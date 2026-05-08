@@ -9,10 +9,11 @@ import re
 import subprocess
 import sys
 import tarfile
+import tkinter as tk
 import zipfile
 from pathlib import Path
+from tkinter import filedialog, messagebox, scrolledtext
 from typing import Any
-
 
 LOG_DIR_RE = re.compile(r'Info \| (?:Info \| )?Log directory:\s*"([^"]+)"')
 APP_VERSION_RE = re.compile(r"Info \| (?:Info \| )?Starting Topaz Photo\s+(.+?)\s*$")
@@ -230,6 +231,7 @@ def get_system_info_search_paths(input_path: Path, extracted_dirs: list[Path]) -
     return [input_path]
 
 
+
 def ask_for_issue_log_path(default_path: Path) -> Path:
     """Ask Support for the log file/folder that contains the reported issue."""
     print("\nIssue log step.")
@@ -241,6 +243,25 @@ def ask_for_issue_log_path(default_path: Path) -> Path:
         return default_path
 
     return Path(user_input).expanduser().resolve()
+
+
+def ask_for_notable_error_messages() -> str:
+    """Ask Support to add notable error messages found in the problem log."""
+    print("\nNotable error message step.")
+    print("Add any notable error messages found in the problem log.")
+    print("Press Enter once on a blank line when finished.")
+
+    lines: list[str] = []
+    while True:
+        user_input = input("Error message: ").strip()
+        if not user_input:
+            break
+        lines.append(user_input)
+
+    if not lines:
+        return "Not provided"
+
+    return "\n".join(f"  - {line}" for line in lines)
 
 
 def discover_log_files(path_input: Path) -> list[Path]:
@@ -268,6 +289,7 @@ def find_first_log_with_system_info(parsed_logs: list[dict[str, Any]]) -> dict[s
     return None
 
 
+
 def copy_to_clipboard(text: str) -> bool:
     try:
         if sys.platform == "darwin":
@@ -280,6 +302,17 @@ def copy_to_clipboard(text: str) -> bool:
         return False
 
     return False
+
+
+def write_report_to_txt(report: str, output_folder: Path, filename: str = "support_tzlog_report.txt") -> Path:
+    """Write report text to a .txt file inside the selected Support folder."""
+    if output_folder.is_file():
+        output_folder = output_folder.parent
+
+    output_folder.mkdir(parents=True, exist_ok=True)
+    report_path = output_folder / filename
+    report_path.write_text(report, encoding="utf-8")
+    return report_path
 
 
 def format_system_info_report(entry: dict[str, Any] | None) -> str:
@@ -310,6 +343,7 @@ def format_system_info_report(entry: dict[str, Any] | None) -> str:
     return "\n".join(lines)
 
 
+
 def format_issue_report(entry: dict[str, Any]) -> str:
     log_name = Path(entry["file"]).name
 
@@ -320,6 +354,16 @@ def format_issue_report(entry: dict[str, Any]) -> str:
     ]
 
     return "\n".join(lines)
+
+
+def format_notable_error_report(notable_errors: str) -> str:
+    lines = [
+        "Notable error messages:",
+        notable_errors,
+    ]
+
+    return "\n".join(lines)
+
 
 
 def format_text_report(entry: dict[str, Any]) -> str:
@@ -348,12 +392,285 @@ def format_text_report(entry: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+# === GUI and helper functions for GUI mode ===
+
+def process_system_info_from_path(input_path: Path) -> tuple[str, dict[str, Any] | None, list[Path]]:
+    """Extract archives, locate tzlogs, parse system info, and return a report."""
+    extracted_dirs = extract_archive_files(input_path)
+
+    system_info_files: list[Path] = []
+    for search_path in get_system_info_search_paths(input_path, extracted_dirs):
+        system_info_files.extend(discover_log_files(search_path))
+
+    if not system_info_files:
+        raise FileNotFoundError(
+            "No .tzlog files found for system information in the extracted archive folders or original path."
+        )
+
+    parsed_system_info_logs = [parse_tzlog(file_path) for file_path in system_info_files]
+    system_info_entry = find_first_log_with_system_info(parsed_system_info_logs)
+    system_info_report = format_system_info_report(system_info_entry)
+
+    return system_info_report, system_info_entry, extracted_dirs
+
+
+def process_issue_logs_from_path(issue_log_path: Path, notable_errors: str = "Not provided") -> str:
+    """Parse the issue-specific tzlog path and return the issue/crashpad report."""
+    issue_log_files = discover_log_files(issue_log_path)
+
+    if not issue_log_files:
+        raise FileNotFoundError(f"No .tzlog files found for issue log information at: {issue_log_path}")
+
+    parsed_issue_logs = [parse_tzlog(file_path) for file_path in issue_log_files]
+
+    report_blocks: list[str] = []
+    for entry in parsed_issue_logs:
+        report_blocks.append(format_issue_report(entry))
+
+    report_blocks.append(format_notable_error_report(notable_errors))
+
+    return ("\n" + ("-" * 72) + "\n").join(report_blocks)
+
+
+def run_gui() -> None:
+    """Launch a simple GUI for Support users who do not use the CLI."""
+    root = tk.Tk()
+    root.title("Topaz tzlog Reader")
+    root.geometry("900x760")
+
+    state: dict[str, Any] = {
+        "system_info_report": "",
+        "final_report": "",
+        "support_path": None,
+    }
+
+    main_frame = tk.Frame(root, padx=16, pady=16)
+    main_frame.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(
+        main_frame,
+        text="Topaz tzlog Reader",
+        font=("Arial", 18, "bold"),
+        anchor="w",
+    ).pack(fill=tk.X)
+
+    tk.Label(
+        main_frame,
+        text=(
+            "Select a Support download folder or archive. The tool will extract archives, "
+            "find .tzlog files, copy system information, then build the Linear crashpad report."
+        ),
+        anchor="w",
+        wraplength=850,
+        justify=tk.LEFT,
+    ).pack(fill=tk.X, pady=(4, 16))
+
+    support_path_var = tk.StringVar()
+    issue_path_var = tk.StringVar()
+    status_var = tk.StringVar(value="Ready.")
+
+    support_frame = tk.LabelFrame(
+        main_frame,
+        text="Step 1: Support download folder or archive",
+        padx=10,
+        pady=10,
+    )
+    support_frame.pack(fill=tk.X, pady=(0, 12))
+
+    tk.Entry(support_frame, textvariable=support_path_var).pack(
+        side=tk.LEFT,
+        fill=tk.X,
+        expand=True,
+        padx=(0, 8),
+    )
+
+    def select_support_folder() -> None:
+        selected = filedialog.askdirectory(title="Select support download folder")
+        if selected:
+            support_path_var.set(selected)
+
+    def select_support_archive() -> None:
+        selected = filedialog.askopenfilename(
+            title="Select support archive",
+            filetypes=[
+                ("Supported archives", "*.tar *.tar.gz *.tgz *.zip"),
+                ("All files", "*.*"),
+            ],
+        )
+        if selected:
+            support_path_var.set(selected)
+
+    tk.Button(support_frame, text="Choose Folder", command=select_support_folder).pack(
+        side=tk.LEFT,
+        padx=(0, 8),
+    )
+    tk.Button(support_frame, text="Choose Archive", command=select_support_archive).pack(
+        side=tk.LEFT,
+    )
+
+    issue_frame = tk.LabelFrame(
+        main_frame,
+        text="Step 2: Issue-specific .tzlog file or folder",
+        padx=10,
+        pady=10,
+    )
+    issue_frame.pack(fill=tk.X, pady=(0, 12))
+
+    tk.Entry(issue_frame, textvariable=issue_path_var).pack(
+        side=tk.LEFT,
+        fill=tk.X,
+        expand=True,
+        padx=(0, 8),
+    )
+
+    def select_issue_file() -> None:
+        selected = filedialog.askopenfilename(
+            title="Select issue .tzlog file",
+            filetypes=[("Topaz logs", "*.tzlog"), ("All files", "*.*")],
+        )
+        if selected:
+            issue_path_var.set(selected)
+
+    def select_issue_folder() -> None:
+        selected = filedialog.askdirectory(title="Select folder containing issue .tzlog files")
+        if selected:
+            issue_path_var.set(selected)
+
+    tk.Button(issue_frame, text="Choose .tzlog", command=select_issue_file).pack(
+        side=tk.LEFT,
+        padx=(0, 8),
+    )
+    tk.Button(issue_frame, text="Choose Folder", command=select_issue_folder).pack(
+        side=tk.LEFT,
+    )
+
+    error_frame = tk.LabelFrame(
+        main_frame,
+        text="Step 3: Notable error messages from problem log",
+        padx=10,
+        pady=10,
+    )
+    error_frame.pack(fill=tk.X, pady=(0, 12))
+
+    notable_error_text = scrolledtext.ScrolledText(error_frame, wrap=tk.WORD, height=5)
+    notable_error_text.pack(fill=tk.X, expand=True)
+
+    button_frame = tk.Frame(main_frame)
+    button_frame.pack(fill=tk.X, pady=(0, 12))
+
+    output = scrolledtext.ScrolledText(main_frame, wrap=tk.WORD, height=20)
+    output.pack(fill=tk.BOTH, expand=True)
+
+    def set_output(text: str) -> None:
+        output.delete("1.0", tk.END)
+        output.insert(tk.END, text)
+
+    def run_system_info_step() -> None:
+        raw_path = support_path_var.get().strip()
+        if not raw_path:
+            messagebox.showwarning("Missing path", "Choose a support download folder or archive first.")
+            return
+
+        input_path = Path(raw_path).expanduser().resolve()
+        state["support_path"] = input_path
+
+        try:
+            system_info_report, _system_info_entry, extracted_dirs = process_system_info_from_path(input_path)
+        except Exception as error:
+            messagebox.showerror("System information failed", str(error))
+            status_var.set("System information failed.")
+            return
+
+        state["system_info_report"] = system_info_report
+
+        extraction_note = ""
+        if extracted_dirs:
+            extraction_note = "\n\nExtracted archive folders:\n" + "\n".join(
+                f"- {path}" for path in extracted_dirs
+            )
+
+        set_output(system_info_report + extraction_note)
+
+        if copy_to_clipboard(system_info_report):
+            status_var.set("System information copied to clipboard.")
+        else:
+            status_var.set("System information found, but clipboard copy failed.")
+
+        write_report_to_txt(system_info_report, input_path, "support_system_information.txt")
+
+    def run_issue_step() -> None:
+        raw_path = issue_path_var.get().strip()
+        if not raw_path:
+            messagebox.showwarning("Missing issue log", "Choose the issue-specific .tzlog file or folder first.")
+            return
+
+        issue_path = Path(raw_path).expanduser().resolve()
+        notable_errors = notable_error_text.get("1.0", tk.END).strip() or "Not provided"
+        if notable_errors != "Not provided":
+            notable_errors = "\n".join(f"  - {line.strip()}" for line in notable_errors.splitlines() if line.strip())
+
+        try:
+            issue_report = process_issue_logs_from_path(issue_path, notable_errors)
+        except Exception as error:
+            messagebox.showerror("Issue log failed", str(error))
+            status_var.set("Issue log parsing failed.")
+            return
+
+        state["final_report"] = issue_report
+        set_output(issue_report)
+
+        if copy_to_clipboard(issue_report):
+            status_var.set("Issue report copied to clipboard.")
+        else:
+            status_var.set("Issue report created, but clipboard copy failed.")
+
+        output_folder = state["support_path"] or issue_path
+        full_report = issue_report
+        if state["system_info_report"]:
+            full_report = state["system_info_report"] + "\n" + ("-" * 72) + "\n" + issue_report
+        write_report_to_txt(full_report, output_folder, "support_full_tzlog_report.txt")
+
+    def copy_current_output() -> None:
+        current_text = output.get("1.0", tk.END).strip()
+        if not current_text:
+            messagebox.showwarning("Nothing to copy", "There is no report text to copy yet.")
+            return
+
+        if copy_to_clipboard(current_text):
+            status_var.set("Current output copied to clipboard.")
+        else:
+            status_var.set("Clipboard copy failed.")
+
+    tk.Button(
+        button_frame,
+        text="1. Extract + Copy System Info",
+        command=run_system_info_step,
+    ).pack(side=tk.LEFT, padx=(0, 8))
+
+    tk.Button(
+        button_frame,
+        text="2. Build Crashpad Report",
+        command=run_issue_step,
+    ).pack(side=tk.LEFT, padx=(0, 8))
+
+    tk.Button(
+        button_frame,
+        text="Copy Current Output",
+        command=copy_current_output,
+    ).pack(side=tk.LEFT)
+
+    tk.Label(main_frame, textvariable=status_var, anchor="w").pack(fill=tk.X, pady=(8, 0))
+
+    root.mainloop()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Extract support triage details from .tzlog files."
     )
     parser.add_argument(
         "path",
+        nargs="?",
         help="Path to a .tzlog file, a directory containing .tzlog files, or a folder containing archive files with .tzlog files.",
     )
     parser.add_argument(
@@ -362,6 +679,10 @@ def main() -> None:
         help="Output results as JSON instead of text report.",
     )
     args = parser.parse_args()
+
+    if args.path is None:
+        run_gui()
+        return
 
     input_path = Path(args.path).expanduser().resolve()
 
@@ -393,6 +714,13 @@ def main() -> None:
     else:
         print("\nCould not copy system information to clipboard automatically.")
 
+    system_info_report_path = write_report_to_txt(
+        system_info_report,
+        input_path,
+        "support_system_information.txt",
+    )
+    print(f"System information report saved to: {system_info_report_path}")
+
     issue_log_path = ask_for_issue_log_path(input_path)
     issue_log_files = discover_log_files(issue_log_path)
 
@@ -409,9 +737,12 @@ def main() -> None:
         print(json.dumps(output, indent=2))
         return
 
-    report_blocks: list[str] = [format_system_info_report(system_info_entry)]
+    report_blocks: list[str] = []
     for entry in parsed_issue_logs:
         report_blocks.append(format_issue_report(entry))
+
+    notable_errors = ask_for_notable_error_messages()
+    report_blocks.append(format_notable_error_report(notable_errors))
 
     report = ("\n" + ("-" * 72) + "\n").join(report_blocks)
     print(report)
@@ -420,6 +751,14 @@ def main() -> None:
         print("\nCopied report to clipboard.")
     else:
         print("\nCould not copy report to clipboard automatically.")
+
+    full_report = system_info_report + "\n" + ("-" * 72) + "\n" + report
+    full_report_path = write_report_to_txt(
+        full_report,
+        input_path,
+        "support_full_tzlog_report.txt",
+    )
+    print(f"Full Support report saved to: {full_report_path}")
 
 
 if __name__ == "__main__":
