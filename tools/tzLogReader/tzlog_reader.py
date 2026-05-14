@@ -15,6 +15,8 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, scrolledtext
 from typing import Any
 
+import error_message_bank as error_bank
+
 LOG_DIR_RE = re.compile(r'Info \| (?:Info \| )?Log directory:\s*"([^"]+)"')
 APP_VERSION_RE = re.compile(r"Info \| (?:Info \| )?Starting Topaz Photo\s+(.+?)\s*$")
 CRASHPAD_RE = re.compile(
@@ -315,6 +317,11 @@ def write_report_to_txt(report: str, output_folder: Path, filename: str = "suppo
     return report_path
 
 
+def report_destination_dirs(extracted_dirs: list[Path], fallback: Path) -> list[Path]:
+    """When archives were extracted, save reports next to the unpacked files; otherwise use fallback."""
+    return extracted_dirs if extracted_dirs else [fallback]
+
+
 def format_system_info_report(entry: dict[str, Any] | None) -> str:
     if entry is None:
         return "System information:\n  Not found"
@@ -429,19 +436,20 @@ def process_issue_logs_from_path(issue_log_path: Path, notable_errors: str = "No
 
     report_blocks.append(format_notable_error_report(notable_errors))
 
-    return ("\n" + ("-" * 72) + "\n").join(report_blocks)
+    return "\n\n".join(report_blocks)
 
 
 def run_gui() -> None:
     """Launch a simple GUI for Support users who do not use the CLI."""
     root = tk.Tk()
     root.title("Topaz tzlog Reader")
-    root.geometry("900x760")
+    root.geometry("900x900")
 
     state: dict[str, Any] = {
         "system_info_report": "",
         "final_report": "",
         "support_path": None,
+        "extracted_dirs": [],
     }
 
     main_frame = tk.Frame(root, padx=16, pady=16)
@@ -555,6 +563,114 @@ def run_gui() -> None:
     notable_error_text = scrolledtext.ScrolledText(error_frame, wrap=tk.WORD, height=5)
     notable_error_text.pack(fill=tk.X, expand=True)
 
+    bank_frame = tk.LabelFrame(
+        main_frame,
+        text="Error message bank (trends & reuse)",
+        padx=10,
+        pady=8,
+    )
+    bank_frame.pack(fill=tk.X, pady=(0, 12))
+
+    bank_hint = tk.Label(
+        bank_frame,
+        text=(
+            "Build a local history of error lines. Filter matches sample text; double-click a row "
+            f"to append it to Step 3. Bank file: {error_bank.default_bank_path()}"
+        ),
+        anchor="w",
+        wraplength=850,
+        justify=tk.LEFT,
+    )
+    bank_hint.pack(fill=tk.X)
+
+    auto_record_bank_var = tk.BooleanVar(value=False)
+    tk.Checkbutton(
+        bank_frame,
+        text="When building the crashpad report, also record Step 3 lines into the bank",
+        variable=auto_record_bank_var,
+    ).pack(anchor="w", pady=(4, 0))
+
+    filter_top = tk.Frame(bank_frame)
+    filter_top.pack(fill=tk.X, pady=(6, 4))
+    tk.Label(filter_top, text="Filter:").pack(side=tk.LEFT, padx=(0, 6))
+    bank_filter_var = tk.StringVar()
+    filter_entry = tk.Entry(filter_top, textvariable=bank_filter_var)
+    filter_entry.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+    list_row = tk.Frame(bank_frame)
+    list_row.pack(fill=tk.BOTH, expand=True, pady=(0, 6))
+
+    bank_list_rows: list[error_bank.BankEntryView] = []
+
+    bank_listbox = tk.Listbox(list_row, height=6, exportselection=False)
+    bank_scroll = tk.Scrollbar(list_row, orient=tk.VERTICAL, command=bank_listbox.yview)
+    bank_listbox.configure(yscrollcommand=bank_scroll.set)
+    bank_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+    bank_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+
+    def refresh_bank_listbox(*_args: object) -> None:
+        bank_listbox.delete(0, tk.END)
+        bank_list_rows.clear()
+        query = bank_filter_var.get().strip()
+        entries = error_bank.search_entries(query, limit=40) if query else error_bank.list_entries_sorted(limit=40)
+        for entry in entries:
+            bank_list_rows.append(entry)
+            short = entry.sample_text.replace("\n", " ")
+            if len(short) > 92:
+                short = short[:89] + "..."
+            bank_listbox.insert(tk.END, f"{entry.count:>4}  {short}")
+
+    def insert_bank_selection(_event: object | None = None) -> None:
+        selection = bank_listbox.curselection()
+        if not selection:
+            return
+        entry = bank_list_rows[int(selection[0])]
+        notable_error_text.insert(tk.END, entry.sample_text + "\n")
+
+    bank_listbox.bind("<Double-Button-1>", insert_bank_selection)
+
+    def record_step3_to_bank() -> None:
+        raw = notable_error_text.get("1.0", tk.END)
+        lines = [ln.strip() for ln in raw.splitlines() if ln.strip()]
+        if not lines:
+            messagebox.showinfo("Nothing to record", "Add one or more error lines in Step 3 first.")
+            return
+        _new_keys, path = error_bank.record_lines(lines)
+        refresh_bank_listbox()
+        status_var.set(f"Recorded {len(lines)} line(s) to error bank ({path.name}).")
+
+    def show_trends_window() -> None:
+        win = tk.Toplevel(root)
+        win.title("Error bank — frequency view")
+        win.geometry("880x520")
+        body = tk.Frame(win, padx=10, pady=10)
+        body.pack(fill=tk.BOTH, expand=True)
+        text = scrolledtext.ScrolledText(body, wrap=tk.WORD, height=24)
+        text.pack(fill=tk.BOTH, expand=True)
+        text.insert(tk.END, error_bank.format_trends_text(limit=500))
+        text.configure(state=tk.DISABLED)
+
+        def copy_trends() -> None:
+            if copy_to_clipboard(error_bank.format_trends_text(limit=500)):
+                status_var.set("Trends list copied to clipboard.")
+            else:
+                messagebox.showwarning("Clipboard", "Could not copy trends to the clipboard.")
+
+        btn_row = tk.Frame(win, padx=10, pady=(0, 10))
+        btn_row.pack(fill=tk.X)
+        tk.Button(btn_row, text="Copy trends to clipboard", command=copy_trends).pack(side=tk.LEFT)
+
+    bank_btn_row = tk.Frame(bank_frame)
+    bank_btn_row.pack(fill=tk.X, pady=(0, 2))
+    tk.Button(bank_btn_row, text="Record Step 3 to bank", command=record_step3_to_bank).pack(
+        side=tk.LEFT, padx=(0, 8)
+    )
+    tk.Button(bank_btn_row, text="Refresh list", command=refresh_bank_listbox).pack(side=tk.LEFT, padx=(0, 8))
+    tk.Button(bank_btn_row, text="Trends window…", command=show_trends_window).pack(side=tk.LEFT)
+
+    filter_entry.bind("<KeyRelease>", refresh_bank_listbox)
+    refresh_bank_listbox()
+
     button_frame = tk.Frame(main_frame)
     button_frame.pack(fill=tk.X, pady=(0, 12))
 
@@ -582,6 +698,7 @@ def run_gui() -> None:
             return
 
         state["system_info_report"] = system_info_report
+        state["extracted_dirs"] = extracted_dirs
 
         extraction_note = ""
         if extracted_dirs:
@@ -596,7 +713,8 @@ def run_gui() -> None:
         else:
             status_var.set("System information found, but clipboard copy failed.")
 
-        write_report_to_txt(system_info_report, input_path, "support_system_information.txt")
+        for dest in report_destination_dirs(extracted_dirs, input_path):
+            write_report_to_txt(system_info_report, dest, "support_system_information.txt")
 
     def run_issue_step() -> None:
         raw_path = issue_path_var.get().strip()
@@ -605,7 +723,8 @@ def run_gui() -> None:
             return
 
         issue_path = Path(raw_path).expanduser().resolve()
-        notable_errors = notable_error_text.get("1.0", tk.END).strip() or "Not provided"
+        notable_errors_raw = notable_error_text.get("1.0", tk.END).strip()
+        notable_errors = notable_errors_raw or "Not provided"
         if notable_errors != "Not provided":
             notable_errors = "\n".join(f"  - {line.strip()}" for line in notable_errors.splitlines() if line.strip())
 
@@ -616,19 +735,28 @@ def run_gui() -> None:
             status_var.set("Issue log parsing failed.")
             return
 
-        state["final_report"] = issue_report
-        set_output(issue_report)
-
-        if copy_to_clipboard(issue_report):
-            status_var.set("Issue report copied to clipboard.")
-        else:
-            status_var.set("Issue report created, but clipboard copy failed.")
-
-        output_folder = state["support_path"] or issue_path
         full_report = issue_report
         if state["system_info_report"]:
-            full_report = state["system_info_report"] + "\n" + ("-" * 72) + "\n" + issue_report
-        write_report_to_txt(full_report, output_folder, "support_full_tzlog_report.txt")
+            full_report = state["system_info_report"] + "\n\n" + issue_report
+
+        state["final_report"] = full_report
+        set_output(full_report)
+
+        if copy_to_clipboard(full_report):
+            status_var.set("Full support report copied to clipboard.")
+        else:
+            status_var.set("Full support report saved, but clipboard copy failed.")
+
+        if auto_record_bank_var.get() and notable_errors_raw:
+            bank_lines = [ln.strip() for ln in notable_errors_raw.splitlines() if ln.strip()]
+            if bank_lines:
+                error_bank.record_lines(bank_lines)
+                refresh_bank_listbox()
+
+        fallback_folder = state["support_path"] or issue_path
+        extracted_dirs: list[Path] = state.get("extracted_dirs") or []
+        for dest in report_destination_dirs(extracted_dirs, fallback_folder):
+            write_report_to_txt(full_report, dest, "support_full_tzlog_report.txt")
 
     def copy_current_output() -> None:
         current_text = output.get("1.0", tk.END).strip()
@@ -678,7 +806,18 @@ def main() -> None:
         action="store_true",
         help="Output results as JSON instead of text report.",
     )
+    parser.add_argument(
+        "--error-bank-stats",
+        action="store_true",
+        help="Print cached error lines sorted by frequency (from the local error bank) and exit.",
+    )
     args = parser.parse_args()
+
+    if args.error_bank_stats:
+        bank_path = error_bank.default_bank_path()
+        print(f"Error bank file: {bank_path}\n")
+        print(error_bank.format_trends_text(limit=500))
+        return
 
     if args.path is None:
         run_gui()
@@ -714,12 +853,13 @@ def main() -> None:
     else:
         print("\nCould not copy system information to clipboard automatically.")
 
-    system_info_report_path = write_report_to_txt(
-        system_info_report,
-        input_path,
-        "support_system_information.txt",
-    )
-    print(f"System information report saved to: {system_info_report_path}")
+    for dest in report_destination_dirs(extracted_dirs, input_path):
+        system_info_report_path = write_report_to_txt(
+            system_info_report,
+            dest,
+            "support_system_information.txt",
+        )
+        print(f"System information report saved to: {system_info_report_path}")
 
     issue_log_path = ask_for_issue_log_path(input_path)
     issue_log_files = discover_log_files(issue_log_path)
@@ -744,21 +884,23 @@ def main() -> None:
     notable_errors = ask_for_notable_error_messages()
     report_blocks.append(format_notable_error_report(notable_errors))
 
-    report = ("\n" + ("-" * 72) + "\n").join(report_blocks)
+    report = "\n\n".join(report_blocks)
     print(report)
 
-    if copy_to_clipboard(report):
-        print("\nCopied report to clipboard.")
-    else:
-        print("\nCould not copy report to clipboard automatically.")
+    full_report = system_info_report + "\n\n" + report
 
-    full_report = system_info_report + "\n" + ("-" * 72) + "\n" + report
-    full_report_path = write_report_to_txt(
-        full_report,
-        input_path,
-        "support_full_tzlog_report.txt",
-    )
-    print(f"Full Support report saved to: {full_report_path}")
+    if copy_to_clipboard(full_report):
+        print("\nCopied full support report to clipboard.")
+    else:
+        print("\nCould not copy full support report to clipboard automatically.")
+
+    for dest in report_destination_dirs(extracted_dirs, input_path):
+        full_report_path = write_report_to_txt(
+            full_report,
+            dest,
+            "support_full_tzlog_report.txt",
+        )
+        print(f"Full Support report saved to: {full_report_path}")
 
 
 if __name__ == "__main__":

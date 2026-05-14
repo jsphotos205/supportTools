@@ -1,0 +1,42 @@
+{
+  "jsonVersion": "1.0.0",
+  "version": "5",
+  "minAppVersion": "0",
+  "shortName": "sdi_unet_nogpu",
+  "name": "Standard UNet",
+  "category": "Inpaint",
+  "verb": "Inpainting",
+  "enabled": 1,
+  "optional": 1,
+  "inputs": {
+    "input0": "sample",
+    "input1": "encoder_hidden_states",
+    "timestep": "timestep"
+  },
+  "backends": {
+    "openvino": {
+      "model": "imn",
+      "parallel": 0,
+      "transpose": 0,
+      "scales": {
+        "1": {
+          "nets": ["sdi_unet-v[V]-fp16-[H]x[W]-ox.tz2"],
+          "blocks": [512,512],
+          "outputs": ["out_sample"]
+        }
+      }
+    },
+    "coreml": {
+      "model": "imn",
+      "parallel": 0,
+      "minMacVersion": 10.16,
+      "scales": {
+        "1": {
+          "nets": ["sdi_unet-v[V]-fp16-[H]x[W]-mlc.tz"],
+          "blocks": [512,512],
+          "outputs": ["out"]
+        }
+      }
+    }
+  }
+}
