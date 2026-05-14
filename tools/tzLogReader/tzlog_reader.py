@@ -13,7 +13,7 @@ import tkinter as tk
 import zipfile
 from pathlib import Path
 from tkinter import filedialog, messagebox, scrolledtext
-from typing import Any
+from typing import Any, Iterable
 
 import error_message_bank as error_bank
 
@@ -22,14 +22,13 @@ APP_VERSION_RE = re.compile(r"Info \| (?:Info \| )?Starting Topaz Photo\s+(.+?)\
 CRASHPAD_RE = re.compile(
     r"Info \| (?:Info \| )?Starting Crashpad handler with sessionId[:\s]*([^\s]+)"
 )
+USER_EMAIL_RE = re.compile(r"Info \| (?:Info \| )?User email:\s*(.+?)\s*\|")
 SYSTEM_START_RE = re.compile(r"Info \| \[AIE\] === System Information ===")
 SYSTEM_END_RE = re.compile(r"Info \| \[AIE\] =+")
 
 OS_RE = re.compile(r"Info \| \[AIE\] OS (.+?)\s*$")
 CPU_RE = re.compile(r"Info \| \[AIE\] CPU (.+?)\s*$")
 RAM_RE = re.compile(r"Info \| \[AIE\] RAM (.+?)\s*$")
-MACHINE_ID_RE = re.compile(r"Info \| \[AIE\] Machine Id:\s*(.+?)\s*$")
-DEVICE_COUNT_RE = re.compile(r"Info \| \[AIE\] Device count:\s*(\d+)\s*$")
 GPU_INDEX_RE = re.compile(r"Info \| \[AIE\] - Index (\d+) Name (.+?) Cores \d+\s*$")
 GPU_VRAM_RE = re.compile(r"Info \| \[AIE\]\s+VRAM (.+?)\s*$")
 
@@ -55,12 +54,11 @@ def parse_tzlog(file_path: Path) -> dict[str, Any]:
         "inferred_user_os": None,
         "app_version": None,
         "crashpad_session_id": None,
+        "user_email": None,
         "system_information": {
             "os": None,
             "cpu": None,
             "ram": None,
-            "machine_id": None,
-            "device_count": None,
             "indexed_gpus": [],
         },
     }
@@ -103,6 +101,12 @@ def parse_tzlog(file_path: Path) -> dict[str, Any]:
                 current_gpu = None
                 continue
 
+            if result["user_email"] is None:
+                match = USER_EMAIL_RE.search(line)
+                if match:
+                    result["user_email"] = match.group(1).strip()
+                    continue
+
             if not in_system_block:
                 continue
 
@@ -122,18 +126,6 @@ def parse_tzlog(file_path: Path) -> dict[str, Any]:
                 match = RAM_RE.search(line)
                 if match:
                     result["system_information"]["ram"] = match.group(1).strip()
-                    continue
-
-            if result["system_information"]["machine_id"] is None:
-                match = MACHINE_ID_RE.search(line)
-                if match:
-                    result["system_information"]["machine_id"] = match.group(1).strip()
-                    continue
-
-            if result["system_information"]["device_count"] is None:
-                match = DEVICE_COUNT_RE.search(line)
-                if match:
-                    result["system_information"]["device_count"] = int(match.group(1))
                     continue
 
             match = GPU_INDEX_RE.search(line)
@@ -247,6 +239,12 @@ def ask_for_issue_log_path(default_path: Path) -> Path:
     return Path(user_input).expanduser().resolve()
 
 
+def format_notable_errors_for_report(lines: Iterable[str]) -> str:
+    """Format Step 3 lines for pasted reports: one trimmed line each, dash-prefixed."""
+    trimmed = [ln.strip() for ln in lines if ln.strip()]
+    return "\n".join(f"- {item}" for item in trimmed)
+
+
 def ask_for_notable_error_messages() -> str:
     """Ask Support to add notable error messages found in the problem log."""
     print("\nNotable error message step.")
@@ -263,7 +261,7 @@ def ask_for_notable_error_messages() -> str:
     if not lines:
         return "Not provided"
 
-    return "\n".join(f"  - {line}" for line in lines)
+    return format_notable_errors_for_report(lines)
 
 
 def discover_log_files(path_input: Path) -> list[Path]:
@@ -282,14 +280,31 @@ def find_first_log_with_system_info(parsed_logs: list[dict[str, Any]]) -> dict[s
             sys_info["os"]
             or sys_info["cpu"]
             or sys_info["ram"]
-            or sys_info["machine_id"]
-            or sys_info["device_count"] is not None
             or sys_info["indexed_gpus"]
         ):
             return entry
 
     return None
 
+
+def first_user_email_from_parsed(parsed_logs: list[dict[str, Any]]) -> str | None:
+    """Return the first non-empty user email found across parsed logs (activation troubleshooting)."""
+    for entry in parsed_logs:
+        email = entry.get("user_email")
+        if email:
+            return str(email).strip()
+    return None
+
+
+def merge_system_info_entry_for_report(parsed_logs: list[dict[str, Any]]) -> dict[str, Any] | None:
+    """Pick the primary system-info log and attach user email from any log in the same batch if missing."""
+    entry = find_first_log_with_system_info(parsed_logs)
+    if entry is None:
+        return None
+    merged_email = entry.get("user_email") or first_user_email_from_parsed(parsed_logs)
+    if merged_email == entry.get("user_email"):
+        return entry
+    return {**entry, "user_email": merged_email}
 
 
 def copy_to_clipboard(text: str) -> bool:
@@ -324,18 +339,18 @@ def report_destination_dirs(extracted_dirs: list[Path], fallback: Path) -> list[
 
 def format_system_info_report(entry: dict[str, Any] | None) -> str:
     if entry is None:
-        return "System information:\n  Not found"
+        return "SYSTEM INFORMATION:\n\n  Not found\n"
 
     sys_info = entry["system_information"]
     lines = [
-        "System information:",
+        "SYSTEM INFORMATION:",
+        "",
         f"  User OS: {entry['inferred_user_os'] or 'Not found'}",
         f"  Topaz Photo version: {entry['app_version'] or 'Not found'}",
+        f"  User email (activation): {entry.get('user_email') or 'Not found'}",
         f"  OS: {sys_info['os'] or 'Not found'}",
         f"  CPU: {sys_info['cpu'] or 'Not found'}",
         f"  RAM: {sys_info['ram'] or 'Not found'}",
-        f"  Machine ID: {sys_info['machine_id'] or 'Not found'}",
-        f"  Device count: {sys_info['device_count'] if sys_info['device_count'] is not None else 'Not found'}",
     ]
 
     if sys_info["indexed_gpus"]:
@@ -347,6 +362,8 @@ def format_system_info_report(entry: dict[str, Any] | None) -> str:
     else:
         lines.append("  Indexed GPUs: Not found")
 
+    lines.append("")
+
     return "\n".join(lines)
 
 
@@ -355,7 +372,9 @@ def format_issue_report(entry: dict[str, Any]) -> str:
     log_name = Path(entry["file"]).name
 
     lines = [
-        "Issue log information:",
+        "",
+        "ISSUE LOG INFORMATION:",
+        "",
         f"  Log file: {log_name}",
         f"  Crashpad session ID: {entry['crashpad_session_id'] or 'Not found'}",
     ]
@@ -365,7 +384,8 @@ def format_issue_report(entry: dict[str, Any]) -> str:
 
 def format_notable_error_report(notable_errors: str) -> str:
     lines = [
-        "Notable error messages:",
+        "NOTABLE ERROR MESSAGES:",
+        "",
         notable_errors,
     ]
 
@@ -379,12 +399,12 @@ def format_text_report(entry: dict[str, Any]) -> str:
         f"User OS: {entry['inferred_user_os'] or 'Not found'}",
         f"Topaz Photo version: {entry['app_version'] or 'Not found'}",
         f"Crashpad session ID: {entry['crashpad_session_id'] or 'Not found'}",
-        "System information:",
+        f"User email (activation): {entry.get('user_email') or 'Not found'}",
+        "SYSTEM INFORMATION:",
+        "",
         f"  OS: {sys_info['os'] or 'Not found'}",
         f"  CPU: {sys_info['cpu'] or 'Not found'}",
         f"  RAM: {sys_info['ram'] or 'Not found'}",
-        f"  Machine ID: {sys_info['machine_id'] or 'Not found'}",
-        f"  Device count: {sys_info['device_count'] if sys_info['device_count'] is not None else 'Not found'}",
     ]
 
     if sys_info["indexed_gpus"]:
@@ -415,7 +435,7 @@ def process_system_info_from_path(input_path: Path) -> tuple[str, dict[str, Any]
         )
 
     parsed_system_info_logs = [parse_tzlog(file_path) for file_path in system_info_files]
-    system_info_entry = find_first_log_with_system_info(parsed_system_info_logs)
+    system_info_entry = merge_system_info_entry_for_report(parsed_system_info_logs)
     system_info_report = format_system_info_report(system_info_entry)
 
     return system_info_report, system_info_entry, extracted_dirs
@@ -726,7 +746,7 @@ def run_gui() -> None:
         notable_errors_raw = notable_error_text.get("1.0", tk.END).strip()
         notable_errors = notable_errors_raw or "Not provided"
         if notable_errors != "Not provided":
-            notable_errors = "\n".join(f"  - {line.strip()}" for line in notable_errors.splitlines() if line.strip())
+            notable_errors = format_notable_errors_for_report(notable_errors.splitlines())
 
         try:
             issue_report = process_issue_logs_from_path(issue_path, notable_errors)
@@ -737,7 +757,7 @@ def run_gui() -> None:
 
         full_report = issue_report
         if state["system_info_report"]:
-            full_report = state["system_info_report"] + "\n\n" + issue_report
+            full_report = state["system_info_report"] + "\n" + issue_report
 
         state["final_report"] = full_report
         set_output(full_report)
@@ -843,7 +863,7 @@ def main() -> None:
         raise SystemExit("No .tzlog files found for system information in the extracted archive folders or original path.")
 
     parsed_system_info_logs = [parse_tzlog(file_path) for file_path in system_info_files]
-    system_info_entry = find_first_log_with_system_info(parsed_system_info_logs)
+    system_info_entry = merge_system_info_entry_for_report(parsed_system_info_logs)
 
     system_info_report = format_system_info_report(system_info_entry)
     print("\n" + system_info_report)
@@ -887,7 +907,7 @@ def main() -> None:
     report = "\n\n".join(report_blocks)
     print(report)
 
-    full_report = system_info_report + "\n\n" + report
+    full_report = system_info_report + "\n" + report
 
     if copy_to_clipboard(full_report):
         print("\nCopied full support report to clipboard.")
