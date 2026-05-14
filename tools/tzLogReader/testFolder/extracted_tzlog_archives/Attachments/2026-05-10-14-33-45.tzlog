@@ -1,0 +1,240 @@
+[2026-05-10 14:33:45.572,   0.00 μs] [1fb4] Info | Log directory: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/Logs" 
+[2026-05-10 14:33:45.574,   1.10 ms] [1fb4] Info | Command line arguments: 
+[2026-05-10 14:33:45.574, 150.50 μs] [1fb4] Info | argv[ 0 / 1 ]: Topaz_Photo_PS_Plugin 
+[2026-05-10 14:33:45.574,  89.10 μs] [1fb4] Info | Processed args list: QList() 
+[2026-05-10 14:33:45.574,   0.00 μs] [3088] Warn | QEventLoop: Cannot be used without QCoreApplication 
+[2026-05-10 14:33:45.761, 187.27 ms] [1fb4] Info | Starting Topaz Photo 1.5.1 
+[2026-05-10 14:33:45.761, 101.90 μs] [1fb4] Info | Starting Crashpad handler with sessionId9f01f22a-2571-4564-8c31-4f2a255272c5 
+[2026-05-10 14:33:45.831,  75.70 ms] [1fb4] Info | Opening shmInfoName __topazPhoto_paramInfo shmDataName __topazPhoto_param 
+[2026-05-10 14:33:45.839,   2.66 ms] [1fb4] Info | Opening shmInfoName __topazPhoto_plane0Info shmDataName __topazPhoto_plane0 
+[2026-05-10 14:33:45.841,   1.65 ms] [1fb4] Info | Opening shmInfoName __topazPhoto_plane1Info shmDataName __topazPhoto_plane1 
+[2026-05-10 14:33:45.841,   1.57 ms] [1fb4] Info | Opening shmInfoName __topazPhoto_plane2Info shmDataName __topazPhoto_plane2 
+[2026-05-10 14:33:45.980, 141.04 ms] [1fb4] Info | Created IPCParams, waiting for lock. 
+[2026-05-10 14:33:45.980, 545.60 μs] [1fb4] Info | Starting local server "a6f9ea56a1099e30245cc0b9477e6624" 
+[2026-05-10 14:33:45.986,   1.31 ms] [1fb4] Info | Using Graphics API Index 4 
+[2026-05-10 14:33:45.986,  62.00 μs] [1fb4] Info | Not a server instance, will not register restart handler 
+[2026-05-10 14:33:45.994,   8.32 ms] [1fb4] Info | Loaded Inter font from resources 
+[2026-05-10 14:33:45.994, 133.10 μs] [1fb4] Info | Initializing QML engine 
+[2026-05-10 14:33:45.994, 308.30 μs] [1fb4] Warn | Invalid QML element name "TImageSettings"; value type names should begin with a lowercase letter 
+[2026-05-10 14:33:45.994, 640.40 μs] [1fb4] Info | Model Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models" 
+[2026-05-10 14:33:45.996,   1.87 ms] [1fb4] Info | Sample images Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/Sample Images" 
+[2026-05-10 14:33:46.290, 294.33 ms] [1fb4] Info | Attempting to use cached credentials 
+[2026-05-10 14:33:46.290,   2.93 ms] [1fb4] Info | JWT status: "active" 
+[2026-05-10 14:33:46.290, 130.20 μs] [1fb4] Info | Refreshing authentication 
+[2026-05-10 14:33:46.290, 257.10 μs] [1fb4] Info | Auth request url "https://api.topaz-labs.net/v3/token/refresh" 
+[2026-05-10 14:33:46.321,  32.47 ms] [1fb4] Info | Filter Data Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/filterData" 
+[2026-05-10 14:33:47.491,   1.16  s] [1fb4] Info | Finished loading JSON file: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/filterData/likely_f_sel_combs.json" 
+[2026-05-10 14:33:47.491,   1.14 ms] [1fb4] Info | QML engine initialized 
+[2026-05-10 14:33:48.077, 587.30 ms] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.082,   2.92 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.082,   4.72 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.082,   2.69 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.082,   1.93 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:38 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.093,   2.12 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.093,   2.26 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.093,   2.03 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:38 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.093,   3.18 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.156,  64.69 ms] [1fb4] Info | [AIE] AIEngine mode: Normal 2.9.19 
+[2026-05-10 14:33:48.172,   6.44 ms] [1fb4] Info | [Window] Owned screen exists at: QPoint(0,0) Max width/height: 1920 1032 Ratio: 1 1 
+[2026-05-10 14:33:48.172,  78.30 μs] [1fb4] Info | [Window] OSUtils constructor - Maximum window width/height: 1920 1032 
+[2026-05-10 14:33:48.174,   4.60 ms] [1fb4] Info | Overwriting binding on TEngineController_QML_604::faceLandmarks at qrc:/imageenhance/main.qml:5937 that was initially bound at qrc:/imageenhance/main.qml:5923:9 
+[2026-05-10 14:33:48.178,   0.00 μs] [1f5c] Info | Changing models directory to: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models" from "" 
+[2026-05-10 14:33:48.178, 197.00 μs] [1f5c] Info | [AIE] 000001F32F507F40 loadModelInfo called at C:/ProgramData/Topaz Labs LLC/Topaz Photo/models 
+[2026-05-10 14:33:48.202,  23.81 ms] [1f5c] Info | [AIE] ModelManager setting path to C:/ProgramData/Topaz Labs LLC/Topaz Photo/models 
+[2026-05-10 14:33:48.202, 126.70 μs] [1f5c] Info | Loaded following models:  Denoise Max Super Focus V3 Wonder V2 Wonder V3 apnb claa claae daclip dnt_beta draw_linear drw_native drw_native_mac drw_standard drw_standard_mac dswn_dec dswn_dit dswn_enc expog expoi gfclc gffm gfg gfp-l gfp-s gfpf gfrf gfrfn gfrg ggi ggn ggn_ap ggn_noee ggnv2 ghq ghq_noee ghqv2 ghqv2_ldn ghqv3 ghqv3_cache gmp iisa iri irwn_dec irwn_dit irwn_enc isoa isob lensblur liting_det lmx noise_det s_mask_l_flexible sam_decode sam_encode sddustdec sddustdec-gpu-mac sddustenc sddustenc-gpu-mac sddustunet sddustunet-gpu-mac sdi_dec sdi_enc sdi_imdn sdi_unet slb sll slsp slsp_ap smp_flexible sms_new spfcdec spfcdit spfcenc ssddec0_0 ssddec0_0-gpu-mac ssddec0_5 ssddec0_5-gpu-mac ssddec1_0 ssddec1_0-gpu-mac ssdenc-sharpen ssdenc-sharpen-gpu-mac ssdunet-sharpen ssdunet-sharpen-gpu-mac sstd sstd_ahres sstd_phres sstg stdmax tpn tpn_900 tpn_900_nogpu tpn_nogpu trf trfn txtdtx wbc  
+[2026-05-10 14:33:48.206,  28.77 ms] [1fb4] Warn | Wrong camera model naming format "" 
+[2026-05-10 14:33:48.210,   3.56 ms] [1fb4] Warn | Could not open camera profile: ":/profiles/.gz" 
+[2026-05-10 14:33:48.212,   3.48 ms] [1fb4] Warn | QFSFileEngine::open: No file name specified 
+[2026-05-10 14:33:48.212,  39.00 μs] [1fb4] Warn | Could not open DCP file for reading: "" 
+[2026-05-10 14:33:48.212,  56.80 μs] [1fb4] Warn | Could not load camera profile"" 
+[2026-05-10 14:33:48.271,  58.55 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.275,   3.99 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.277,   1.64 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.299,  23.92 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.299,   2.21 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.299, 480.70 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.299,   4.47 ms] [1fb4] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-10 14:33:48.299, 143.80 μs] [1fb4] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-10 14:33:48.299,  90.30 μs] [1fb4] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-10 14:33:48.299,  94.90 μs] [1fb4] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-10 14:33:48.299,  80.30 μs] [1fb4] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-10 14:33:48.299,  98.00 μs] [1fb4] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-10 14:33:48.299, 124.80 μs] [1fb4] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-10 14:33:48.299, 102.40 μs] [1fb4] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-10 14:33:48.500, 192.01 ms] [1fb4] Info | Loaded lensfun database from "C:/Program Files/Topaz Labs LLC/Topaz Photo/lensfun/db" 
+[2026-05-10 14:33:48.502,   1.20 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.504,   1.62 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.504,   1.80 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.506,   1.59 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.514,   7.33 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.516,   1.88 ms] [1fb4] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_101::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-10 14:33:48.516, 989.80 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.524,   6.29 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.526,   2.95 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.532,   5.68 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.536,   4.07 ms] [1fb4] Info | Overwriting binding on WComboBox_QMLTYPE_59::currentIndex at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:315 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:368:21 
+[2026-05-10 14:33:48.536, 379.70 μs] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::value at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:323 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:575:21 
+[2026-05-10 14:33:48.536,  92.60 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:48.538,   1.38 ms] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::value at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:319 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:552:21 
+[2026-05-10 14:33:48.538,  76.90 μs] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:48.538,  70.50 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:48.540,   2.34 ms] [1fb4] Info | Estimated ETA for the machine 0 
+[2026-05-10 14:33:48.546,   6.25 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.548,   1.76 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:48.551,  17.64 ms] [1fb4] Info | Overwriting binding on EnhancementListPanel_QMLTYPE_281_QML_342::orderedPresets at qrc:/imageenhance/views/rightPanel/enhancements/elements/EnhancementListPanel.qml:43 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/elements/EnhancementListPanel.qml:38:5 
+[2026-05-10 14:33:48.551, 471.00 μs] [1fb4] Warn | qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:267:5: QML QQuickRectangle*: Cannot anchor to an item that isn't a parent or sibling.  | (qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:267)
+[2026-05-10 14:33:48.569,   2.48 ms] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 3. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.573,   3.71 ms] [1fb4] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-10 14:33:48.573,  97.80 μs] [1fb4] Warn | QQmlExpression: Expression qrc:/imageenhance/views/preview/ImageNavigator.qml:137:13 depends on non-bindable properties: 
+[2026-05-10 14:33:48.573,  40.90 μs] [1fb4] Warn |     FacesPreview_QMLTYPE_425::transform 
+[2026-05-10 14:33:48.573, 892.20 μs] [1fb4] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-10 14:33:48.573, 849.60 μs] [1fb4] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-10 14:33:48.598,  31.80 ms] [1fb4] Warn | qrc:/imageenhance/main.qml:6408:5: QML Settings: The Settings type from Qt.labs.settings is deprecated and will be removed in a future release. Please use the one from QtCore instead.  | (qrc:/imageenhance/main.qml:6408)
+[2026-05-10 14:33:48.647,  43.67 ms] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 17. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.647, 166.90 μs] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 16. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.647, 424.40 μs] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 12. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.647, 106.20 μs] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 11. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.647, 766.70 μs] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 5. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.647, 219.30 μs] [1fb4] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 3. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-10 14:33:48.837, 196.25 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.837, 769.20 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.853,   7.26 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_227::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-10 14:33:48.952, 100.92 ms] [1fb4] Warn | qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:59:5: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }  | (qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:59)
+[2026-05-10 14:33:48.964,  21.60 ms] [1fb4] Warn | qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:59:5: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }  | (qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:59)
+[2026-05-10 14:33:49.091, 113.17 ms] [1fb4] Warn | ShaderEffect: 'source' does not have a matching property 
+[2026-05-10 14:33:49.104,   0.00 μs] [4e04] Info | Creating exiftool 
+[2026-05-10 14:33:49.146,  53.43 ms] [1fb4] Warn | ShaderEffect: 'source' does not have a matching property 
+[2026-05-10 14:33:49.157,  12.36 ms] [1fb4] Info | [Window] Setting geometry called: QRect(239,170 1296x751) 
+[2026-05-10 14:33:49.230,  73.06 ms] [1fb4] Info | [Window] SetWindowPos (physical): 239 170 1296 751 dpr: 1 
+[2026-05-10 14:33:49.248,  16.79 ms] [1fb4] Warn | qrc:/imageenhance/main.qml:47:1: QML ApplicationWindow: Conflicting properties 'visible' and 'visibility'  | (qrc:/imageenhance/main.qml:47)
+[2026-05-10 14:33:49.299,  52.97 ms] [1fb4] Info | Auth state changed: Owned  | (qrc:/imageenhance/main.qml:1714, onStateChanged)
+[2026-05-10 14:33:49.365,  65.29 ms] [1fb4] Info | Got PS image planar data! 
+[2026-05-10 14:33:49.365, 129.00 μs] [1fb4] Info | Opening shmInfoName __topazPhoto_srcIccInfo shmDataName __topazPhoto_srcIcc 
+[2026-05-10 14:33:49.380,  13.96 ms] [1fb4] Info | Finished loading data from PS 
+[2026-05-10 14:33:49.380, 128.70 μs] [1fb4] Info | Closing __topazPhoto_srcIcc 
+[2026-05-10 14:33:49.386,   6.02 ms] [1fb4] Info | [AIE] === System Information === 
+[2026-05-10 14:33:49.386, 148.10 μs] [1fb4] Info | [AIE] OS Windows Version 11.240000 
+[2026-05-10 14:33:49.386,  51.80 μs] [1fb4] Info | [AIE] CPU Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz Threads 4 AVX 1 AVX2 1 VNNI 0 
+[2026-05-10 14:33:49.386,  41.30 μs] [1fb4] Info | [AIE] Is Apple Processor 0 Hexagon 0 
+[2026-05-10 14:33:49.386,  36.40 μs] [1fb4] Info | [AIE] RAM 15.937614 GB Total / 10.096977 GB Used 
+[2026-05-10 14:33:49.386,  35.50 μs] [1fb4] Info | [AIE] Machine Id: a1fa72c5-7f69-4610-a192-8fe045835d05 
+[2026-05-10 14:33:49.386,  34.70 μs] [1fb4] Info | [AIE] Device count: 1 
+[2026-05-10 14:33:49.386,  33.80 μs] [1fb4] Info | [AIE] - Index 0 Name Default GPU Cores 0 
+[2026-05-10 14:33:49.386,  35.60 μs] [1fb4] Info | [AIE]   VRAM 2.000000 GB Total / 0.000000 GB Used DataType -1634742264 
+[2026-05-10 14:33:49.386,  34.70 μs] [1fb4] Info | [AIE]   Serial  Legacy 0 1 CudaId 0 Capability 5 
+[2026-05-10 14:33:49.386,  31.60 μs] [1fb4] Info | [AIE] ========================== 
+[2026-05-10 14:33:49.386, 174.80 μs] [1fb4] Info | [Amplitude] Sending lab request 
+[2026-05-10 14:33:49.386, 236.10 μs] [1fb4] Info | [Amplitude] request id: "{85021d7e-2ce3-44f4-9451-70e9cbbc2c7d}" 
+[2026-05-10 14:33:49.386,  65.10 μs] [1fb4] Info | [Amplitude] Waiting for response... 
+[2026-05-10 14:33:49.400,  13.12 ms] [1fb4] Info | Worker cancel requested 
+[2026-05-10 14:33:49.400, 133.40 μs] [1fb4] Info | Cancelling processing 
+[2026-05-10 14:33:49.400,   1.12 ms] [1fb4] Info | Overwriting binding on AutoPilotControls_QMLTYPE_329::apStatus at qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:44 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:33:5 
+[2026-05-10 14:33:49.404,   2.29 ms] [1fb4] Info | Overwriting binding on HealingToolControls_QMLTYPE_286::currentSubjectSettings at qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:65 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:27:5 
+[2026-05-10 14:33:49.404, 256.10 μs] [1fb4] Info | Overwriting binding on DustRemovalControls_QMLTYPE_275::currentSubjectSettings at qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:65 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:27:5 
+[2026-05-10 14:33:49.848, 444.82 ms] [1fb4] Info | Stopping TThumbnailWriterWorker thread 
+[2026-05-10 14:33:49.850,   1.30 ms] [1fb4] Info | TThumbnailWriterWorker thread stopped 
+[2026-05-10 14:33:49.854,   3.47 ms] [1fb4] Warn | qrc:/imageenhance/views/openFiles/OpenFileDelegate.qml:144:33: QML QQuickImage: Cannot open: file:Adobe Photoshop Image  | (qrc:/imageenhance/views/openFiles/OpenFileDelegate.qml:144)
+[2026-05-10 14:33:49.941,  88.73 ms] [1fb4] Warn | qrc:/imageenhance/views/exports/ExportFileDelegate.qml:50:13: QML QQuickImage: Cannot open: file:Adobe Photoshop Image  | (qrc:/imageenhance/views/exports/ExportFileDelegate.qml:50)
+[2026-05-10 14:33:50.059, 117.38 ms] [1fb4] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-10 14:33:50.065,   5.98 ms] [1fb4] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-10 14:33:50.071,   5.14 ms] [1fb4] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-10 14:33:50.071, 887.80 μs] [1fb4] Info | Worker cancel requested 
+[2026-05-10 14:33:50.071, 103.50 μs] [1fb4] Info | Cancelling processing 
+[2026-05-10 14:33:50.071,   1.87  s] [1f5c] Info | Calculating top level auto category 
+[2026-05-10 14:33:50.071, 113.00 μs] [1f5c] Info | [AIE] [Embeddings] Starting to generate auto embeddings: daclip 
+[2026-05-10 14:33:50.071,  91.80 μs] [1f5c] Info | [AIE] [Embeddings PROFILE] begin model loading 
+[2026-05-10 14:33:50.071,  55.10 μs] [1f5c] Info | [AIE] Model: daclip Device: -1 
+[2026-05-10 14:33:50.071,  79.90 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: openvino,onnx16,onnx, 
+[2026-05-10 14:33:50.071,  63.60 μs] [1f5c] Info | [AIE]  ---TBlockProc 256x256 C: 2/19 R: 2/19 X: 208 Y: 208 inSize: 3543 3543 Pad: 228 228 
+[2026-05-10 14:33:50.071,  55.10 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: openvino,onnx16,onnx, 
+[2026-05-10 14:33:50.071,  38.60 μs] [1f5c] Info | [AIE] Loading openvino backend 0019 
+[2026-05-10 14:33:50.071,  47.50 μs] [1f5c] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-10 14:33:50.073,  48.30 μs] [1f5c] Info | [AIE] [ -1:1 ] 
+[2026-05-10 14:33:50.073,  37.90 μs] [1f5c] Info | [AIE] 1 instances for device -1 
+[2026-05-10 14:33:50.073,  60.20 μs] [1f5c] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-10 14:33:50.073,  61.40 μs] [1f5c] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.075,   4.62 ms] [1fb4] Info | Calling generate pixmap: "Original Image Original" QSize(-1, -1) 
+[2026-05-10 14:33:50.084,   7.84 ms] [1fb4] Warn | Wrong camera model naming format "" 
+[2026-05-10 14:33:50.087,   4.05 ms] [1fb4] Warn | Could not open camera profile: ":/profiles/.gz" 
+[2026-05-10 14:33:50.091,  18.72 ms] [1f5c] Info | [AIE] Can't decrypt C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.091,  92.20 μs] [1f5c] Info | [AIE] Can't read .onnx 
+[2026-05-10 14:33:50.091,  52.40 μs] [1f5c] Info | [AIE] Loading default error reading file: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.091,  71.80 μs] [1f5c] Info | [AIE] Unable to create or load model of type openvino from path daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.091,  40.60 μs] [1f5c] Info | [AIE] Can't makeBackend daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.091,  36.30 μs] [1f5c] Info | [AIE] Waiting for download of daclip-v3-fp32-256x256-ox.tz2 
+[2026-05-10 14:33:50.091,   3.85 ms] [1fb4] Warn | QFSFileEngine::open: No file name specified 
+[2026-05-10 14:33:50.091,  70.00 μs] [1fb4] Warn | Could not open DCP file for reading: "" 
+[2026-05-10 14:33:50.091,  64.80 μs] [1fb4] Warn | Could not load camera profile"" 
+[2026-05-10 14:33:50.097,   4.60 ms] [1fb4] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-10 14:33:50.097, 935.00 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:50.097, 777.20 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:50.099,   7.59 ms] [1f5c] Info | Trying download from https://image-models.topazlabs.com for "daclip-v3-fp32-256x256-ox.tz2" 
+[2026-05-10 14:33:50.099,   7.59 ms] [1f5c] Info | Trying download from https://image-models.topazlabs.com for "daclip-v3-fp32-256x256-ox.tz2" 
+[2026-05-10 14:33:50.099, 856.70 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:50.099, 856.70 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:50.109, 637.80 μs] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_113::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-10 14:33:50.109, 468.90 μs] [1fb4] Info | Estimated ETA for the machine 243563 
+[2026-05-10 14:33:50.138,   0.00 μs] [3c10] Info | Using embedded color profile:  QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-10 14:33:50.142,   4.48 ms] [3c10] Info | Using base colorspace: QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-10 14:33:50.220, 109.55 ms] [1fb4] Info | [Amplitude] Request completed. 
+[2026-05-10 14:33:50.239,  20.40 ms] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:50.239, 436.80 μs] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:50.239, 498.20 μs] [1fb4] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_102::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-10 14:33:50.259,  19.09 ms] [1fb4] Info | Overwriting binding on WTextField_QMLTYPE_103_QML_128::text at qrc:/imageenhance/elements/TLabelledTextField.qml:49 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-10 14:33:50.259, 245.80 μs] [1fb4] Info | QML engine loaded 
+[2026-05-10 14:33:50.292,  33.62 ms] [1fb4] Info | Current credit balance: 398  | (qrc:/imageenhance/main.qml:1882, onCreditAvailableChanged)
+[2026-05-10 14:33:50.322,  29.68 ms] [1fb4] Info | Feature flag value true 
+[2026-05-10 14:33:50.467, 151.86 ms] [1fb4] Info | Dynamic tooltip loaded: Get Topaz Video, Topaz Photo, Topaz <br> Gigapixel, Bloom, Astra, Express (web <br> tools), mobile apps, and all new apps<br> on release  | (qrc:/WonderUI/WonderUI/dialogs/WPricingModal.qml:38)
+[2026-05-10 14:33:50.585,   1.49  s] [4e04] Info | Created exiftool 
+[2026-05-10 14:33:50.959, 484.15 ms] [1fb4] Info | JWT status: "active" 
+[2026-05-10 14:33:50.959, 151.40 μs] [1fb4] Info | Auth response | valid: true | owned: true | expired: false | inactive: false | no seats: false | autorenew: false | needs disambiguation: false | license expiration: "2026-07-25" | legacy: true | tier: Individual 
+[2026-05-10 14:33:50.959, 769.40 μs] [1fb4] Info | Avatar is out of date, trying to refresh 
+[2026-05-10 14:33:50.959, 725.40 μs] [1fb4] Info | [F] Finishing auth without checking features true false true true 
+[2026-05-10 14:33:50.959,   4.26 ms] [1fb4] Info | Auth state changed: Owned  | (qrc:/imageenhance/main.qml:1714, onStateChanged)
+[2026-05-10 14:33:50.959, 107.50 μs] [1fb4] Info | User email: mltaylor@gmx.co.uk  | (qrc:/imageenhance/main.qml:1715, onStateChanged)
+[2026-05-10 14:33:51.119, 159.95 ms] [1fb4] Info | Found 0 new app versions 
+[2026-05-10 14:33:51.119, 120.10 μs] [1fb4] Info | Update check response: true false 
+[2026-05-10 14:33:51.238, 647.95 ms] [4e04] Info | Exiftool metadata count: 240 File: "F:/A Photography/Photos2024/0 Cranbrook 2024/3 Sunday flash/OM2N0975.JPG" 
+[2026-05-10 14:33:51.238, 126.20 μs] [4e04] Info | Exiftool metadata size: 43579 
+[2026-05-10 14:33:51.351, 227.45 ms] [1fb4] Info | Feature flag value true 
+[2026-05-10 14:33:51.565, 219.73 ms] [1fb4] Warn | Network error. Status Code: QNetworkReply::ContentNotFoundError (404) Error: Error transferring https://gravatar.com/avatar/4f255465755421f88d9ca586740ecc694728adf7e7de83aa12f3cb156de6a921.jpg?s=100&d=404 - server replied:  
+[2026-05-10 14:33:51.565, 109.70 μs] [1fb4] Warn | Network error body: "404 Not Found" 
+[2026-05-10 14:33:51.565, 583.60 μs] [1fb4] Info | E-mail does not have a gravatar icon associated with it 
+[2026-05-10 14:35:37.685,   1.79  m] [1f5c] Info | Download succeeded from https://image-models.topazlabs.com 
+[2026-05-10 14:35:37.685,   6.24 ms] [1f5c] Error | Failed to rename temp file to: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models/daclip-v3-fp32-256x256-ox.tz2" 
+[2026-05-10 14:35:37.717,  20.91 ms] [1f5c] Info | [AIE] Waiting for download of mobileclip2s2_main_subject_classifier.bin 
+[2026-05-10 14:35:37.717,   1.77  m] [1fb4] Warn | Model download failed: "daclip-v3-fp32-256x256-ox.tz2" HTTP status: 0 
+[2026-05-10 14:35:37.717, 866.00 μs] [1f5c] Info | Trying download from https://image-models.topazlabs.com for "mobileclip2s2_main_subject_classifier.bin" 
+[2026-05-10 14:35:44.367,   6.66  s] [1f5c] Info | Download succeeded from https://image-models.topazlabs.com 
+[2026-05-10 14:35:44.383,   4.41 ms] [1f5c] Error | Failed to rename temp file to: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models/mobileclip2s2_main_subject_classifier.bin" 
+[2026-05-10 14:35:44.383, 734.20 μs] [1f5c] Info | [AIE] Waiting for download of mobileclip2s2_age_of_photo_classifier.bin 
+[2026-05-10 14:35:44.383,   6.67  s] [1fb4] Warn | Model download failed: "mobileclip2s2_main_subject_classifier.bin" HTTP status: 0 
+[2026-05-10 14:35:44.383, 891.90 μs] [1f5c] Info | Trying download from https://image-models.topazlabs.com for "mobileclip2s2_age_of_photo_classifier.bin" 
+[2026-05-10 14:35:47.156,   2.79  s] [1f5c] Info | Download succeeded from https://image-models.topazlabs.com 
+[2026-05-10 14:35:47.204,  36.14 ms] [1f5c] Error | Failed to rename temp file to: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models/mobileclip2s2_age_of_photo_classifier.bin" 
+[2026-05-10 14:35:47.204, 775.90 μs] [1f5c] Info | [AIE] BackendRunner load failed 
+[2026-05-10 14:35:47.204, 105.40 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  53.10 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  34.10 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,   2.82  s] [1fb4] Warn | Model download failed: "mobileclip2s2_age_of_photo_classifier.bin" HTTP status: 0 
+[2026-05-10 14:35:47.204,  47.80 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+er.bin" HTTP status: 0 
+[2026-05-10 14:35:47.204,  47.80 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+ | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  43.60 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  35.40 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  32.00 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  38.60 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  37.00 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  31.20 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  33.50 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  31.80 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  30.40 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  32.10 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  31.20 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  30.00 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  31.90 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 
+[2026-05-10 14:35:47.204,  30.80 μs] [1f5c] Info | [AIE] Loading none backend 0018 
+[2026-05-10 14:35:47.204,  29.80 μs] [1f5c] Info | [AIE] No backend none 
+[2026-05-10 14:35:47.204,  42.90 μs] [1f5c] Info | [AIE] Selecting backend for device -1 from: onnx16,onnx, 

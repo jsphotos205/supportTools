@@ -421,24 +421,73 @@ def format_text_report(entry: dict[str, Any]) -> str:
 
 # === GUI and helper functions for GUI mode ===
 
-def process_system_info_from_path(input_path: Path) -> tuple[str, dict[str, Any] | None, list[Path]]:
-    """Extract archives, locate tzlogs, parse system info, and return a report."""
+def process_system_info_from_path(
+    input_path: Path,
+) -> tuple[str, dict[str, Any] | None, list[Path], list[Path]]:
+    """Extract archives, locate tzlogs, parse system info, and return a report plus discovered log paths."""
     extracted_dirs = extract_archive_files(input_path)
 
     system_info_files: list[Path] = []
     for search_path in get_system_info_search_paths(input_path, extracted_dirs):
         system_info_files.extend(discover_log_files(search_path))
 
-    if not system_info_files:
+    tzlog_files = sorted({p.resolve() for p in system_info_files})
+
+    if not tzlog_files:
         raise FileNotFoundError(
             "No .tzlog files found for system information in the extracted archive folders or original path."
         )
 
-    parsed_system_info_logs = [parse_tzlog(file_path) for file_path in system_info_files]
+    parsed_system_info_logs = [parse_tzlog(file_path) for file_path in tzlog_files]
     system_info_entry = merge_system_info_entry_for_report(parsed_system_info_logs)
     system_info_report = format_system_info_report(system_info_entry)
 
-    return system_info_report, system_info_entry, extracted_dirs
+    return system_info_report, system_info_entry, extracted_dirs, tzlog_files
+
+
+def gui_display_root_for_tzlogs(input_path: Path, extracted_dirs: list[Path]) -> Path:
+    """Folder used to show relative paths in the GUI log list (extracted tree or original folder)."""
+    if extracted_dirs:
+        return extracted_dirs[0].resolve()
+    if input_path.is_dir():
+        return input_path.resolve()
+    return input_path.resolve().parent
+
+
+def open_path_in_os_file_manager(path: Path) -> bool:
+    """Open a folder (or file's parent) in Finder / Explorer / xdg-open."""
+    target = path.resolve()
+    if target.is_file():
+        target = target.parent
+    if not target.is_dir():
+        return False
+    try:
+        if sys.platform == "darwin":
+            subprocess.run(["open", str(target)], check=False)
+        elif sys.platform == "win32":
+            subprocess.run(["explorer", str(target)], check=False)
+        else:
+            subprocess.run(["xdg-open", str(target)], check=False)
+    except OSError:
+        return False
+    return True
+
+
+def read_log_file_for_gui_preview(file_path: Path, max_chars: int = 350_000) -> tuple[str, bool]:
+    """Read UTF-8 log text for preview; returns (text, truncated)."""
+    chunks: list[str] = []
+    total = 0
+    truncated = False
+    with file_path.open("r", encoding="utf-8", errors="replace") as handle:
+        while total < max_chars:
+            piece = handle.read(max_chars - total)
+            if not piece:
+                break
+            chunks.append(piece)
+            total += len(piece)
+        if handle.read(1):
+            truncated = True
+    return "".join(chunks), truncated
 
 
 def process_issue_logs_from_path(issue_log_path: Path, notable_errors: str = "Not provided") -> str:
@@ -470,6 +519,7 @@ def run_gui() -> None:
         "final_report": "",
         "support_path": None,
         "extracted_dirs": [],
+        "tzlog_browse_root": None,
     }
 
     main_frame = tk.Frame(root, padx=16, pady=16)
@@ -485,8 +535,8 @@ def run_gui() -> None:
     tk.Label(
         main_frame,
         text=(
-            "Select a Support download folder or archive. The tool will extract archives, "
-            "find .tzlog files, copy system information, then build the Linear crashpad report."
+            "Choose a folder or archive in Step 1, then click Run Step 1 there. Extracted logs appear in the list "
+            "below so you can open folders, read raw .tzlog files, and pick the issue log for Step 2."
         ),
         anchor="w",
         wraplength=850,
@@ -505,7 +555,10 @@ def run_gui() -> None:
     )
     support_frame.pack(fill=tk.X, pady=(0, 12))
 
-    tk.Entry(support_frame, textvariable=support_path_var).pack(
+    support_path_row = tk.Frame(support_frame)
+    support_path_row.pack(fill=tk.X)
+
+    tk.Entry(support_path_row, textvariable=support_path_var).pack(
         side=tk.LEFT,
         fill=tk.X,
         expand=True,
@@ -528,11 +581,151 @@ def run_gui() -> None:
         if selected:
             support_path_var.set(selected)
 
-    tk.Button(support_frame, text="Choose Folder", command=select_support_folder).pack(
+    tk.Button(support_path_row, text="Choose Folder", command=select_support_folder).pack(
         side=tk.LEFT,
         padx=(0, 8),
     )
-    tk.Button(support_frame, text="Choose Archive", command=select_support_archive).pack(
+    tk.Button(support_path_row, text="Choose Archive", command=select_support_archive).pack(
+        side=tk.LEFT,
+    )
+
+    step1_action_row = tk.Frame(support_frame)
+    step1_action_row.pack(fill=tk.X, pady=(10, 0))
+
+    logs_frame = tk.LabelFrame(
+        main_frame,
+        text="Discovered .tzlog files (after Step 1)",
+        padx=10,
+        pady=10,
+    )
+    logs_frame.pack(fill=tk.BOTH, expand=False, pady=(0, 12))
+
+    tk.Label(
+        logs_frame,
+        text=(
+            "Click Run Step 1 (in the Step 1 section above) to extract archives and list logs here. "
+            "Double-click a row to read the raw log. "
+            "Use the buttons to open the folder in your file manager or copy the path into Step 2."
+        ),
+        anchor="w",
+        wraplength=850,
+        justify=tk.LEFT,
+    ).pack(fill=tk.X, pady=(0, 6))
+
+    tzlog_list_row = tk.Frame(logs_frame)
+    tzlog_list_row.pack(fill=tk.BOTH, expand=True)
+    tzlog_listbox = tk.Listbox(tzlog_list_row, height=7, exportselection=False)
+    tzlog_list_scroll = tk.Scrollbar(tzlog_list_row, orient=tk.VERTICAL, command=tzlog_listbox.yview)
+    tzlog_listbox.configure(yscrollcommand=tzlog_list_scroll.set)
+    tzlog_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+    tzlog_list_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+    tzlog_listbox_paths: list[Path] = []
+
+    logs_btn_row = tk.Frame(logs_frame)
+    logs_btn_row.pack(fill=tk.X, pady=(8, 0))
+
+    def refresh_tzlog_list(paths: list[Path], display_root: Path) -> None:
+        tzlog_listbox.delete(0, tk.END)
+        tzlog_listbox_paths.clear()
+        root_res = display_root.resolve()
+        for path in paths:
+            tzlog_listbox_paths.append(path)
+            try:
+                label = str(path.resolve().relative_to(root_res))
+            except ValueError:
+                label = str(path)
+            tzlog_listbox.insert(tk.END, label)
+
+    def selected_tzlog_path() -> Path | None:
+        sel = tzlog_listbox.curselection()
+        if not sel:
+            return None
+        idx = int(sel[0])
+        if 0 <= idx < len(tzlog_listbox_paths):
+            return tzlog_listbox_paths[idx]
+        return None
+
+    def view_tzlog_window(path: Path) -> None:
+        try:
+            body_text, truncated = read_log_file_for_gui_preview(path)
+        except OSError as error:
+            messagebox.showerror("Cannot read log", str(error))
+            return
+        win = tk.Toplevel(root)
+        win.title(f"Log — {path.name}")
+        win.geometry("920x640")
+        frame = tk.Frame(win, padx=8, pady=8)
+        frame.pack(fill=tk.BOTH, expand=True)
+        header = tk.Label(frame, text=str(path), anchor="w")
+        header.pack(fill=tk.X)
+        if truncated:
+            tk.Label(
+                frame,
+                text="(Preview truncated; open the file in an editor to see the rest.)",
+                anchor="w",
+                fg="#555",
+            ).pack(fill=tk.X)
+        text_w = scrolledtext.ScrolledText(
+            frame,
+            wrap=tk.NONE,
+            height=28,
+            font=("Menlo", 11) if sys.platform == "darwin" else ("Consolas", 10),
+        )
+        text_w.pack(fill=tk.BOTH, expand=True, pady=(6, 0))
+        text_w.insert(tk.END, body_text)
+
+        def copy_log_preview() -> None:
+            if copy_to_clipboard(body_text):
+                status_var.set("Log preview copied to clipboard.")
+            else:
+                messagebox.showwarning("Clipboard", "Could not copy to the clipboard.")
+
+        btn_r = tk.Frame(frame)
+        btn_r.pack(fill=tk.X, pady=(6, 0))
+        tk.Button(btn_r, text="Copy preview to clipboard", command=copy_log_preview).pack(side=tk.LEFT)
+
+    def on_tzlog_double_click(_event: object) -> None:
+        path = selected_tzlog_path()
+        if path and path.is_file():
+            view_tzlog_window(path)
+
+    tzlog_listbox.bind("<Double-Button-1>", on_tzlog_double_click)
+
+    def use_selected_tzlog_for_step2() -> None:
+        path = selected_tzlog_path()
+        if not path:
+            messagebox.showinfo("No selection", "Select a .tzlog file in the list first.")
+            return
+        issue_path_var.set(str(path))
+        status_var.set(f"Step 2 path set to: {path.name}")
+
+    def open_tzlogs_folder() -> None:
+        base = state.get("tzlog_browse_root")
+        if isinstance(base, Path) and base.exists():
+            if open_path_in_os_file_manager(base):
+                status_var.set(f"Opened folder: {base}")
+            else:
+                messagebox.showwarning("Open folder", f"Could not open: {base}")
+            return
+        messagebox.showinfo(
+            "No folder yet",
+            "Run Step 1 first so archives are extracted and a browse folder is available.",
+        )
+
+    tk.Button(logs_btn_row, text="Open logs folder", command=open_tzlogs_folder).pack(
+        side=tk.LEFT, padx=(0, 8)
+    )
+    tk.Button(logs_btn_row, text="Use selected for Step 2", command=use_selected_tzlog_for_step2).pack(
+        side=tk.LEFT, padx=(0, 8)
+    )
+    def view_selected_tzlog_click() -> None:
+        path = selected_tzlog_path()
+        if path and path.is_file():
+            view_tzlog_window(path)
+        else:
+            messagebox.showinfo("No selection", "Select a .tzlog file in the list first.")
+
+    tk.Button(logs_btn_row, text="View selected log", command=view_selected_tzlog_click).pack(
         side=tk.LEFT,
     )
 
@@ -711,14 +904,26 @@ def run_gui() -> None:
         state["support_path"] = input_path
 
         try:
-            system_info_report, _system_info_entry, extracted_dirs = process_system_info_from_path(input_path)
+            system_info_report, _system_info_entry, extracted_dirs, tzlog_files = process_system_info_from_path(
+                input_path
+            )
         except Exception as error:
             messagebox.showerror("System information failed", str(error))
             status_var.set("System information failed.")
+            state["tzlog_browse_root"] = None
+            refresh_tzlog_list([], input_path)
             return
 
         state["system_info_report"] = system_info_report
         state["extracted_dirs"] = extracted_dirs
+        browse_root = gui_display_root_for_tzlogs(input_path, extracted_dirs)
+        state["tzlog_browse_root"] = browse_root
+        refresh_tzlog_list(tzlog_files, browse_root)
+
+        if len(tzlog_files) == 1:
+            issue_path_var.set(str(tzlog_files[0]))
+        else:
+            issue_path_var.set(str(browse_root))
 
         extraction_note = ""
         if extracted_dirs:
@@ -728,13 +933,22 @@ def run_gui() -> None:
 
         set_output(system_info_report + extraction_note)
 
+        n_logs = len(tzlog_files)
         if copy_to_clipboard(system_info_report):
-            status_var.set("System information copied to clipboard.")
+            status_var.set(f"System information copied. {n_logs} .tzlog file(s) listed — Step 2 path preset for review.")
         else:
-            status_var.set("System information found, but clipboard copy failed.")
+            status_var.set(
+                f"System information found ({n_logs} .tzlog listed), but clipboard copy failed. Step 2 path preset."
+            )
 
         for dest in report_destination_dirs(extracted_dirs, input_path):
             write_report_to_txt(system_info_report, dest, "support_system_information.txt")
+
+    tk.Button(
+        step1_action_row,
+        text="Run Step 1 — Extract archives, list .tzlog files, copy system info",
+        command=run_system_info_step,
+    ).pack(fill=tk.X)
 
     def run_issue_step() -> None:
         raw_path = issue_path_var.get().strip()
@@ -788,12 +1002,6 @@ def run_gui() -> None:
             status_var.set("Current output copied to clipboard.")
         else:
             status_var.set("Clipboard copy failed.")
-
-    tk.Button(
-        button_frame,
-        text="1. Extract + Copy System Info",
-        command=run_system_info_step,
-    ).pack(side=tk.LEFT, padx=(0, 8))
 
     tk.Button(
         button_frame,

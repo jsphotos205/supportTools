@@ -1,155 +1,137 @@
 # supportTools
 
-Internal Python tooling project for developing utilities that help automate and speed up Support workflows.
+Internal Python tools for speeding up Support workflows.
 
-Current workflow integrations and targets:
+Current focus:
 
-- HelpScout (Support ticket workflows)
-- Linear (bug reporting and QA formatting)
-- Slack (internal communication)
-- Google Chrome download workflows
-- Topaz `.tzlog` troubleshooting analysis
+- Topaz `.tzlog` troubleshooting
+- HelpScout ticket notes
+- Linear bug report details
+- Local trend tracking for repeated error messages
 
-The repository is managed with Git and GitHub for version control and iterative development.
+## tzLogReader
 
-# **tzlog_reader.py**
+`tools/tzLogReader/tzlog_reader.py` reads Topaz `.tzlog` files and builds paste-ready Support reports.
 
-Current support utility for parsing Topaz `.tzlog` files.
+It can:
 
-# **Current tzlog Reader Workflow**
+- open a simple GUI when run without arguments
+- process a `.tzlog` file, a folder of logs, or a support archive
+- extract `.zip`, `.tar`, `.tar.gz`, and `.tgz` files
+- find `.tzlog` files inside extracted folders
+- copy reports to the clipboard on macOS and Windows
+- save report text files next to the processed logs
+- keep a local bank of repeated notable error messages
 
-## **Step 1**
+## What It Collects
 
-Support downloads:
-
-* `.tar`
-* `.tar.gz`
-* `.tgz`
-* `.zip`
-
-files into:
-
-```bash
-testFolder/
-```
-
-## **Step 2**
-
-Run the script:
-
-```bash
-testFolder/
-```
-
-## **Step 3**
-
-The script automatically extract supported archive creates the `extracted_tzlog_archives/` and locates .tzlog files while parsing the first valid log containing system information
-
-## **Step 4**
-
-The script gathers:
-
-* User OS
-* Topaz Photo version
-* OS
-* CPU
-* RAM
-* Machine ID
-* Device count
-* Indexed GPUs
-* GPU VRAM
-
-This information is automatically copied to the clipboard.
-
-## **Step 5**
-
-Support pastes the copied system information into the HelpScout ticket or Linear task.
-
-## **Step 6**
-
-The script asks for the issue-specific `.tzlog` file.
-
-## **Step 7**
-
-The script gathers:
-
-* `.tzlog` filename
-* Crashpad session ID
-
-The final report is copied to the clipboard for Linear bug reporting.
-
-# **Example Output**
-
-```
 System information:
-  User OS: macOS
-  Topaz Photo version: 2.0.1
-  OS: macOS 15.5
-  CPU: Apple M4 Max
-  RAM: 64 GB
-  Machine ID: XXXXX
-  Device count: 2
-  Indexed GPUs:
-    - Index 0: Apple M4 Max | VRAM: Unified
+
+- User OS inferred from the log path
+- Topaz Photo version
+- User email, when present
+- OS
+- CPU
+- RAM
+- Indexed GPUs
+- GPU VRAM
 
 Issue log information:
-  Log file: TopazPhoto_2026_05_08_10_15_32.tzlog
-  Crashpad session ID: XXXXXXXX
+
+- `.tzlog` filename
+- Crashpad session ID
+- Notable error messages entered by Support
+
+## GUI Workflow
+
+Run the tool:
+
+```bash
+python tools/tzLogReader/tzlog_reader.py
 ```
 
----
+Then:
 
-# Current Project Structure
+1. Choose a support folder or archive.
+2. Run Step 1 to extract archives, list logs, copy system info, and save `support_system_information.txt`.
+3. Select the issue-specific `.tzlog` file or folder.
+4. Add any notable error messages.
+5. Build the Crashpad report.
+
+The final report is copied to the clipboard and saved as `support_full_tzlog_report.txt`.
+
+## CLI Workflow
+
+Run the tool with a path:
+
+```bash
+python tools/tzLogReader/tzlog_reader.py path/to/support-folder-or-archive
+```
+
+The path can be:
+
+- a `.tzlog` file
+- a folder containing `.tzlog` files
+- a folder containing supported archives
+- a supported archive file
+
+The CLI prints the system info report, copies it when possible, then asks for the issue log path.
+
+JSON output is also available:
+
+```bash
+python tools/tzLogReader/tzlog_reader.py path/to/logs --json
+```
+
+## Error Message Bank
+
+The GUI can store notable error lines in a local file:
 
 ```text
-supportTools/
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── venv/
-├── tools/
-│   └── tzLogReader/
-│       └── tzlog_reader.py
-└── testFolder/
+tools/tzLogReader/support_error_bank.json
 ```
 
-# **Environment Setup**
-
-## **Create the Project Folder**
+View stored trends from the CLI:
 
 ```bash
-mkdir ~/Projects/supportTools
-cd ~/Projects/supportTools
+python tools/tzLogReader/tzlog_reader.py --error-bank-stats
 ```
 
-Open in VS Code:
+## Example Report
 
-```bash
-code .
+```text
+SYSTEM INFORMATION:
+
+  User OS: Windows
+  Topaz Photo version: 1.3.3
+  User email (activation): user@example.com
+  OS: Windows Version 11.240000
+  CPU: Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+  RAM: 15.9 GB Total / 7.2 GB Used
+  Indexed GPUs:
+    - Index 0: Default GPU | VRAM: 2.0 GB Total / 0.0 GB Used
+
+ISSUE LOG INFORMATION:
+
+  Log file: 2026-05-12-10-38-58.tzlog
+  Crashpad session ID: abc123
+
+NOTABLE ERROR MESSAGES:
+
+- Example error line from the issue log
 ```
 
-# **Python Virtual Environment**
+## Setup
 
-## **Create Virtual Environment**
+Create and activate a virtual environment:
 
 ```bash
 python3 -m venv venv
-```
-
-## **Activate Virtual Environment**
-
-```bash
 source venv/bin/activate
 ```
 
-Expected terminal prompt:
+Install dependencies:
 
 ```bash
-(venv)
-```
-
-If `(base)` also appears:
-
-```bash
-conda deactivate
+pip install -r requirements.txt
 ```

@@ -1,0 +1,76 @@
+TA-Entry Topaz Photo AI new session
+System Information:
+===================
+OEM ID: 9
+Processor Architecture: 9
+CPU Level: 6
+CPU Revision: 24067
+Number of CPUs: 4
+Min Address: 10000
+Max Address: fffeffff
+Page size: 4096
+Windows Version: 10.0
+===================
+2026-05-12T10:38:52 [Debug  ] TA-PluginMain() - begin | (Dissolve.cpp:104)
+2026-05-12T10:38:52 [Debug  ] TA-Selector - 3 | (Dissolve.cpp:124)
+2026-05-12T10:38:52 [Debug  ] TA-DoStart() - begin | (Dissolve.cpp:282)
+2026-05-12T10:38:52 [Debug  ] TA-ReadScriptParameters() - begin | (DissolveScripting.cpp:89)
+2026-05-12T10:38:52 [Debug  ] TA-ReadScriptParameters() - return - 0 | (DissolveScripting.cpp:124)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - planes - 3 | (Dissolve.cpp:317)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - inLayerPlanes - 0 | (Dissolve.cpp:318)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - inTransparencyMask - 0 | (Dissolve.cpp:319)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - outTransparencyMask - 0 | (Dissolve.cpp:320)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - inLayerMasks - 0 | (Dissolve.cpp:321)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - inInvertedLayerMasks - 0 | (Dissolve.cpp:322)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - inNonLayerPlanes - 3 | (Dissolve.cpp:323)
+2026-05-12T10:38:52 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_param | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmInfoName - __topazPhoto_paramInfo | (../../ps-common/CTLIPC.hpp:116)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmDataName - __topazPhoto_param | (../../ps-common/CTLIPC.hpp:117)
+2026-05-12T10:38:52 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_srcIcc | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmInfoName - __topazPhoto_srcIccInfo | (../../ps-common/CTLIPC.hpp:116)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmDataName - __topazPhoto_srcIcc | (../../ps-common/CTLIPC.hpp:117)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - action play in progress - 0 | (Dissolve.cpp:389)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - action record in progress - 0 | (Dissolve.cpp:390)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - display Dialog - 1 | (Dissolve.cpp:391)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - rasterizing smart object - 0 | (Dissolve.cpp:392)
+2026-05-12T10:38:52 [Debug  ] TA-doStart() - is smart layer - 0 | (Dissolve.cpp:393)
+2026-05-12T10:38:52 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane0 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmInfoName - __topazPhoto_plane0Info | (../../ps-common/CTLIPC.hpp:116)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmDataName - __topazPhoto_plane0 | (../../ps-common/CTLIPC.hpp:117)
+2026-05-12T10:38:52 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane1 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmInfoName - __topazPhoto_plane1Info | (../../ps-common/CTLIPC.hpp:116)
+2026-05-12T10:38:52 [Debug  ] TA-createSharedMem() - shmDataName - __topazPhoto_plane1 | (../../ps-common/CTLIPC.hpp:117)
+2026-05-12T10:38:53 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane2 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:38:53 [Debug  ] TA-createSharedMem() - shmInfoName - __topazPhoto_plane2Info | (../../ps-common/CTLIPC.hpp:116)
+2026-05-12T10:38:53 [Debug  ] TA-createSharedMem() - shmDataName - __topazPhoto_plane2 | (../../ps-common/CTLIPC.hpp:117)
+2026-05-12T10:38:53 [Debug  ] TA-isGrayScale() - false | (Dissolve.cpp:857)
+2026-05-12T10:38:53 [Debug  ] TA-doStart(), App Path - C:\Program Files\Topaz Labs LLC\Topaz Photo\\Topaz Photo.exe | (Dissolve.cpp:534)
+2026-05-12T10:38:53 [Debug  ] TA-Create IPC - begin | (Dissolve.cpp:537)
+2026-05-12T10:38:53 [Debug  ] TA-Create IPC - end, gIPCProc - 000002AC6B645510 | (Dissolve.cpp:542)
+2026-05-12T10:38:53 [Debug  ] TA-Launch GUI - begin | (Dissolve.cpp:543)
+2026-05-12T10:38:53 [Debug  ] TA-Launch GUI - end | (Dissolve.cpp:581)
+2026-05-12T10:38:53 [Debug  ] Started Timer | (DissolveUIWin.cpp:41)
+2026-05-12T10:40:54 [Debug  ] Found TPAI exited | (DissolveUIWin.cpp:53)
+2026-05-12T10:40:54 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_srcIcc | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:40:54 [Debug  ] TA-IPC OutStatus - 255 | (Dissolve.cpp:597)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - begin | (DissolveScripting.cpp:147)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - version - 1 | (DissolveScripting.cpp:160)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - denoise - {} | (DissolveScripting.cpp:161)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - sharpen - {} | (DissolveScripting.cpp:162)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - enhance - {} | (DissolveScripting.cpp:163)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - faceRecovery - {} | (DissolveScripting.cpp:164)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - textRecovery -  | (DissolveScripting.cpp:165)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - adjustLighting -  | (DissolveScripting.cpp:166)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - balanceColor -  | (DissolveScripting.cpp:167)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - subjectSettings - {} | (DissolveScripting.cpp:168)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - maskStrokes -  | (DissolveScripting.cpp:169)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - manual - 0 | (DissolveScripting.cpp:170)
+2026-05-12T10:40:54 [Debug  ] TA-WriteScriptParameters() - written | (DissolveScripting.cpp:185)
+2026-05-12T10:40:54 [Debug  ] TA-doStart() - Error: plug-in has crashed. | (Dissolve.cpp:1615)
+2026-05-12T10:40:57 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane2 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:40:57 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane1 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:40:57 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_plane0 | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:40:57 [Debug  ] TA-closeSharedMem() - Closing - __topazPhoto_param | (../../ps-common/CTLIPC.hpp:220)
+2026-05-12T10:40:57 [Debug  ] TA-DoStart(), exception - 1 | (Dissolve.cpp:637)
+2026-05-12T10:40:57 [Debug  ] TA-PluginMain() - end | (Dissolve.cpp:154)
+

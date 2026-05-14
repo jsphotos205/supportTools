@@ -1,0 +1,1634 @@
+[2026-05-08 17:03:36.187,   0.00 μs] [f28] Info | Log directory: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/Logs" 
+[2026-05-08 17:03:36.187,   1.09 ms] [f28] Info | Command line arguments: 
+[2026-05-08 17:03:36.187, 124.60 μs] [f28] Info | argv[ 0 / 1 ]: Topaz_Photo_PS_Plugin 
+[2026-05-08 17:03:36.187,  57.30 μs] [f28] Info | Processed args list: QList() 
+[2026-05-08 17:03:36.195,   0.00 μs] [29d8] Warn | QEventLoop: Cannot be used without QCoreApplication 
+[2026-05-08 17:03:36.313, 130.45 ms] [f28] Info | Starting Topaz Photo 1.3.3 
+[2026-05-08 17:03:36.313, 102.90 μs] [f28] Info | Starting Crashpad handler with sessionId31ce0a0e-c28e-4372-aba5-b8acc0a0b789 
+[2026-05-08 17:03:36.313, 937.50 μs] [f28] Info | Opening shmInfoName __topazPhoto_paramInfo shmDataName __topazPhoto_param 
+[2026-05-08 17:03:36.313,   2.52 ms] [f28] Info | Opening shmInfoName __topazPhoto_plane0Info shmDataName __topazPhoto_plane0 
+[2026-05-08 17:03:36.329,   1.71 ms] [f28] Info | Opening shmInfoName __topazPhoto_plane1Info shmDataName __topazPhoto_plane1 
+[2026-05-08 17:03:36.331,   1.77 ms] [f28] Info | Opening shmInfoName __topazPhoto_plane2Info shmDataName __topazPhoto_plane2 
+[2026-05-08 17:03:36.333,   1.68 ms] [f28] Info | Created IPCParams, waiting for lock. 
+[2026-05-08 17:03:36.333, 274.80 μs] [f28] Info | Starting local server "a316451c7ebe2dee67f898992c9107f2" 
+[2026-05-08 17:03:36.335,   1.39 ms] [f28] Info | Using Graphics API Index 4 
+[2026-05-08 17:03:36.335,  57.90 μs] [f28] Info | Not a server instance, will not register restart handler 
+[2026-05-08 17:03:36.335,   8.89 ms] [f28] Info | Loaded Inter font from resources 
+[2026-05-08 17:03:36.335, 130.10 μs] [f28] Info | Initializing QML engine 
+[2026-05-08 17:03:36.345,   1.59 ms] [f28] Warn | Invalid QML element name "TImageSettings"; value type names should begin with a lowercase letter 
+[2026-05-08 17:03:36.345, 654.00 μs] [f28] Info | Model Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models" 
+[2026-05-08 17:03:36.345,   1.81 ms] [f28] Info | Sample images Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/Sample Images" 
+[2026-05-08 17:03:36.787, 439.39 ms] [f28] Info | Attempting to use cached credentials 
+[2026-05-08 17:03:36.791,   4.11 ms] [f28] Info | JWT status: "active" 
+[2026-05-08 17:03:36.791, 141.20 μs] [f28] Info | Refreshing authentication 
+[2026-05-08 17:03:36.791, 257.40 μs] [f28] Info | Auth request url "https://api.topaz-labs.net/v3/token/refresh" 
+[2026-05-08 17:03:36.837,  46.04 ms] [f28] Info | Filter Data Dir: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/filterData" 
+[2026-05-08 17:03:38.019,   1.20  s] [f28] Info | Finished loading JSON file: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/filterData/likely_f_sel_combs.json" 
+[2026-05-08 17:03:38.035,   1.11 ms] [f28] Info | QML engine initialized 
+[2026-05-08 17:03:38.716, 686.05 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.716,   2.81 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.716,   4.79 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.732,   3.10 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.732,   1.69 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:38 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:38.732,   2.23 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.732,   2.29 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.732,   1.80 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:38 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:38.732,   3.21 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:38.809,  66.98 ms] [f28] Info | [AIE] AIEngine mode: Normal 2.9.16 
+[2026-05-08 17:03:38.815,   6.10 ms] [f28] Info | [Window] Owned screen exists at: QPoint(0,0) Max width/height: 1920 1032 Ratio: 1 1 
+[2026-05-08 17:03:38.817, 113.20 μs] [f28] Info | [Window] OSUtils constructor - Maximum window width/height: 1920 1032 
+[2026-05-08 17:03:38.819,   4.84 ms] [f28] Info | Overwriting binding on TEngineController_QML_596::faceLandmarks at qrc:/imageenhance/main.qml:5833 that was initially bound at qrc:/imageenhance/main.qml:5819:9 
+[2026-05-08 17:03:38.819,   0.00 μs] [2b48] Info | Changing models directory to: "C:/ProgramData/Topaz Labs LLC/Topaz Photo/models" from "" 
+[2026-05-08 17:03:38.819, 197.10 μs] [2b48] Info | [AIE] 00000239C1C30EA0 loadModelInfo called at C:/ProgramData/Topaz Labs LLC/Topaz Photo/models 
+[2026-05-08 17:03:38.897,  74.65 ms] [2b48] Info | [AIE] ModelManager setting path to C:/ProgramData/Topaz Labs LLC/Topaz Photo/models 
+[2026-05-08 17:03:38.897, 980.30 μs] [2b48] Info | Loaded following models:  WonderV2 apnb claa claae daclip dnt_beta draw_linear drw_native drw_native_mac drw_standard drw_standard_mac dswn_dec dswn_dit dswn_enc expog expoi gfclc gffm gfg gfp-l gfp-s gfpf gfrf gfrfn gfrg ggi ggn ggn_ap ggn_noee ggnv2 ghq ghq_noee ghqv2 ghqv2_ldn gmp iri irwn_dec irwn_dit irwn_enc isoa isob lensblur liting_det lmx noise_det s_mask_l_flexible sam_decode sam_encode sddustdec sddustdec-gpu-mac sddustenc sddustenc-gpu-mac sddustunet sddustunet-gpu-mac sdi_dec sdi_enc sdi_imdn sdi_unet slb sll slsp slsp_ap smp_flexible sms_new spfcdec spfcdit spfcenc ssddec0_0 ssddec0_0-gpu-mac ssddec0_5 ssddec0_5-gpu-mac ssddec1_0 ssddec1_0-gpu-mac ssdenc-sharpen ssdenc-sharpen-gpu-mac ssdunet-sharpen ssdunet-sharpen-gpu-mac sstd sstd_ahres sstd_phres sstg stdmax tpn tpn_900 tpn_900_nogpu tpn_nogpu trf trfn txtdtx wbc  
+[2026-05-08 17:03:38.911,  89.40 ms] [f28] Warn | Wrong camera model naming format "" 
+[2026-05-08 17:03:38.913,   3.68 ms] [f28] Warn | Could not open camera profile: ":/profiles/.gz" 
+[2026-05-08 17:03:38.917,   3.48 ms] [f28] Warn | QFSFileEngine::open: No file name specified 
+[2026-05-08 17:03:38.917,  37.60 μs] [f28] Warn | Could not open DCP file for reading: "" 
+[2026-05-08 17:03:38.917,  56.70 μs] [f28] Warn | Could not load camera profile"" 
+[2026-05-08 17:03:38.968,  55.17 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:38.968,   4.10 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:38.968,   1.61 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.002,  23.36 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.016,  19.08 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.016, 488.10 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.016,   4.46 ms] [f28] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-08 17:03:39.016, 153.20 μs] [f28] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-08 17:03:39.016,  93.30 μs] [f28] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-08 17:03:39.016,  95.10 μs] [f28] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-08 17:03:39.016,  85.00 μs] [f28] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-08 17:03:39.016,  97.60 μs] [f28] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-08 17:03:39.016, 126.10 μs] [f28] Warn | WonderStyle.pointSize() is deprecated. Please define all text according to pixel size instead.  | (qrc:/WonderUI/WonderUI/WonderStyle.qml:388, pointSize)
+[2026-05-08 17:03:39.016,  96.60 μs] [f28] Warn | Both point size and pixel size set. Using pixel size. 
+[2026-05-08 17:03:39.381, 357.79 ms] [f28] Info | Loaded lensfun database from "C:/Program Files/Topaz Labs LLC/Topaz Photo/lensfun/db" 
+[2026-05-08 17:03:39.386,   1.20 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:39.388,   1.52 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:39.390,   1.81 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:39.390,   1.62 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.399,   7.59 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.400,   2.01 ms] [f28] Info | Overwriting binding on BrushSizeSlider_QMLTYPE_120::defaultValue at qrc:/imageenhance/views/rightPanel/controls/BrushSizeSlider.qml:136 that was initially bound at qrc:/WonderUI/WonderUI/controls/WSlider.qml:14:5 
+[2026-05-08 17:03:39.400, 928.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.406,   6.12 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.410,   2.94 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.412,   6.85 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.412,   4.36 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:314 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:549:21 
+[2026-05-08 17:03:39.412, 128.10 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:39.412, 151.60 μs] [f28] Info | Overwriting binding on WComboBox_QMLTYPE_83::currentIndex at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:306 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:359:21 
+[2026-05-08 17:03:39.412,   1.38 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:310 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/SuperFocusControls.qml:526:21 
+[2026-05-08 17:03:39.412,  82.70 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:39.412,  84.60 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:39.412,   2.50 ms] [f28] Info | Estimated ETA for the machine 0 
+[2026-05-08 17:03:39.428,   6.58 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.428,   1.94 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:39.452,  17.87 ms] [f28] Info | Overwriting binding on EnhancementListPanel_QMLTYPE_357_QML_412::orderedPresets at qrc:/imageenhance/views/rightPanel/enhancements/elements/EnhancementListPanel.qml:43 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/elements/EnhancementListPanel.qml:38:5 
+[2026-05-08 17:03:39.452, 453.30 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:267:5: QML QQuickRectangle*: Cannot anchor to an item that isn't a parent or sibling.  | (qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:267)
+[2026-05-08 17:03:39.454,   2.25 ms] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 3. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.458,   3.52 ms] [f28] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-08 17:03:39.458,  90.40 μs] [f28] Warn | QQmlExpression: Expression qrc:/imageenhance/views/preview/ImageNavigator.qml:137:13 depends on non-bindable properties: 
+[2026-05-08 17:03:39.458,  96.80 μs] [f28] Warn |     FacesPreview_QMLTYPE_483::transform 
+[2026-05-08 17:03:39.460,   1.64 ms] [f28] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-08 17:03:39.460,   1.31 ms] [f28] Info | Device pixel ratio changed: 1 => 1 
+[2026-05-08 17:03:39.494,  31.67 ms] [f28] Warn | qrc:/imageenhance/main.qml:6298:5: QML Settings: The Settings type from Qt.labs.settings is deprecated and will be removed in a future release. Please use the one from QtCore instead.  | (qrc:/imageenhance/main.qml:6298)
+[2026-05-08 17:03:39.539,  45.18 ms] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 17. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.539, 160.60 μs] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 16. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.539, 454.40 μs] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 12. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.539, 100.20 μs] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 11. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.539, 743.90 μs] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 5. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.541, 238.40 μs] [f28] Warn | qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121:5: QML Shortcut: Shortcut: Only binding to one of multiple key bindings associated with 3. Use 'sequences: [ <key> ]' to bind to all of them.  | (qrc:/WonderUI/WonderUI/menus/WMenuItem.qml:121)
+[2026-05-08 17:03:39.735, 195.82 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.737, 770.60 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.744,   7.22 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_80::text at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:174 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledSlider.qml:107:9 
+[2026-05-08 17:03:39.839, 103.08 ms] [f28] Warn | qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:59:5: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }  | (qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:59)
+[2026-05-08 17:03:39.855,  20.79 ms] [f28] Warn | qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:59:5: QML Connections: Implicitly defined onFoo properties in Connections are deprecated. Use this syntax instead: function onFoo(<arguments>) { ... }  | (qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:59)
+[2026-05-08 17:03:39.966,  99.00 ms] [f28] Warn | ShaderEffect: 'source' does not have a matching property 
+[2026-05-08 17:03:39.979,   0.00 μs] [4990] Info | Creating exiftool 
+[2026-05-08 17:03:40.013,  52.90 ms] [f28] Warn | ShaderEffect: 'source' does not have a matching property 
+[2026-05-08 17:03:40.033,  12.83 ms] [f28] Info | [Window] Setting geometry called: QRect(239,170 1296x751) 
+[2026-05-08 17:03:40.203, 178.14 ms] [f28] Info | [Window] SetWindowPos (physical): 239 170 1296 751 dpr: 1 
+[2026-05-08 17:03:40.219,  16.90 ms] [f28] Warn | qrc:/imageenhance/main.qml:47:1: QML ApplicationWindow: Conflicting properties 'visible' and 'visibility'  | (qrc:/imageenhance/main.qml:47)
+[2026-05-08 17:03:40.280,  53.08 ms] [f28] Info | Auth state changed: Owned  | (qrc:/imageenhance/main.qml:1712, onStateChanged)
+[2026-05-08 17:03:40.345,  64.86 ms] [f28] Info | Opening shmInfoName __topazPhoto_maskInfo shmDataName __topazPhoto_mask 
+[2026-05-08 17:03:40.347,   2.54 ms] [f28] Info | Got PS image planar data! 
+[2026-05-08 17:03:40.349, 128.80 μs] [f28] Info | Opening shmInfoName __topazPhoto_srcIccInfo shmDataName __topazPhoto_srcIcc 
+[2026-05-08 17:03:40.363,  16.00 ms] [f28] Info | Finished loading data from PS 
+[2026-05-08 17:03:40.377,  12.66 ms] [f28] Info | Closing __topazPhoto_srcIcc 
+[2026-05-08 17:03:40.383,   6.68 ms] [f28] Info | [AIE] === System Information === 
+[2026-05-08 17:03:40.383, 151.40 μs] [f28] Info | [AIE] OS Windows Version 11.240000 
+[2026-05-08 17:03:40.383,  47.90 μs] [f28] Info | [AIE] CPU Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz Threads 4 AVX 1 AVX2 1 VNNI 0 
+[2026-05-08 17:03:40.383,  37.70 μs] [f28] Info | [AIE] Is Apple Processor 0 Hexagon 0 
+[2026-05-08 17:03:40.383,  34.40 μs] [f28] Info | [AIE] RAM 15.937614 GB Total / 9.735764 GB Used 
+[2026-05-08 17:03:40.383,  33.00 μs] [f28] Info | [AIE] Machine Id: a1fa72c5-7f69-4610-a192-8fe045835d05 
+[2026-05-08 17:03:40.383,  48.40 μs] [f28] Info | [AIE] Device count: 1 
+[2026-05-08 17:03:40.383,  47.40 μs] [f28] Info | [AIE] - Index 0 Name Default GPU Cores 0 
+[2026-05-08 17:03:40.383,  35.10 μs] [f28] Info | [AIE]   VRAM 2.000000 GB Total / 0.000000 GB Used DataType -46345832 
+[2026-05-08 17:03:40.383,  39.90 μs] [f28] Info | [AIE]   Serial  Legacy 0 1 CudaId 0 Capability 88 
+[2026-05-08 17:03:40.383,  36.30 μs] [f28] Info | [AIE] ========================== 
+[2026-05-08 17:03:40.383, 165.20 μs] [f28] Info | [Amplitude] Sending lab request 
+[2026-05-08 17:03:40.383, 219.60 μs] [f28] Info | [Amplitude] request id: "{943e9b21-5df3-485e-a457-701493215e95}" 
+[2026-05-08 17:03:40.385,  46.10 μs] [f28] Info | [Amplitude] Waiting for response... 
+[2026-05-08 17:03:40.401,  16.86 ms] [f28] Info | Worker cancel requested 
+[2026-05-08 17:03:40.401, 107.70 μs] [f28] Info | Cancelling processing 
+[2026-05-08 17:03:40.401, 926.90 μs] [f28] Info | Overwriting binding on AutoPilotControls_QMLTYPE_367::apStatus at qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:44 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/AutoPilotControls.qml:33:5 
+[2026-05-08 17:03:40.409,   6.79 ms] [f28] Info | Overwriting binding on HealingToolControls_QMLTYPE_362::currentSubjectSettings at qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:65 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/HealingToolControls.qml:27:5 
+[2026-05-08 17:03:40.409, 161.80 μs] [f28] Info | Overwriting binding on DustRemovalControls_QMLTYPE_352::currentSubjectSettings at qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:65 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/DustRemovalControls.qml:27:5 
+[2026-05-08 17:03:40.826, 415.70 ms] [f28] Info | Stopping TThumbnailWriterWorker thread 
+[2026-05-08 17:03:40.826,   1.55 ms] [f28] Info | TThumbnailWriterWorker thread stopped 
+[2026-05-08 17:03:40.849,  23.23 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:03:40.855,   6.11 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:03:40.861,   5.62 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:03:40.863, 931.20 μs] [f28] Info | Worker cancel requested 
+[2026-05-08 17:03:40.863, 108.80 μs] [f28] Info | Cancelling processing 
+[2026-05-08 17:03:40.863,   1.97  s] [2b48] Info | Calculating top level auto category 
+[2026-05-08 17:03:40.863, 111.40 μs] [2b48] Info | [AIE] [Embeddings] Starting to generate auto embeddings: daclip 
+[2026-05-08 17:03:40.863,  86.50 μs] [2b48] Info | [AIE] [Embeddings PROFILE] begin model loading 
+[2026-05-08 17:03:40.863, 667.70 μs] [2b48] Info | [AIE] Model: daclip Device: -1 
+[2026-05-08 17:03:40.863,  78.50 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:40.863,  58.90 μs] [2b48] Info | [AIE]  ---TBlockProc 224x224 C: 2/19 R: 1/13 X: 176 Y: 176 inSize: 3000 2000 Pad: 196 168 
+[2026-05-08 17:03:40.863,  52.50 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:40.863,  39.90 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:40.863,  41.50 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:40.863,  43.40 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:03:40.863,  36.40 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:03:40.863,  49.80 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:03:40.863,  48.80 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v2-fp32-224x224-1x-ox.tz2 
+[2026-05-08 17:03:40.867,   4.35 ms] [f28] Info | Calling generate pixmap: "Original Image Original" QSize(-1, -1) 
+[2026-05-08 17:03:40.875,   7.78 ms] [f28] Warn | Wrong camera model naming format "" 
+[2026-05-08 17:03:40.879,   4.30 ms] [f28] Warn | Could not open camera profile: ":/profiles/.gz" 
+[2026-05-08 17:03:40.883,   4.44 ms] [f28] Warn | QFSFileEngine::open: No file name specified 
+[2026-05-08 17:03:40.883, 150.30 μs] [f28] Warn | Could not open DCP file for reading: "" 
+[2026-05-08 17:03:40.883,  86.10 μs] [f28] Warn | Could not load camera profile"" 
+[2026-05-08 17:03:40.889,   4.58 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:03:40.889, 788.40 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.891, 715.10 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.891, 484.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.891,   1.43 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.893, 666.30 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.893, 458.20 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:03:40.895,   2.88 ms] [f28] Info | Estimated ETA for the machine 116538 
+[2026-05-08 17:03:40.909,   0.00 μs] [4128] Info | Using embedded color profile:  QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-08 17:03:40.914,   5.55 ms] [4128] Info | Using base colorspace: QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-08 17:03:41.374, 479.17 ms] [f28] Info | Current credit balance: 398  | (qrc:/imageenhance/main.qml:1868, onCreditAvailableChanged)
+[2026-05-08 17:03:41.396,  23.57 ms] [f28] Info | [Amplitude] Request completed. 
+[2026-05-08 17:03:41.416,  17.34 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:41.416, 338.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:41.416, 460.80 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:03:41.435,  17.96 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:49 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:03:41.435, 165.40 μs] [f28] Info | QML engine loaded 
+[2026-05-08 17:03:41.441,   6.93 ms] [f28] Info | Feature flag value true 
+[2026-05-08 17:03:41.451,   1.48  s] [4990] Info | Created exiftool 
+[2026-05-08 17:03:41.514,  81.70 ms] [f28] Info | Dynamic tooltip loaded: Get Topaz Video, Topaz Photo, Topaz <br> Gigapixel, Bloom, Astra, Express (web <br> tools), mobile apps, and all new apps<br> on release  | (qrc:/WonderUI/WonderUI/dialogs/WPricingModal.qml:38)
+[2026-05-08 17:03:41.625, 170.32 ms] [4990] Info | Exiftool metadata count: 240 File: "F:/A Photography/Photos2024/0 Cranbrook 2024/3 Sunday flash/OM2N0975.JPG" 
+[2026-05-08 17:03:41.625, 111.60 μs] [4990] Info | Exiftool metadata size: 43579 
+[2026-05-08 17:03:42.103, 585.28 ms] [f28] Info | JWT status: "active" 
+[2026-05-08 17:03:42.103, 141.30 μs] [f28] Info | Auth response | valid: true | owned: true | expired: false | inactive: false | no seats: false | autorenew: false | needs disambiguation: false | license expiration: "2026-07-25" | legacy: true | tier: Individual 
+[2026-05-08 17:03:42.103, 779.30 μs] [f28] Info | Avatar is out of date, trying to refresh 
+[2026-05-08 17:03:42.111, 814.00 μs] [f28] Info | [F] Finishing auth without checking features true false true true 
+[2026-05-08 17:03:42.203,  96.51 ms] [f28] Info | Auth state changed: Owned  | (qrc:/imageenhance/main.qml:1712, onStateChanged)
+[2026-05-08 17:03:42.203, 127.70 μs] [f28] Info | User email: mltaylor@gmx.co.uk  | (qrc:/imageenhance/main.qml:1713, onStateChanged)
+[2026-05-08 17:03:42.339, 137.64 ms] [f28] Info | Found 3 new app versions 
+[2026-05-08 17:03:42.339, 145.60 μs] [f28] Info | Adding update 0 : "1.5.1" 
+[2026-05-08 17:03:42.339,  74.50 μs] [f28] Info | Adding update 1 : "1.5.0" 
+[2026-05-08 17:03:42.339,  43.80 μs] [f28] Info | Adding update 2 : "1.4.1" 
+[2026-05-08 17:03:42.339,  48.90 μs] [f28] Info | Update check response: true true 
+[2026-05-08 17:03:42.561, 230.32 ms] [f28] Info | Feature flag value true 
+[2026-05-08 17:03:42.664,  89.67 ms] [f28] Warn | Network error. Status Code: QNetworkReply::ContentNotFoundError (404) Error: Error transferring https://gravatar.com/avatar/4f255465755421f88d9ca586740ecc694728adf7e7de83aa12f3cb156de6a921.jpg?s=100&d=404 - server replied:  
+[2026-05-08 17:03:42.664, 117.40 μs] [f28] Warn | Network error body: "404 Not Found" 
+[2026-05-08 17:03:42.664, 644.60 μs] [f28] Info | E-mail does not have a gravatar icon associated with it 
+[2026-05-08 17:03:43.730,   2.87  s] [2b48] Info | [AIE] Network Name: Model1 Size: 380580160 
+[2026-05-08 17:03:43.730, 119.00 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:43.730,  39.90 μs] [2b48] Info | [AIE] image 
+[2026-05-08 17:03:43.730,  32.50 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:43.730,  30.60 μs] [2b48] Info | [AIE] img_vecs 
+[2026-05-08 17:03:43.730,  43.70 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v2-fp32-224x224-1x-ox.tz2 is 2871 
+[2026-05-08 17:03:43.730, 277.40 μs] [2b48] Info | [AIE] [Embeddings PROFILE] finish model loading: 2873 ms 
+[2026-05-08 17:03:43.730,   2.12 ms] [2b48] Info | [AIE] [ViTEmbeddings PROFILE] finish pre-processing: 2 ms 
+[2026-05-08 17:03:43.730, 257.50 μs] [2b48] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:43.730,  43.10 μs] [2b48] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:43.730,  33.10 μs] [2b48] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:45.526,   1.80  s] [2b48] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:45.526, 129.40 μs] [2b48] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:45.623,  87.71 ms] [2b48] Info | [AIE] procTime: 1884 ms 
+[2026-05-08 17:03:45.794, 172.04 ms] [2b48] Info | [AIE] [LinearClassifier] Loading model from: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip_sub_det.bin 
+[2026-05-08 17:03:45.796,   1.71 ms] [2b48] Info | [AIE] [LinearClassifier]  Validated Metadata, loading 2 linear layers for LinearClassifier 
+[2026-05-08 17:03:45.804,   9.00 ms] [2b48] Info | [AIE] [LinearClassifier] Model loaded successfully. 
+[2026-05-08 17:03:45.806, 890.20 μs] [2b48] Info | [AIE] [Embeddings] Subject prediction: animals with confidence 1.000000 
+[2026-05-08 17:03:45.806,  79.90 μs] [2b48] Info | [AIE] [LinearClassifier] Loading model from: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip_old_photo_det.bin 
+[2026-05-08 17:03:45.808,   1.83 ms] [2b48] Info | [AIE] [LinearClassifier]  Validated Metadata, loading 2 linear layers for LinearClassifier 
+[2026-05-08 17:03:45.816,   8.74 ms] [2b48] Info | [AIE] [LinearClassifier] Model loaded successfully. 
+[2026-05-08 17:03:45.816, 564.60 μs] [2b48] Info | [AIE] [Embeddings] old photo detection: modern_photo with confidence 0.999991 
+[2026-05-08 17:03:45.818,   1.17 ms] [2b48] Info | [AIE] Can't decode autopilot JSON {"adjustColor":false,"applyAutopilotOnceCalculated":false,"autoPilot":1,"autoPilotSettings":{},"blurLevel":-1,"changesCount":0,"conflictResPref":"auto","defaultSubjectSettings":{"feathering":1,"model":"Subject","originalSubjectPath":"","sensitivity":0.5,"strokes":[]},"denoiseLevels":"medium","denoiseRawLevels":"low","denoiseRawStrength":3,"denoisingModel":-1,"denoisingRawModel":-1,"enableDownscaling":false,"exposureRAWStrength":8,"exposureStrength":25,"faceDetection":"subject","faceParts":3,"faceStrength":-1,"initialFiltersApplied":false,"justSaved":false,"noiseLevel":-1,"opacityValue":100,"presetAppliedNoModifications":false,"presetsApplied":[],"recommendFilters":true,"regenerateMask":true,"resizingSupported":false,"resolution":-1,"resolutionUnit":1,"rollingModelSelections":[{"category":4294967296,"model":0,"weight":0.36000000000000015},{"category":4294967296,"model":2,"weight":0.6200000000000003},{"category":4294967297,"model":0,"weight":0.3900000000000002},{"category":4294967297,"model":2,"weight":0.3000000000000001},{"category":4294967298,"model":0,"weight":0.04},{"category":4294967299,"model":2,"weight":0.02},{"category":4294967296,"model":0,"weight":0.01},{"category":4294967296,"model":2,"weight":0.02},{"category":21474836480,"model":4,"weight":0.02}],"rollingParamStrengths":{"Denoise-0-Low Light Beta-param1_normalv2":-0.019999999999999993,"Denoise-0-Severe Noise Beta-param1_strongv2":0.03199999999999999,"Denoise-0-Severe Noise-param1":0.09,"Denoise-1-Low Light Beta-param1_normalv2":-0.019999999999999993,"Denoise-1-Severe Noise Beta-param1_strongv2":0.030000000000000006,"Denoise-1-Severe Noise-param1":0.07,"Denoise-2-Low Light Beta-param1_normalv2":-0.019999999999999993,"Denoise-2-Severe Noise Beta-param1_strongv2":0.02,"Denoise-2-Severe Noise-param1":0.04,"Denoise-3-Low Light Beta-param1_normalv2":-0.05,"Denoise-3-Severe Noise Beta-param1_strongv2":-0.030000000000000002,"Denoise-3-Severe Noise-param1":-0.03,"Denoise-undefined-Low Light Beta-param1_normalv2":0,"Denoise-undefined-Severe Noise Beta-param1_strongv2":0,"Sharpen-0-Lens Blur v2-slens2_blur":-0.01,"Sharpen-0-Sharpen Natural-snat_blur":0.04,"Sharpen-0-Sharpen Refocus-srf_blur":0.05,"Sharpen-0-Sharpen Standard v2-std_blur":-0.009999999999999997,"Sharpen-0-Sharpen Standardfalse-smot_blur":0.05,"Sharpen-0-Sharpen Strong-stg_blur":0.08899999999999997,"Sharpen-1-Lens Blur v2-slens2_blur":-0.05,"Sharpen-1-Sharpen Natural-snat_blur":0.02,"Sharpen-1-Sharpen Refocus-srf_blur":0.03,"Sharpen-1-Sharpen Standard v2-std_blur":-0.07200000000000001,"Sharpen-1-Sharpen Standardfalse-smot_blur":0.03,"Sharpen-1-Sharpen Strong-stg_blur":0.049999999999999996,"Sharpen-2-Lens Blur v2-slens2_blur":-0.11,"Sharpen-2-Sharpen Natural-snat_blur":0.01,"Sharpen-2-Sharpen Refocus-srf_blur":0.03,"Sharpen-2-Sharpen Standard v2-std_blur":-0.11,"Sharpen-2-Sharpen Standardfalse-smot_blur":0.03,"Sharpen-2-Sharpen Strong-stg_blur":0.031999999999999994,"Sharpen-undefined-Sharpen Standard v2-std_blur":null},"sharpenBlurs":"medium","sharpeningModel":-1,"showMinorSettings":true,"temperatureValue":50,"textModel":-1,"textStrength":3,"upscalingFactor":2,"upscalingModel":-1,"upscalingParam1":3,"upscalingParam2":3,"upscalingType":"none"}: [json.exception.type_error.302] type must be number, but is null 
+[2026-05-08 17:03:45.818, 134.60 μs] [2b48] Info | Using embedded color profile:  QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-08 17:03:45.818,  61.70 μs] [2b48] Info | [AIE] Calculating top level auto category 
+[2026-05-08 17:03:45.818,  41.70 μs] [2b48] Info | [AIE] [Embeddings] Starting to generate auto embeddings: daclip 
+[2026-05-08 17:03:45.818,  39.20 μs] [2b48] Info | [AIE] [Embeddings PROFILE] begin model loading 
+[2026-05-08 17:03:45.818, 436.00 μs] [2b48] Info | [AIE] Model: daclip Device: -1 
+[2026-05-08 17:03:45.818,  47.50 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:45.818,  43.00 μs] [2b48] Info | [AIE]  ---TBlockProc 224x224 C: 2/19 R: 1/13 X: 176 Y: 176 inSize: 3000 2000 Pad: 196 168 
+[2026-05-08 17:03:45.818,  36.50 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:45.818,  32.90 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:45.818,  33.70 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:45.818,  31.40 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:03:45.818,  36.40 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:03:45.820,  66.60 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:03:45.820,  36.70 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v2-fp32-224x224-1x-ox.tz2 
+[2026-05-08 17:03:46.508, 693.97 ms] [2b48] Info | [AIE] Network Name: Model536 Size: 380580160 
+[2026-05-08 17:03:46.508, 108.00 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:46.508,  42.50 μs] [2b48] Info | [AIE] image 
+[2026-05-08 17:03:46.508,  33.80 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:46.508,  32.00 μs] [2b48] Info | [AIE] img_vecs 
+[2026-05-08 17:03:46.508,  45.40 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip-v2-fp32-224x224-1x-ox.tz2 is 695 
+[2026-05-08 17:03:46.508, 237.60 μs] [2b48] Info | [AIE] [Embeddings PROFILE] finish model loading: 695 ms 
+[2026-05-08 17:03:46.508,   2.31 ms] [2b48] Info | [AIE] [ViTEmbeddings PROFILE] finish pre-processing: 2 ms 
+[2026-05-08 17:03:46.508, 482.60 μs] [2b48] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:46.508,  75.30 μs] [2b48] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:46.508,  57.20 μs] [2b48] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:47.956,   1.44  s] [2b48] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:47.956, 201.50 μs] [2b48] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:48.039,  82.46 ms] [2b48] Info | [AIE] procTime: 1524 ms 
+[2026-05-08 17:03:48.161, 121.96 ms] [2b48] Info | [AIE] [LinearClassifier] Loading model from: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip_sub_det.bin 
+[2026-05-08 17:03:48.161, 361.20 μs] [2b48] Info | [AIE] [LinearClassifier]  Validated Metadata, loading 2 linear layers for LinearClassifier 
+[2026-05-08 17:03:48.167,   6.28 ms] [2b48] Info | [AIE] [LinearClassifier] Model loaded successfully. 
+[2026-05-08 17:03:48.167, 519.40 μs] [2b48] Info | [AIE] [Embeddings] Subject prediction: animals with confidence 1.000000 
+[2026-05-08 17:03:48.167,  57.50 μs] [2b48] Info | [AIE] [LinearClassifier] Loading model from: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\daclip_old_photo_det.bin 
+[2026-05-08 17:03:48.167, 247.30 μs] [2b48] Info | [AIE] [LinearClassifier]  Validated Metadata, loading 2 linear layers for LinearClassifier 
+[2026-05-08 17:03:48.167,   5.19 ms] [2b48] Info | [AIE] [LinearClassifier] Model loaded successfully. 
+[2026-05-08 17:03:48.167, 457.20 μs] [2b48] Info | [AIE] [Embeddings] old photo detection: modern_photo with confidence 0.999991 
+[2026-05-08 17:03:48.167, 412.60 μs] [2b48] Info | [AIE] [AutoMasking Detection] Detecting all input image quality parameters. 
+[2026-05-08 17:03:48.167, 215.00 μs] [2b48] Info | [Autopilot] Detected params: {
+    "ap_params": {
+    },
+    "autoBlurLevel": "low",
+    "autoFaces": [
+    ],
+    "autoNoiseLevel": "low",
+    "blurLevel": "low",
+    "clippingRatio": 0,
+    "currentStep": "init",
+    "denoiseStatus": false,
+    "existBackground": false,
+    "existSalient": false,
+    "existText": false,
+    "faceCount": 0,
+    "faceLandmarks": [
+    ],
+    "faceOption": "none",
+    "faces": {
+        "autoFaces": [
+        ],
+        "faceLandmarks": [
+        ],
+        "highConfidenceFaces": [
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "subjectFaces": [
+        ]
+    },
+    "highConfidenceFaces": [
+    ],
+    "lightingLevel": 0,
+    "lowConfidenceFaces": [
+    ],
+    "noiseLevel": "low",
+    "rawImage": false,
+    "resizeStatus": false,
+    "resolution": 72,
+    "resolutionUnit": "inches",
+    "salientRatio": 0,
+    "selectedFaces": [
+    ],
+    "sharpenStatus": false,
+    "subjectFaces": [
+    ],
+    "upscalingMode": "none",
+    "upscalingScale": 1
+}
+ 
+[2026-05-08 17:03:48.167, 179.70 μs] [2b48] Info | [Autopilot] Detected params: {
+    "ap_params": {
+    },
+    "autoBlurLevel": "low",
+    "autoFaces": [
+    ],
+    "autoNoiseLevel": "low",
+    "blurLevel": "low",
+    "clippingRatio": 0,
+    "currentStep": "strokes",
+    "denoiseStatus": false,
+    "existBackground": false,
+    "existSalient": false,
+    "existText": false,
+    "faceCount": 0,
+    "faceLandmarks": [
+    ],
+    "faceOption": "none",
+    "faces": {
+        "autoFaces": [
+        ],
+        "faceLandmarks": [
+        ],
+        "highConfidenceFaces": [
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "subjectFaces": [
+        ]
+    },
+    "highConfidenceFaces": [
+    ],
+    "lightingLevel": 0,
+    "lowConfidenceFaces": [
+    ],
+    "noiseLevel": "low",
+    "rawImage": false,
+    "resizeStatus": false,
+    "resolution": 72,
+    "resolutionUnit": "pixels",
+    "salientRatio": 0,
+    "selectedFaces": [
+    ],
+    "sharpenStatus": false,
+    "subjectFaces": [
+    ],
+    "upscalingMode": "none",
+    "upscalingScale": 1
+}
+ 
+[2026-05-08 17:03:48.167, 131.50 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:03:48.167,  44.30 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:03:48.167,  33.80 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:03:48.167,  38.20 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:03:48.167,  43.60 μs] [2b48] Info | [AutoMasking PROFILE] begin model loading 
+[2026-05-08 17:03:48.167, 446.10 μs] [2b48] Info | [AIE] Model: sms_new Device: -1 
+[2026-05-08 17:03:48.167,  46.70 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:48.167,  41.70 μs] [2b48] Info | [AIE]  ---TBlockProc 320x320 C: 1/1 R: 1/1 X: 272 Y: 272 inSize: 320 320 Pad: 0 0 
+[2026-05-08 17:03:48.167,  35.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:48.167,  32.70 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:48.167,  34.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:48.167,  31.50 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:03:48.167,  30.70 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:03:48.167,  38.80 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:03:48.167,  34.80 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\sms_new-v3-fp16-320x320-ov.tz2 
+[2026-05-08 17:03:48.829, 657.29 ms] [2b48] Info | [AIE] Network Name: Model1071 Size: 88496504 
+[2026-05-08 17:03:48.829, 115.70 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:48.829,  82.70 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:03:48.829,  50.00 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:48.829,  47.20 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:03:48.829,  48.40 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\sms_new-v3-fp16-320x320-ov.tz2 is 658 
+[2026-05-08 17:03:48.835, 335.60 μs] [2b48] Info | [AutoMasking PROFILE] finish model loading:  0.658691  s 
+[2026-05-08 17:03:48.835,  64.20 μs] [2b48] Info | [AIE] [AutoMasking PROFILE] begin pre-processing 
+[2026-05-08 17:03:48.835,   2.06 ms] [2b48] Info | [AIE] [AutoMasking PROFILE] image pixel values: 0 -536870912 
+[2026-05-08 17:03:48.835, 192.90 μs] [2b48] Info | [AIE] [AutoMasking PROFILE] finish pre-processing: 2 ms 
+[2026-05-08 17:03:48.835, 741.30 μs] [2b48] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:48.835,  49.40 μs] [2b48] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:48.835,  33.20 μs] [2b48] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:49.580, 743.95 ms] [2b48] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:49.580, 104.20 μs] [2b48] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:50.093, 520.04 ms] [2b48] Info | [AIE] procTime: 1265 ms 
+[2026-05-08 17:03:50.103,   2.37 ms] [2b48] Info | [AutoMasking PROFILE] begin thresholding 
+[2026-05-08 17:03:50.105,   2.57 ms] [2b48] Info | [AutoMasking PROFILE] finish simple thresholding: 2.4384 ms 
+[2026-05-08 17:03:50.173,  69.78 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:03:50.191,  19.43 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:03:50.191,   7.20 ms] [2b48] Info | Generating subject mask 
+[2026-05-08 17:03:50.204, 184.90 μs] [2b48] Info | Generating auto mask for requested model: "Text Recovery" 
+[2026-05-08 17:03:50.204,  57.90 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Text Recovery" 
+[2026-05-08 17:03:50.204,  53.60 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Text Recovery" "txtdtx" 
+[2026-05-08 17:03:50.204,  40.70 μs] [2b48] Info | [AutoMasking PROFILE] begin model loading 
+[2026-05-08 17:03:50.204, 389.60 μs] [2b48] Info | [AIE] Model: txtdtx Device: -1 
+[2026-05-08 17:03:50.204,  42.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:50.204,  41.70 μs] [2b48] Info | [AIE]  ---TBlockProc 960x640 C: 2/3 R: 2/3 X: 912 Y: 592 inSize: 960 640 Pad: 912 592 
+[2026-05-08 17:03:50.204,  35.00 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:50.204,  32.30 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:50.204,  40.30 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:50.204,  35.70 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:03:50.204,  30.60 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:03:50.204,  39.10 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:03:50.204,  33.30 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\txtdtx-v1-fp16-640x960-1x-ox.tz2 
+[2026-05-08 17:03:50.632, 427.53 ms] [2b48] Info | [AIE] Network Name: Model1104 Size: 59184188 
+[2026-05-08 17:03:50.632, 110.40 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:50.632,  37.70 μs] [2b48] Info | [AIE] image 
+[2026-05-08 17:03:50.632,  32.00 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:50.632,  30.00 μs] [2b48] Info | [AIE] outputImage 
+[2026-05-08 17:03:50.632,  40.60 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\txtdtx-v1-fp16-640x960-1x-ox.tz2 is 427 
+[2026-05-08 17:03:50.632, 228.50 μs] [2b48] Info | [AutoMasking PROFILE] finish model loading:  0.428691  s 
+[2026-05-08 17:03:50.632,  35.40 μs] [2b48] Info | [AIE] [AutoMasking PROFILE] begin pre-processing 
+[2026-05-08 17:03:50.637,  10.79 ms] [2b48] Info | [AIE] [AutoMasking PROFILE] image pixel values: 0 0 
+[2026-05-08 17:03:50.648,   4.08 ms] [2b48] Info | [AIE] [AutoMasking PROFILE] finish pre-processing: 14 ms 
+[2026-05-08 17:03:50.648,   3.04 ms] [2b48] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:50.648, 116.20 μs] [2b48] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:50.648,  38.30 μs] [2b48] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:51.248, 598.91 ms] [2b48] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:51.248, 130.10 μs] [2b48] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:54.192,   2.94  s] [2b48] Info | [AIE] procTime: 3545 ms 
+[2026-05-08 17:03:54.192, 596.90 μs] [2b48] Info | [AIE] [TextDetection] Computing Masks on output Image: 640 x 960 x 2 
+[2026-05-08 17:03:54.289,  96.48 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "txtdtx" 
+[2026-05-08 17:03:54.317,  29.49 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Text Recovery" 
+[2026-05-08 17:03:54.328,   7.33 ms] [2b48] Info | [Autopilot] Detected params: {
+    "ap_params": {
+    },
+    "autoBlurLevel": "low",
+    "autoFaces": [
+    ],
+    "autoNoiseLevel": "low",
+    "blurLevel": "low",
+    "clippingRatio": 0,
+    "currentStep": "faces",
+    "denoiseStatus": false,
+    "existBackground": true,
+    "existSalient": true,
+    "existText": false,
+    "faceCount": 0,
+    "faceLandmarks": [
+    ],
+    "faceOption": "none",
+    "faces": {
+        "autoFaces": [
+        ],
+        "faceLandmarks": [
+        ],
+        "highConfidenceFaces": [
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "subjectFaces": [
+        ]
+    },
+    "highConfidenceFaces": [
+    ],
+    "lightingLevel": 0,
+    "lowConfidenceFaces": [
+    ],
+    "noiseLevel": "low",
+    "rawImage": false,
+    "resizeStatus": false,
+    "resolution": 72,
+    "resolutionUnit": "pixels",
+    "salientRatio": 0.5136460065841675,
+    "selectedFaces": [
+    ],
+    "sharpenStatus": false,
+    "subjectFaces": [
+    ],
+    "upscalingMode": "none",
+    "upscalingScale": 1
+}
+ 
+[2026-05-08 17:03:54.328, 611.40 μs] [2b48] Info | [AIE] Model: gfp-l Device: -1 
+[2026-05-08 17:03:54.328,  80.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:54.328,  52.20 μs] [2b48] Info | [AIE]  ---TBlockProc 2048x2048 C: 1/1 R: 1/1 X: 2000 Y: 2000 inSize: 1 1 Pad: 1023 1023 
+[2026-05-08 17:03:54.328,  39.10 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:54.328,  34.10 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:54.328,  35.80 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:54.328,  37.70 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:03:54.328,  34.80 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:03:54.330,  47.80 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:03:54.330,  37.60 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 
+[2026-05-08 17:03:54.840, 510.71 ms] [2b48] Info | [AIE] Network Name: Model1129 Size: 127170040 
+[2026-05-08 17:03:54.840, 120.30 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:54.840,  40.40 μs] [2b48] Info | [AIE] modelInput 
+[2026-05-08 17:03:54.840,  32.40 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:54.840,  30.80 μs] [2b48] Info | [AIE] modelOutput 
+[2026-05-08 17:03:54.840,  43.70 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 is 511 
+[2026-05-08 17:03:54.840, 270.40 μs] [2b48] Info | [AIE] faceParserSetup: 513 ms 
+[2026-05-08 17:03:54.840,  46.10 μs] [2b48] Info | [AIE] Parsing faces from 3000x2000 image 
+[2026-05-08 17:03:54.862,  27.95 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:03:54.878,   0.00 μs] [1524] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:54.878, 124.80 μs] [1524] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:54.878,  42.10 μs] [1524] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:55.356, 474.82 ms] [1524] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:55.356, 174.70 μs] [1524] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:58.795,   3.93  s] [2b48] Info | [AIE] parseTime: 3935 ms 
+[2026-05-08 17:03:58.795,   1.99 ms] [2b48] Info | [AIE] ImageFaceParser nms input: 121 
+[2026-05-08 17:03:58.795,  78.60 μs] [2b48] Info | [AIE] ImageFaceParser nms output: 1 
+[2026-05-08 17:03:58.878,  79.70 ms] [2b48] Info | [AIE] Detect faces. Will perform face refinement 1 
+[2026-05-08 17:03:58.880, 118.20 μs] [2b48] Info | [AIE] [ImageFaceParseFilter PROFILE] begin model loading 
+[2026-05-08 17:03:58.880, 448.80 μs] [2b48] Info | [AIE] Face Filter Device: -1 
+[2026-05-08 17:03:58.880,  50.20 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:58.880,  38.20 μs] [2b48] Info | [AIE] overlapping >2 blocks 
+[2026-05-08 17:03:58.880,  39.20 μs] [2b48] Info | [AIE]  ---TBlockProc 48x48 C: 1/1 R: 1/1 X: 1 Y: 1 inSize: 48 48 Pad: 0 0 
+[2026-05-08 17:03:58.880,  36.20 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:58.880,  33.70 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:58.880,  33.80 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:58.880,  45.10 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:03:58.880,  60.50 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:03:58.880,  54.30 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:03:58.880,  34.60 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfpf-v1-fp16-48x48-ov.tz2 
+[2026-05-08 17:03:58.893,  14.60 ms] [2b48] Info | [AIE] Network Name: Model1186 Size: 793432 
+[2026-05-08 17:03:58.893, 115.50 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:58.893,  38.40 μs] [2b48] Info | [AIE] modelInput 
+[2026-05-08 17:03:58.895,  46.10 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:58.895,  30.70 μs] [2b48] Info | [AIE] modelOutput 
+[2026-05-08 17:03:58.895,  39.50 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfpf-v1-fp16-48x48-ov.tz2 is 15 
+[2026-05-08 17:03:58.895, 273.90 μs] [2b48] Info | [AIE] [ImageFaceParseFilter PROFILE] finish model loading: 16 ms 
+[2026-05-08 17:03:58.895,  69.30 μs] [2b48] Info | [AIE] [ImageFaceParseFilter] high 1 low 0 auto 0 subject 1 
+[2026-05-08 17:03:58.895, 144.60 μs] [2b48] Info | [AIE] Calculating auto settings with auto model liting_det 
+[2026-05-08 17:03:58.895,  89.80 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:03:58.895,  40.10 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:03:58.895,  33.30 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:03:58.895,  33.60 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:03:58.897,   1.70 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:03:58.927,  31.24 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:03:58.927,   5.92 ms] [2b48] Info | [AIE] Model: liting_det Device: -1 
+[2026-05-08 17:03:58.927,  90.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:58.927,  47.10 μs] [2b48] Info | [AIE]  ---TBlockProc 128x128 C: 2/3 R: 2/3 X: 80 Y: 80 inSize: 128 128 Pad: 80 80 
+[2026-05-08 17:03:58.927,  37.00 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:58.927,  33.00 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:58.927,  33.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:58.927,  30.70 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:03:58.927,  30.50 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:03:58.927,  38.20 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:03:58.927,  33.70 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\liting_det-v1-fp16-128x128-ox.tz2 
+[2026-05-08 17:03:58.953,  23.14 ms] [2b48] Info | [AIE] Network Name: Model1188 Size: 1471974 
+[2026-05-08 17:03:58.953, 140.60 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:58.953,  49.40 μs] [2b48] Info | [AIE] image0 
+[2026-05-08 17:03:58.953,  64.00 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:58.953,  34.60 μs] [2b48] Info | [AIE] output 
+[2026-05-08 17:03:58.953,  43.80 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\liting_det-v1-fp16-128x128-ox.tz2 is 23 
+[2026-05-08 17:03:58.953,   1.13 ms] [2b48] Info | [AIE] Processing image: 128x128x3 
+[2026-05-08 17:03:58.953, 215.80 μs] [2b48] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:58.953,  46.00 μs] [2b48] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:58.960,  47.70 μs] [2b48] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:59.036,  77.16 ms] [2b48] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:59.036, 125.50 μs] [2b48] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:59.038,   1.86 ms] [2b48] Info | [AIE] procTime: 80 ms 
+[2026-05-08 17:03:59.038,  98.20 μs] [2b48] Info | [AIE] Output image: 1x1x2 
+[2026-05-08 17:03:59.044,   7.29 ms] [2b48] Info | [Autopilot] Detected params: {
+    "ap_params": {
+    },
+    "autoBlurLevel": "low",
+    "autoFaces": [
+    ],
+    "autoNoiseLevel": "low",
+    "blurLevel": "low",
+    "clippingRatio": 0.0001068115234375,
+    "currentStep": "params",
+    "denoiseStatus": false,
+    "existBackground": true,
+    "existSalient": true,
+    "existText": false,
+    "faceCount": 1,
+    "faceLandmarks": [
+        [
+            1836.1865234375,
+            398.2729797363281,
+            2310.002685546875,
+            1104.4425048828125,
+            0.9914524555206299,
+            1922.767578125,
+            652.5078125,
+            2092.83837890625,
+            663.6320190429688,
+            1929.1988525390625,
+            743.2672119140625,
+            1909.00537109375,
+            892.2421264648438,
+            2050.51611328125,
+            899.7496337890625
+        ]
+    ],
+    "faceOption": "subject",
+    "faces": {
+        "autoFaces": [
+        ],
+        "faceLandmarks": [
+            [
+                1836.1865234375,
+                398.2729797363281,
+                2310.002685546875,
+                1104.4425048828125,
+                0.9914524555206299,
+                1922.767578125,
+                652.5078125,
+                2092.83837890625,
+                663.6320190429688,
+                1929.1988525390625,
+                743.2672119140625,
+                1909.00537109375,
+                892.2421264648438,
+                2050.51611328125,
+                899.7496337890625
+            ]
+        ],
+        "highConfidenceFaces": [
+            0
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "subjectFaces": [
+            0
+        ]
+    },
+    "highConfidenceFaces": [
+        0
+    ],
+    "lightingLevel": 0.17843280732631683,
+    "lowConfidenceFaces": [
+    ],
+    "noiseLevel": "low",
+    "rawImage": false,
+    "resizeStatus": false,
+    "resolution": 72,
+    "resolutionUnit": "pixels",
+    "salientRatio": 0.5136460065841675,
+    "selectedFaces": [
+        0
+    ],
+    "sharpenStatus": false,
+    "subjectFaces": [
+        0
+    ],
+    "upscalingMode": "none",
+    "upscalingScale": 1
+}
+ 
+[2026-05-08 17:03:59.044, 147.30 μs] [2b48] Info | [AIE] Calculating auto settings with auto model apnb 
+[2026-05-08 17:03:59.044,  82.70 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:03:59.044,  41.20 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:03:59.044,  34.40 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:03:59.044,  35.50 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:03:59.048,   1.66 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:03:59.079,  30.95 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:03:59.081,   3.54 ms] [2b48] Info | [AIE] Model: apnb Device: -1 
+[2026-05-08 17:03:59.081, 103.30 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:59.083,  54.70 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 7/7 R: 5/5 X: 464 Y: 464 inSize: 3000 2000 Pad: 148 184 
+[2026-05-08 17:03:59.083,  38.20 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:59.083,  33.00 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:59.083,  34.30 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:59.083,  31.50 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:03:59.083,  30.80 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:03:59.083,  38.20 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:03:59.083,  34.90 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\apnb-v2-fp32-512x512-ov.tz2 
+[2026-05-08 17:03:59.125,  41.61 ms] [2b48] Info | [AIE] Network Name: Model1191 Size: 6857656 
+[2026-05-08 17:03:59.125, 130.10 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:59.125,  81.60 μs] [2b48] Info | [AIE] input 
+[2026-05-08 17:03:59.125,  61.70 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:59.125,  46.80 μs] [2b48] Info | [AIE] output 
+[2026-05-08 17:03:59.125,  41.20 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\apnb-v2-fp32-512x512-ov.tz2 is 42 
+[2026-05-08 17:03:59.127,  15.70 ms] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:03:59.161,   0.00 μs] [4078] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:59.161, 218.20 μs] [4078] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:59.161,  55.70 μs] [4078] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:59.260,  99.21 ms] [4078] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:59.260, 123.00 μs] [4078] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:03:59.611, 471.07 ms] [2b48] Info | [AIE] Auto params keys are noise blur  
+[2026-05-08 17:03:59.622,   9.88 ms] [2b48] Info | [AIE] Autopilot Overall(noise,blur,salient) (0.000000,0.459496,0.513646)Foreground(noise,blur) (0.019267,0.442122) Background(noise,blur) (0.000000,0.478779) 
+[2026-05-08 17:03:59.622, 319.40 μs] [2b48] Info | [Autopilot] Detected params: {
+    "ap_params": {
+        "blur": 0.4594963788986206,
+        "blur_background": 0.47877904772758484,
+        "blur_salient": 0.44212183356285095,
+        "noise": 0,
+        "noise_background": 0,
+        "noise_salient": 0.019267288967967033
+    },
+    "autoBlurLevel": "high",
+    "autoFaces": [
+    ],
+    "autoNoiseLevel": "low",
+    "blurLevel": "low",
+    "clippingRatio": 0.0001068115234375,
+    "currentStep": "done",
+    "denoiseStatus": false,
+    "existBackground": true,
+    "existSalient": true,
+    "existText": false,
+    "faceCount": 1,
+    "faceLandmarks": [
+        [
+            1836.1865234375,
+            398.2729797363281,
+            2310.002685546875,
+            1104.4425048828125,
+            0.9914524555206299,
+            1922.767578125,
+            652.5078125,
+            2092.83837890625,
+            663.6320190429688,
+            1929.1988525390625,
+            743.2672119140625,
+            1909.00537109375,
+            892.2421264648438,
+            2050.51611328125,
+            899.7496337890625
+        ]
+    ],
+    "faceOption": "subject",
+    "faces": {
+        "autoFaces": [
+        ],
+        "faceLandmarks": [
+            [
+                1836.1865234375,
+                398.2729797363281,
+                2310.002685546875,
+                1104.4425048828125,
+                0.9914524555206299,
+                1922.767578125,
+                652.5078125,
+                2092.83837890625,
+                663.6320190429688,
+                1929.1988525390625,
+                743.2672119140625,
+                1909.00537109375,
+                892.2421264648438,
+                2050.51611328125,
+                899.7496337890625
+            ]
+        ],
+        "highConfidenceFaces": [
+            0
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "subjectFaces": [
+            0
+        ]
+    },
+    "highConfidenceFaces": [
+        0
+    ],
+    "lightingLevel": 0.17843280732631683,
+    "lowConfidenceFaces": [
+    ],
+    "noiseLevel": "low",
+    "rawImage": false,
+    "resizeStatus": false,
+    "resolution": 72,
+    "resolutionUnit": "pixels",
+    "salientRatio": 0.5136460065841675,
+    "selectedFaces": [
+        0
+    ],
+    "sharpenStatus": true,
+    "subjectFaces": [
+        0
+    ],
+    "upscalingMode": "none",
+    "upscalingScale": 1
+}
+ 
+[2026-05-08 17:03:59.622, 107.60 μs] [2b48] Info | [AIE] Image analyzed 
+[2026-05-08 17:03:59.622, 722.20 μs] [2b48] Info | [AIE] Calculating Denoise slider values and model selection 
+[2026-05-08 17:03:59.622,  48.00 μs] [2b48] Info | [AIE] Calculating auto settings with auto model slsp_ap 
+[2026-05-08 17:03:59.622,  67.70 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:03:59.622,  38.60 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:03:59.622,  33.40 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:03:59.624,  35.80 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:03:59.624,   1.66 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:03:59.651,  33.21 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:03:59.651,   3.85 ms] [2b48] Info | [AIE] Model: slsp_ap Device: -1 
+[2026-05-08 17:03:59.651, 118.40 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:59.651,  49.60 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 7/7 R: 5/5 X: 464 Y: 464 inSize: 3000 2000 Pad: 148 184 
+[2026-05-08 17:03:59.651,  38.70 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:03:59.651,  33.50 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:03:59.651,  34.80 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:03:59.651,  31.80 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:03:59.651,  37.50 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:03:59.651,  43.40 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:03:59.651,  35.40 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\slsp_ap-v3-fp32-512x512-ov.tz2 
+[2026-05-08 17:03:59.696,  43.92 ms] [2b48] Info | [AIE] Network Name: Model1194 Size: 3464860 
+[2026-05-08 17:03:59.696,  92.70 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:03:59.696,  37.50 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:03:59.696,  32.50 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:03:59.696,  30.70 μs] [2b48] Info | [AIE] Identity:0 
+[2026-05-08 17:03:59.696,  37.30 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\slsp_ap-v3-fp32-512x512-ov.tz2 is 44 
+[2026-05-08 17:03:59.721,  16.08 ms] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:03:59.741,   0.00 μs] [30b4] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:03:59.741, 255.90 μs] [30b4] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:03:59.741,  41.50 μs] [30b4] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:03:59.817,  75.73 ms] [30b4] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:03:59.817, 111.70 μs] [30b4] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:00.097, 375.48 ms] [2b48] Info | [AIE] Auto params keys are noise lensblur motionblur compression  
+[2026-05-08 17:04:00.107,   9.84 ms] [2b48] Info | [AIE] Calculating Sharpen slider values and model selection 
+[2026-05-08 17:04:00.107, 236.30 μs] [2b48] Info | [AIE] Calculating auto settings with auto model apnb 
+[2026-05-08 17:04:00.107, 145.90 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:00.107,  63.00 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:00.107,  50.80 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:00.107,  52.40 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:00.107,   2.23 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:00.143,  39.78 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:00.143,   3.57 ms] [2b48] Info | [AIE] Model: apnb Device: -1 
+[2026-05-08 17:04:00.143, 102.40 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:00.143,  50.40 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 7/7 R: 5/5 X: 464 Y: 464 inSize: 3000 2000 Pad: 148 184 
+[2026-05-08 17:04:00.143,  39.70 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:00.143,  34.00 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:00.143,  35.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:00.143,  32.50 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:04:00.143,  47.00 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:04:00.143,  52.90 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:04:00.143,  35.60 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\apnb-v2-fp32-512x512-ov.tz2 
+[2026-05-08 17:04:00.167,  13.13 ms] [2b48] Info | [AIE] Network Name: Model1197 Size: 6857656 
+[2026-05-08 17:04:00.167, 119.20 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:00.167,  40.30 μs] [2b48] Info | [AIE] input 
+[2026-05-08 17:04:00.167,  33.40 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:00.167,  31.00 μs] [2b48] Info | [AIE] output 
+[2026-05-08 17:04:00.167,  38.70 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\apnb-v2-fp32-512x512-ov.tz2 is 14 
+[2026-05-08 17:04:00.187,  19.45 ms] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:04:00.208,   0.00 μs] [e4c] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:00.208, 238.80 μs] [e4c] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:00.208,  46.40 μs] [e4c] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:00.307,  98.74 ms] [e4c] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:00.307, 119.30 μs] [e4c] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:00.655, 466.96 ms] [2b48] Info | [AIE] Auto params keys are noise blur  
+[2026-05-08 17:04:00.664,  11.51 ms] [2b48] Info | [AIE] Calculating auto settings with auto model slsp_ap 
+[2026-05-08 17:04:00.666, 158.50 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:00.666,  47.90 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:00.666,  36.00 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:00.666,  36.20 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:00.666,   2.44 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:00.693,  31.50 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:00.693,   3.37 ms] [2b48] Info | [AIE] Model: slsp_ap Device: -1 
+[2026-05-08 17:04:00.693,  90.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:00.693,  51.20 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 7/7 R: 5/5 X: 464 Y: 464 inSize: 3000 2000 Pad: 148 184 
+[2026-05-08 17:04:00.693,  39.60 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:00.693,  34.40 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:00.693,  36.00 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:00.693,  32.50 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:04:00.693,  32.30 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:04:00.693,  39.50 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:04:00.693,  35.70 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\slsp_ap-v3-fp32-512x512-ov.tz2 
+[2026-05-08 17:04:00.707,   9.67 ms] [2b48] Info | [AIE] Network Name: Model1200 Size: 3464860 
+[2026-05-08 17:04:00.707, 103.90 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:00.707,  39.20 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:00.707,  33.50 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:00.707,  31.50 μs] [2b48] Info | [AIE] Identity:0 
+[2026-05-08 17:04:00.707,  37.70 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\slsp_ap-v3-fp32-512x512-ov.tz2 is 9 
+[2026-05-08 17:04:00.723,  16.26 ms] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:04:00.743,   0.00 μs] [3640] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:00.743, 270.90 μs] [3640] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:00.743,  62.60 μs] [3640] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:00.825,  76.32 ms] [3640] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:00.825, 111.20 μs] [3640] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:01.046, 317.34 ms] [2b48] Info | [AIE] Auto params keys are noise lensblur motionblur compression  
+[2026-05-08 17:04:01.055,   9.14 ms] [2b48] Info | [AIE] Calculating Upscale slider values and model selection 
+[2026-05-08 17:04:01.055, 129.10 μs] [2b48] Info | [AIE] Calculating auto settings with auto model ggn_ap 
+[2026-05-08 17:04:01.055, 446.80 μs] [2b48] Info | [AIE] Model: ggn_ap Device: -1 
+[2026-05-08 17:04:01.055,  48.60 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:01.055,  43.90 μs] [2b48] Info | [AIE]  ---TBlockProc 128x128 C: 37/37 R: 25/25 X: 80 Y: 80 inSize: 3000 2000 Pad: 4 24 
+[2026-05-08 17:04:01.055,  37.90 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:01.055,  39.10 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:01.055,  38.60 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:01.055,  36.20 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:04:01.055,  32.20 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:04:01.055,  41.80 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:04:01.055,  36.00 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\ggn_ap-v2-fp16-128x128-ov.tz2 
+[2026-05-08 17:04:01.075,  28.11 ms] [2b48] Info | [AIE] Network Name: Model1203 Size: 1721074 
+[2026-05-08 17:04:01.075, 103.80 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:01.075,  39.50 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:01.075,  34.10 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:01.075,  32.30 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:04:01.075,  37.80 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\ggn_ap-v2-fp16-128x128-ov.tz2 is 28 
+[2026-05-08 17:04:01.087,   3.25 ms] [2b48] Info | [AIE] gamma: 1.000000 
+[2026-05-08 17:04:01.087,   1.89 ms] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:04:01.087,   0.00 μs] [fd8] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:01.087, 150.20 μs] [fd8] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:01.087,  47.90 μs] [fd8] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:01.170,  77.37 ms] [fd8] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:01.170, 126.30 μs] [fd8] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:01.182,  90.78 ms] [2b48] Info | [AIE] Auto params keys are param2 param1 param3  
+[2026-05-08 17:04:01.182,   5.71 ms] [2b48] Info | [AIE] Calculating Text slider values and model selection 
+[2026-05-08 17:04:01.182, 101.00 μs] [2b48] Info | [AIE] Using cached auto settings ggn_ap Adobe Photoshop Image 
+[2026-05-08 17:04:01.182,  55.60 μs] [2b48] Info | [AIE] Using cached auto settings slsp_ap Adobe Photoshop Image 
+[2026-05-08 17:04:01.182, 868.60 μs] [2b48] Info | [Autopilot] Result: {
+    "Denoise": {
+        "enabled": false,
+        "flattened": false,
+        "model": "Low Light Beta",
+        "param1": 0.336527556180954,
+        "param1_normalv2": 0.336527556180954,
+        "param1_strongv2": 0.28353703022003174,
+        "param2": 0.3520055413246155,
+        "param2_normalv2": 0.17600277066230774,
+        "param2_strongv2": 0.17600277066230774,
+        "recover_detail": 0,
+        "recover_detail_normalv2": 0,
+        "recover_detail_strongv2": 0,
+        "scale": 1
+    },
+    "Dust Removal": {
+        "enabled": false,
+        "flattened": false,
+        "model": "",
+        "scale": 1
+    },
+    "Enhance": {
+        "enabled": false,
+        "flattened": false,
+        "gamma_correction": false,
+        "model": "High Fidelity V2",
+        "param1": 0.30240145325660706,
+        "param2": 0.41617366671562195,
+        "param3": 0.005373924504965544,
+        "scale": 1,
+        "strength": 1
+    },
+    "Exposure Adjust": {
+        "adjustColor": false,
+        "enabled": false,
+        "flattened": false,
+        "highlight": 1,
+        "lighting": 1,
+        "model": "Color Light Underexposed",
+        "param1": 0.25,
+        "scale": 1,
+        "shadow": 1
+    },
+    "Face Recovery": {
+        "creativity": 0,
+        "enabled": true,
+        "faceOption": "subject",
+        "faceParts": [
+            "hair",
+            "necks"
+        ],
+        "flattened": false,
+        "highConfidenceFaces": [
+            0
+        ],
+        "lowConfidenceFaces": [
+        ],
+        "model": "",
+        "onePassOnly": false,
+        "param1": 0.20000000298023224,
+        "scale": 1,
+        "selectedFaces": [
+            0
+        ],
+        "version": 2
+    },
+    "GAN Removal": {
+        "enabled": false,
+        "flattened": false,
+        "model": "",
+        "scale": 1
+    },
+    "RAW": {
+        "enabled": false,
+        "flattened": false,
+        "model": "RAW Native",
+        "param1_native": 0.5,
+        "param2_native": 0.5,
+        "param3_native": 0.5,
+        "scale": 1
+    },
+    "Sharpen": {
+        "compression_animals": 0.5171718597412109,
+        "compression_lensblur": 0.5171718597412109,
+        "compression_lensblurv2": 0.5171718597412109,
+        "compression_natural": 0.5171718597412109,
+        "compression_portrait": 0.5171718597412109,
+        "compression_refocus": 0.5171718597412109,
+        "compression_standard": 0.5171718597412109,
+        "compression_standardv2": 0.5171718597412109,
+        "compression_strong": 0.5171718597412109,
+        "enabled": true,
+        "flattened": false,
+        "isLens": false,
+        "model": "Sharpen Standard v2",
+        "param1_animals": 0.336527556180954,
+        "param1_lensblur": 0.336527556180954,
+        "param1_lensblurv2": 0.06499999761581421,
+        "param1_natural": 0.336527556180954,
+        "param1_portrait": 0,
+        "param1_refocus": 0.336527556180954,
+        "param1_standard": 0.336527556180954,
+        "param1_standardv2": 0.06499999761581421,
+        "param1_strong": 0.05000000074505806,
+        "param2_animals": 0.3032512664794922,
+        "param2_lensblur": 0.12115992605686188,
+        "param2_lensblurv2": 0.7581281661987305,
+        "param2_natural": 0.12115992605686188,
+        "param2_portrait": 0.25018230080604553,
+        "param2_refocus": 0.12115992605686188,
+        "param2_standard": 0.3520055413246155,
+        "param2_standardv2": 0.7581281661987305,
+        "param2_strong": 0.44212183356285095,
+        "scale": 1,
+        "strength_animals": 1,
+        "strength_lensblur": 1,
+        "strength_lensblurv2": 1,
+        "strength_natural": 1,
+        "strength_portrait": 0.800000011920929,
+        "strength_refocus": 1,
+        "strength_standard": 1,
+        "strength_standardv2": 1,
+        "strength_strong": 1
+    },
+    "Super Focus": {
+        "detail": 0.5,
+        "downscaling": 1,
+        "enableModelBasedUpscaling": false,
+        "enabled": false,
+        "flattened": false,
+        "gamma": 1,
+        "model": "Super Focus",
+        "preemptive": true,
+        "scale": 1,
+        "seed": 1,
+        "strength": 1,
+        "superFocusStrength": 0
+    },
+    "Text Recovery": {
+        "enabled": false,
+        "flattened": false,
+        "immediateBlend_noisy": false,
+        "immediateBlend_normal": false,
+        "model": "Text Refine Noisy",
+        "param1_noisy": 0.336527556180954,
+        "param1_normal": 0.36288174986839294,
+        "param2_noisy": 0.17600277066230774,
+        "param2_normal": 0.6451152563095093,
+        "param3_noisy": 0,
+        "param3_normal": 0.0064487094059586525,
+        "param4_noisy": 0.8999999761581421,
+        "param4_normal": 0.8999999761581421,
+        "scale": 1
+    },
+    "White Balance Adjust": {
+        "enabled": false,
+        "flattened": false,
+        "model": "",
+        "scale": 1,
+        "strength": 1,
+        "temperature": 0.5
+    },
+    "embeddingIntelligence": {
+        "embeddingModel": "daclip",
+        "oldPhotoConfidence": 0.9999910593032837,
+        "oldPhotoDetection": "modern_photo",
+        "subject": "animals",
+        "subjectConfidence": 1,
+        "subjectDecision": "Subject"
+    }
+}
+ 
+[2026-05-08 17:04:01.182, 168.30 μs] [2b48] Info | [ImageUnderstanding] Running Image understanding 
+[2026-05-08 17:04:01.182,  57.70 μs] [2b48] Info | [AIE] [ImageUnderstanding] Running Image understanding 
+[2026-05-08 17:04:01.182,  36.60 μs] [2b48] Info | [AIE] [ImageUnderstanding] Running Embedding model 
+[2026-05-08 17:04:01.182,  33.90 μs] [2b48] Info | [AIE] [Embeddings] Starting to generate auto embeddings: daclip 
+[2026-05-08 17:04:01.182,  41.30 μs] [2b48] Info | [AIE] [Embeddings PROFILE] Embeddings cache hit 
+[2026-05-08 17:04:01.182,  18.53  s] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.198,   6.44 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.198,   6.33 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.214,   7.10 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.222,  33.21 ms] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:01.222, 127.50 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:01.222,  42.80 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:01.222,  38.40 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:01.222,   1.54 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:01.228,  15.66 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.237,   7.80 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.244,   7.99 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.254,   8.59 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.254,  30.20 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:01.254,   2.33 ms] [f28] Info | Worker cancel requested 
+[2026-05-08 17:04:01.254,  64.10 μs] [f28] Info | Cancelling processing 
+[2026-05-08 17:04:01.254, 171.00 μs] [f28] Info | Starting proc -2 
+[2026-05-08 17:04:01.254, 525.70 μs] [f28] Info | [PROC] Begin proc: QRect(1721,514 503x625) false QList("Sharpen", "Face Recovery") 
+[2026-05-08 17:04:01.254,   5.49 ms] [2b48] Info | Proc image worker started: => QRect(1721,514 508x630) 
+[2026-05-08 17:04:01.254,   3.57 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.254, 977.50 μs] [2b48] Info | [AIE] Face Recovery active: 0.200000 1 
+[2026-05-08 17:04:01.254,   3.57 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.254, 977.50 μs] [2b48] Info | [AIE] Face Recovery active: 0.200000 1 
+:04:01.262, 571.20 μs] [2b48] Info | [AIE] Model: gfp-l Device: -1 
+[2026-05-08 17:04:01.262,  62.10 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:01.262,  47.50 μs] [2b48] Info | [AIE]  ---TBlockProc 2048x2048 C: 1/1 R: 1/1 X: 2000 Y: 2000 inSize: 1 1 Pad: 1023 1023 
+[2026-05-08 17:04:01.262,  37.80 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:01.262,  34.50 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:01.262,  35.80 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:01.262,  33.10 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:04:01.262,  32.10 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:04:01.262,  43.00 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:04:01.262,  35.40 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 
+[2026-05-08 17:04:01.262,   2.65 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 803.40 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 575.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 548.20 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262,   1.62 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262,   1.11 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 545.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262,   5.12 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 545.20 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 528.10 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262, 558.70 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.262,   1.23 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.278, 934.40 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.278, 615.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.278, 947.10 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.280,   1.03 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.280, 595.00 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.282,   1.51 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.284,   2.40 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.290,   4.72 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:40 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:144:17 
+[2026-05-08 17:04:01.290, 145.70 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.290, 551.40 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:36 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:125:17 
+[2026-05-08 17:04:01.290,  77.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.290,  66.40 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.292,   2.41 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.292, 236.00 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294,   1.45 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294,   2.48 ms] [f28] Info | Overwriting binding on QObject_QML_186::model at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:140 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:32:9 
+[2026-05-08 17:04:01.294, 220.10 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 122.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 121.00 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 568.30 μs] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124::selectedItem at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:211 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:611:17 
+[2026-05-08 17:04:01.294,   3.59 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:04:01.294,   4.10 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.294, 129.70 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 820.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 131.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 116.90 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 101.70 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294,   2.04 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.294, 148.60 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.310,   3.05 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.310, 198.20 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/FaceFilterControl.qml:62: ReferenceError: facesSelector is not defined  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/FaceFilterControl.qml:62)
+[2026-05-08 17:04:01.310, 297.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:81 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:388:21 
+[2026-05-08 17:04:01.310, 158.30 μs] [f28] Info | Overwriting binding on WComboBox_QMLTYPE_83::currentIndex at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:64 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:170:21 
+[2026-05-08 17:04:01.310, 674.90 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:74 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:356:21 
+[2026-05-08 17:04:01.310, 680.90 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:67 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:325:21 
+[2026-05-08 17:04:01.310,  52.41 ms] [2b48] Info | [AIE] Network Name: Model1206 Size: 127170040 
+[2026-05-08 17:04:01.310,  65.10 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:01.310,  38.20 μs] [2b48] Info | [AIE] modelInput 
+[2026-05-08 17:04:01.310,  32.80 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:01.310,  31.80 μs] [2b48] Info | [AIE] modelOutput 
+[2026-05-08 17:04:01.310,  45.40 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 is 53 
+[2026-05-08 17:04:01.310, 239.80 μs] [2b48] Info | [AIE] faceParserSetup: 53 ms 
+[2026-05-08 17:04:01.310,  37.00 μs] [2b48] Info | [AIE] Parsing faces from 3000x2000 image 
+[2026-05-08 17:04:01.320,   5.41 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.322,   2.83 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.322, 378.50 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.322, 153.10 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.322,  81.30 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.328,   4.68 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.342,  29.82 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:01.357,   0.00 μs] [1304] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:01.357, 132.10 μs] [1304] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:01.357,  45.70 μs] [1304] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:01.373,  57.10 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_158::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:332 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:196:21 
+[2026-05-08 17:04:01.389,   4.13 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_158::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:332 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:196:21 
+[2026-05-08 17:04:01.399,   9.97 ms] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124_QML_165::selectedItem at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:407 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:396:29 
+[2026-05-08 17:04:01.399,   1.01 ms] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314:17: QML RowLayout: Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314)
+[2026-05-08 17:04:01.399, 231.90 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314:17: QML RowLayout: Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314)
+[2026-05-08 17:04:01.436,  37.82 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 125.90 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 204.90 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 352.20 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92:9: Unable to assign [undefined] to double  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92)
+[2026-05-08 17:04:01.436,   2.21 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 670.40 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436,   1.72 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 884.10 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 826.30 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 554.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436,   1.40 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436,   1.23 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.436, 556.20 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452,   4.30 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 710.10 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 703.30 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 648.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452,   1.25 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 844.70 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 775.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 866.30 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 776.30 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452, 667.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452,   1.72 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.452,   2.22 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.468,   4.85 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:40 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:144:17 
+[2026-05-08 17:04:01.468, 142.30 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.468, 615.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:36 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SuperFocusFilterControl.qml:125:17 
+[2026-05-08 17:04:01.468,  84.60 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.471,  72.00 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.473,   2.56 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.473, 182.40 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.473,   1.20 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.477,   2.22 ms] [f28] Info | Overwriting binding on QObject_QML_186::model at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:126 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:32:9 
+[2026-05-08 17:04:01.477, 133.90 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.477, 176.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.477, 168.20 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.477, 699.10 μs] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124::selectedItem at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:211 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:611:17 
+[2026-05-08 17:04:01.481,   3.62 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_107::text at qrc:/imageenhance/elements/TLabelledTextField.qml:165 that was initially bound at qrc:/imageenhance/elements/TLabelledTextField.qml:129:13 
+[2026-05-08 17:04:01.486,   4.98 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.486, 124.30 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.486, 859.20 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.488, 127.20 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.488, 100.70 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.488,  85.90 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.490,   2.43 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.490, 155.80 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.492,   2.75 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.492, 150.40 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/FaceFilterControl.qml:62: ReferenceError: facesSelector is not defined  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/FaceFilterControl.qml:62)
+[2026-05-08 17:04:01.492, 275.80 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:81 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:388:21 
+[2026-05-08 17:04:01.494, 215.00 μs] [f28] Info | Overwriting binding on WComboBox_QMLTYPE_83::currentIndex at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:64 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:170:21 
+[2026-05-08 17:04:01.494, 704.20 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:74 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:356:21 
+[2026-05-08 17:04:01.494, 696.40 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::value at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:67 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ExpoFilterControl.qml:325:21 
+[2026-05-08 17:04:01.496,   2.29 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.496, 397.00 μs] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124::selectedItem at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/DenoiseFilterControl.qml:116 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/DenoiseFilterControl.qml:203:21 
+[2026-05-08 17:04:01.543,  45.54 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.543, 183.30 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.543, 126.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.543,  94.10 μs] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.547,   3.53 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_112::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:613 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:256:21 
+[2026-05-08 17:04:01.595,  50.16 ms] [f28] Warn | Could not get image size: Image "Adobe Photoshop Image" does not exist. Also, it is not the name of an image format that OpenImageIO recognizes. 
+[2026-05-08 17:04:01.595,   5.74 ms] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:167:31: QML WComboBox: Binding loop detected for property "currentIndex":
+qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:181:25  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/SharpenFilterControl.qml:167)
+[2026-05-08 17:04:01.623,  20.64 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_158::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:332 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:196:21 
+[2026-05-08 17:04:01.627,   3.10 ms] [f28] Info | Overwriting binding on WTextField_QMLTYPE_71_QML_158::text at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:332 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettyUnitSelector.qml:196:21 
+[2026-05-08 17:04:01.627,   9.01 ms] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124_QML_165::selectedItem at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:407 that was initially bound at qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:396:29 
+[2026-05-08 17:04:01.627, 874.10 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314:17: QML RowLayout: Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314)
+[2026-05-08 17:04:01.627, 374.90 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314:17: QML RowLayout: Qt Quick Layouts: Detected recursive rearrange. Aborting after two iterations.  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:314)
+[2026-05-08 17:04:01.674,  39.68 ms] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.674, 145.50 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.674, 226.00 μs] [f28] Info | Overwriting binding on WLabeledPrettySlider_QMLTYPE_110::computedIconColor at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:68 that was initially bound at qrc:/WonderUI/WonderUI/controls/WLabeledPrettySlider.qml:63:5 
+[2026-05-08 17:04:01.674, 275.30 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92:9: Unable to assign [undefined] to double  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92)
+[2026-05-08 17:04:01.674,  54.00 μs] [f28] Warn | qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92:9: Unable to assign [undefined] to double  | (qrc:/imageenhance/views/rightPanel/enhancements/filterControls/ResolutionFilterControl.qml:92)
+[2026-05-08 17:04:01.701,  25.28 ms] [f28] Info | Worker cancel requested 
+[2026-05-08 17:04:01.701, 110.60 μs] [f28] Info | Cancelling processing 
+[2026-05-08 17:04:01.701, 169.70 μs] [f28] Info | Cancelling current proc for new proc 
+[2026-05-08 17:04:01.701,  47.30 μs] [f28] Info | Worker cancel requested 
+[2026-05-08 17:04:01.701,  35.20 μs] [f28] Info | Cancelling processing 
+[2026-05-08 17:04:01.739,  42.12 ms] [f28] Info | Setting up AP suggestions  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:182, setupAPSuggestions)
+[2026-05-08 17:04:01.746, 693.00 μs] [f28] Info | Applied filters: ["Sharpen-Subject","Face Recovery-"]  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:272, getNewFilterSuggestion)
+[2026-05-08 17:04:01.746, 117.20 μs] [f28] Info | Excluded filters: ["Face Recovery-","Text Recovery-All","Text Recovery-Text","Sharpen-Subject"]  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:273, getNewFilterSuggestion)
+[2026-05-08 17:04:01.746, 207.60 μs] [f28] Info | Adding suggestion {"filterName":"Denoise","subject":"All","demoSuggestion":true}  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:212, setupAPSuggestions)
+[2026-05-08 17:04:01.746, 392.20 μs] [f28] Info | Applied filters: ["Sharpen-Subject","Face Recovery-"]  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:272, getNewFilterSuggestion)
+[2026-05-08 17:04:01.746,  63.90 μs] [f28] Info | Excluded filters: ["Face Recovery-","Text Recovery-All","Text Recovery-Text","Denoise-Subject","Denoise-Background","Denoise-All","Sharpen-Subject"]  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:273, getNewFilterSuggestion)
+[2026-05-08 17:04:01.746,  92.70 μs] [f28] Info | Adding suggestion {"filterName":"Exposure Adjust","subject":"All"}  | (qrc:/imageenhance/views/rightPanel/controls/SuggestionController.qml:212, setupAPSuggestions)
+[2026-05-08 17:04:01.848, 500.48 ms] [1304] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:01.848, 124.90 μs] [1304] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:05.311,   3.97  s] [2b48] Info | [AIE] parseTime: 3977 ms 
+[2026-05-08 17:04:05.311,   1.85 ms] [2b48] Info | [AIE] ImageFaceParser nms input: 121 
+[2026-05-08 17:04:05.311,  76.80 μs] [2b48] Info | [AIE] ImageFaceParser nms output: 1 
+[2026-05-08 17:04:05.319,   2.14 ms] [2b48] Info | [AIE] Cancel called 
+[2026-05-08 17:04:05.377,  58.89 ms] [2b48] Info | [AIE] Face parsing failed. Will return nothing. 
+[2026-05-08 17:04:05.377, 114.20 μs] [2b48] Info | [AIE] faceEnhancement 1 0 0 
+[2026-05-08 17:04:05.377, 125.30 μs] [2b48] Info | wantROI size: QRectF(1721,514 508x630) 
+[2026-05-08 17:04:05.377,  48.80 μs] [2b48] Info | Image dimensions: 3000 2000 
+[2026-05-08 17:04:05.377,  34.70 μs] [2b48] Info | Mat dimensions: 508 630 
+[2026-05-08 17:04:05.379, 733.20 μs] [2b48] Info | Canceled during filter processing. 
+[2026-05-08 17:04:05.379, 175.70 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:05.379,  69.90 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:05.379,  39.90 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:05.379,  39.60 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:05.379,   3.63  s] [f28] Info | Running next proc from procCanceled 
+[2026-05-08 17:04:05.379, 121.10 μs] [f28] Info | Starting proc -2 
+[2026-05-08 17:04:05.379, 685.60 μs] [f28] Info | [PROC] Begin proc: QRect(1721,514 503x625) false QList("Sharpen", "Face Recovery") 
+[2026-05-08 17:04:05.379,   1.84 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:05.413,  33.20 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:05.417,   3.48 ms] [2b48] Info | Proc image worker started: => QRect(1721,514 508x630) 
+[2026-05-08 17:04:05.417, 816.00 μs] [2b48] Info | [AIE] Face Recovery active: 0.200000 1 
+[2026-05-08 17:04:05.417, 111.20 μs] [2b48] Info | [AIE] Start face parsing 
+[2026-05-08 17:04:05.417, 448.10 μs] [2b48] Info | [AIE] Model: gfp-l Device: -1 
+[2026-05-08 17:04:05.417,  47.50 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:05.417,  43.80 μs] [2b48] Info | [AIE]  ---TBlockProc 2048x2048 C: 1/1 R: 1/1 X: 2000 Y: 2000 inSize: 1 1 Pad: 1023 1023 
+[2026-05-08 17:04:05.417,  38.10 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:05.417,  38.00 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:05.417,  35.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:05.417,  32.30 μs] [2b48] Info | [AIE] [ -1:2 ] 
+[2026-05-08 17:04:05.417,  32.10 μs] [2b48] Info | [AIE] 2 instances for device -1 
+[2026-05-08 17:04:05.417,  41.80 μs] [2b48] Info | [AIE] Target Device: -1 Count: 2 
+[2026-05-08 17:04:05.417,  35.80 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 
+[2026-05-08 17:04:05.464,  53.37 ms] [2b48] Info | [AIE] Network Name: Model1263 Size: 127170040 
+[2026-05-08 17:04:05.464, 113.80 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:05.464,  41.00 μs] [2b48] Info | [AIE] modelInput 
+[2026-05-08 17:04:05.464,  34.30 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:05.464,  33.00 μs] [2b48] Info | [AIE] modelOutput 
+[2026-05-08 17:04:05.464,  43.30 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfp-l-v1-fp32-2048x2048-ov.tz2 is 54 
+[2026-05-08 17:04:05.464, 262.60 μs] [2b48] Info | [AIE] faceParserSetup: 54 ms 
+[2026-05-08 17:04:05.464,  39.20 μs] [2b48] Info | [AIE] Parsing faces from 3000x2000 image 
+[2026-05-08 17:04:05.501,  29.34 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:05.511,   0.00 μs] [6b4] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:05.511, 132.80 μs] [6b4] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:05.511,  46.50 μs] [6b4] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:05.972, 461.48 ms] [6b4] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:05.972, 125.20 μs] [6b4] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:09.221,   3.72  s] [2b48] Info | [AIE] parseTime: 3726 ms 
+[2026-05-08 17:04:09.221,   2.20 ms] [2b48] Info | [AIE] ImageFaceParser nms input: 121 
+[2026-05-08 17:04:09.221,  76.00 μs] [2b48] Info | [AIE] ImageFaceParser nms output: 1 
+[2026-05-08 17:04:09.284,  60.66 ms] [2b48] Info | [AIE] Finish face parsing 
+[2026-05-08 17:04:09.284, 136.50 μs] [2b48] Info | [AIE] faceEnhancement 1 0 1 
+[2026-05-08 17:04:09.284,  64.90 μs] [2b48] Info | [AIE] Initializing sstd with: 1721x514x508x630 3000x2000 1 -2 
+[2026-05-08 17:04:09.284, 515.40 μs] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:09.284,  53.20 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:09.284,  42.80 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 2/8 R: 3/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:09.284, 187.20 μs] [2b48] Info | wantROI size: QRectF(1476,48 976x1440) 
+[2026-05-08 17:04:09.284,  40.70 μs] [2b48] Info | Image dimensions: 3000 2000 
+[2026-05-08 17:04:09.284,  31.10 μs] [2b48] Info | Mat dimensions: 976 1440 
+[2026-05-08 17:04:09.284, 349.20 μs] [2b48] Info | [AIE] Output ROI: (1721x514x508x630) 
+[2026-05-08 17:04:09.284,  40.00 μs] [2b48] Info | [AIE] Input ROI: (1476x48x976x1440) 
+[2026-05-08 17:04:09.284,  32.50 μs] [2b48] Info | [AIE] Output size: (976x1440) 
+[2026-05-08 17:04:09.284, 347.10 μs] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:09.284,  50.60 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:09.284,  42.20 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 2/8 R: 3/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:09.284,   1.57 ms] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:09.284,  90.20 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:09.284,  45.30 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 2/8 R: 3/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:09.284, 212.00 μs] [2b48] Info | [AIE] Selecting backend for device 0 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:09.284,  35.40 μs] [2b48] Info | [AIE] Loading openvino backend 0051 
+[2026-05-08 17:04:09.284,  36.00 μs] [2b48] Info | [AIE] TargetDevices: Selected 0 
+[2026-05-08 17:04:09.284,  32.10 μs] [2b48] Info | [AIE] [ 0:1 ] 
+[2026-05-08 17:04:09.284,  30.80 μs] [2b48] Info | [AIE] 1 instances for device 0 
+[2026-05-08 17:04:09.284,  39.30 μs] [2b48] Info | [AIE] Target Device: 0 Count: 1 
+[2026-05-08 17:04:09.284,  34.20 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\sstd-v2-fp32-512x512-ov.tz2 
+[2026-05-08 17:04:10.274, 985.60 ms] [2b48] Info | [AIE] Network Name: Model1320 Size: 219737756 
+[2026-05-08 17:04:10.274, 119.70 μs] [2b48] Info | [AIE] Inputs: 3 
+[2026-05-08 17:04:10.274,  42.30 μs] [2b48] Info | [AIE] input 
+[2026-05-08 17:04:10.274,  33.70 μs] [2b48] Info | [AIE] noise 
+[2026-05-08 17:04:10.274,  55.70 μs] [2b48] Info | [AIE] blur 
+[2026-05-08 17:04:10.274,  31.80 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:10.274,  31.80 μs] [2b48] Info | [AIE] output 
+[2026-05-08 17:04:10.274,  48.10 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\sstd-v2-fp32-512x512-ov.tz2 is 986 
+[2026-05-08 17:04:10.274,  65.90 μs] [2b48] Info | [AIE] aiLoadTime: 986 ms 
+[2026-05-08 17:04:10.276, 230.10 μs] [2b48] Info | [AIE] param1: 0.065000 
+[2026-05-08 17:04:10.276,  49.70 μs] [2b48] Info | [AIE] param2: 0.574758 
+[2026-05-08 17:04:10.276, 100.10 μs] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:04:10.276,  49.10 μs] [2b48] Info | [AIE] Skipped 0 block(s) out of 6 block(s) 
+[2026-05-08 17:04:10.278,   0.00 μs] [3d6c] Info | [AIE] Parameters: device = 0 total: 1 
+[2026-05-08 17:04:10.278,  90.60 μs] [3d6c] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:10.278,  44.60 μs] [3d6c] Info | [AIE] OpenVINO device string for 0 is CPU 
+[2026-05-08 17:04:10.653, 377.32 ms] [3d6c] Info | [AIE]  - Loaded with targetDevice 0 
+[2026-05-08 17:04:10.653, 107.90 μs] [3d6c] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:11.035, 759.88 ms] [2b48] Info | 1 / 9 
+[2026-05-08 17:04:11.047,  12.00 ms] [2b48] Info | [AIE] Creating cache 
+[2026-05-08 17:04:11.415, 369.20 ms] [2b48] Info | 2 / 9 
+[2026-05-08 17:04:11.788, 373.34 ms] [2b48] Info | 3 / 9 
+[2026-05-08 17:04:12.169, 379.72 ms] [2b48] Info | 4 / 9 
+[2026-05-08 17:04:12.551, 381.62 ms] [2b48] Info | 5 / 9 
+[2026-05-08 17:04:12.938, 387.17 ms] [2b48] Info | 6 / 9 
+[2026-05-08 17:04:12.947,  11.02 ms] [2b48] Info | [AIE] aiProcessTime: 2674 ms 
+[2026-05-08 17:04:12.966,  17.04 ms] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:12.966, 102.00 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:12.966,  41.80 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:12.966,  37.50 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:12.966,   2.83 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:13.012,  44.27 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:13.016,   3.35 ms] [2b48] Info | [AutoMasking PROFILE] begin feathering 
+[2026-05-08 17:04:13.122, 109.54 ms] [2b48] Info | [AutoMasking PROFILE] finish feathering:  "109.449 ms" 
+[2026-05-08 17:04:13.132,   5.99 ms] [2b48] Info | [AIE] Writing input to cache 8484775111032069591 Sharpen 
+[2026-05-08 17:04:13.160,  32.08 ms] [2b48] Info | [AIE] Output ROI: (1476x48x976x1440) 
+[2026-05-08 17:04:13.160, 102.70 μs] [2b48] Info | [AIE] Input ROI: (1476x48x976x1440) 
+[2026-05-08 17:04:13.160,  36.10 μs] [2b48] Info | [AIE] Output size: (976x1440) 
+[2026-05-08 17:04:13.160,  44.00 μs] [2b48] Info | [AIE] Start face perfecting 
+[2026-05-08 17:04:13.182,  16.66 ms] [2b48] Info | [AIE] Face Perfector Device: -1 
+[2026-05-08 17:04:13.182, 117.10 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:13.182,  50.90 μs] [2b48] Info | [AIE]  ---TBlockProc 1024x1024 C: 1/1 R: 1/1 X: 976 Y: 976 inSize: 1024 1024 Pad: 0 0 
+[2026-05-08 17:04:13.182,  37.40 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:13.182,  32.30 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:13.182,  33.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:13.182,  31.00 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:04:13.182,  31.40 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:04:13.182,  40.20 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:04:13.182,  34.20 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfrf-v2-fp16-1024x1024-ov.tz2 
+[2026-05-08 17:04:16.480,   3.31  s] [2b48] Info | [AIE] Network Name: Model1343 Size: 306175142 
+[2026-05-08 17:04:16.480, 143.00 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:16.480,  42.20 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:16.480,  33.30 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:16.480,  31.80 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:04:16.480,  45.60 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfrf-v2-fp16-1024x1024-ov.tz2 is 3311 
+[2026-05-08 17:04:16.480, 274.00 μs] [2b48] Info | [AIE] facePerfectorSetup: 3312 ms 
+[2026-05-08 17:04:16.480,  37.00 μs] [2b48] Info | [AIE] # 0 of 1 faces inferred 
+[2026-05-08 17:04:16.500,  10.21 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:16.510,   0.00 μs] [3ce0] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:16.510, 234.10 μs] [3ce0] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:16.510,  41.70 μs] [3ce0] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:18.001,   1.49  s] [3ce0] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:18.001, 113.20 μs] [3ce0] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:19.814,   3.32  s] [2b48] Info | [AIE] perfectTime: 3318 ms 
+[2026-05-08 17:04:19.831,  12.47 ms] [2b48] Info | 7 / 9 
+[2026-05-08 17:04:19.831, 709.30 μs] [2b48] Info | [AIE] Face Masker Device: 0 
+[2026-05-08 17:04:19.831,  84.20 μs] [2b48] Info | [AIE] Selecting backend for device 0 from: openvino,onnx, 
+[2026-05-08 17:04:19.831,  49.30 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 1/1 R: 1/1 X: 464 Y: 464 inSize: 512 512 Pad: 0 0 
+[2026-05-08 17:04:19.831,  41.30 μs] [2b48] Info | [AIE] Selecting backend for device 0 from: openvino,onnx, 
+[2026-05-08 17:04:19.831,  35.50 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:19.831,  37.60 μs] [2b48] Info | [AIE] TargetDevices: Selected 0 
+[2026-05-08 17:04:19.831,  33.60 μs] [2b48] Info | [AIE] [ 0:1 ] 
+[2026-05-08 17:04:19.831,  32.50 μs] [2b48] Info | [AIE] 1 instances for device 0 
+[2026-05-08 17:04:19.831,  43.10 μs] [2b48] Info | [AIE] Target Device: 0 Count: 1 
+[2026-05-08 17:04:19.831,  36.60 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gffm-v1-fp32-512x512-ov.tz2 
+[2026-05-08 17:04:20.878,   1.05  s] [2b48] Info | [AIE] Network Name: Model1615 Size: 52663892 
+[2026-05-08 17:04:20.878, 166.10 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:20.878,  65.40 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:20.878,  38.40 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:20.878,  48.60 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:04:20.878,  57.60 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gffm-v1-fp32-512x512-ov.tz2 is 1046 
+[2026-05-08 17:04:20.880, 451.10 μs] [2b48] Info | [AIE] faceMaskerSetup: 1047 ms 
+[2026-05-08 17:04:20.884,   4.71 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:20.884,   0.00 μs] [17fc] Info | [AIE] Parameters: device = 0 total: 1 
+[2026-05-08 17:04:20.884, 117.60 μs] [17fc] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:20.884,  46.50 μs] [17fc] Info | [AIE] OpenVINO device string for 0 is CPU 
+[2026-05-08 17:04:21.110, 226.74 ms] [17fc] Info | [AIE]  - Loaded with targetDevice 0 
+[2026-05-08 17:04:21.110, 100.60 μs] [17fc] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:21.218, 337.59 ms] [2b48] Info | [AIE] maskTime: 339 ms 
+[2026-05-08 17:04:21.418, 196.74 ms] [2b48] Info | [AIE] Finish face perfecting 
+[2026-05-08 17:04:21.418, 170.50 μs] [2b48] Info | [AIE] Writing input to cache 8315363109955857795 Face Recovery 
+[2026-05-08 17:04:21.451,  32.28 ms] [2b48] Info | [AIE] Start face blending 0 pass 0 
+[2026-05-08 17:04:21.451, 146.00 μs] [2b48] Info | [AIE] Finish face blending pass 0 
+[2026-05-08 17:04:21.451,   1.78 ms] [2b48] Info | [AIE] Start face blending 1 pass 1 
+[2026-05-08 17:04:21.451, 138.80 μs] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] starting process 
+[2026-05-08 17:04:21.524,  72.31 ms] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] mid process 
+[2026-05-08 17:04:21.530,  11.91 ms] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] finished process 
+[2026-05-08 17:04:21.530,   3.12 ms] [2b48] Info | [AIE] [ImageFaceBlender PROFILE] Face blender model initialized 
+[2026-05-08 17:04:21.546,   6.64 ms] [2b48] Info | [AIE] Using face bounds (1721, 514, 508, 630) 
+[2026-05-08 17:04:21.549,   2.52 ms] [2b48] Info | [AIE] Finished transforming faces: 2 ms 
+[2026-05-08 17:04:21.549,   5.04 ms] [2b48] Info | [AIE] opacity: 0.280000 
+[2026-05-08 17:04:21.549,   5.87 ms] [2b48] Info | [AIE] [ImageFaceBlender PROFILE] Face blending finished 
+[2026-05-08 17:04:21.549, 125.40 μs] [2b48] Info | 8 / 9 
+[2026-05-08 17:04:21.549, 119.10 μs] [2b48] Info | [AIE] Finish face blending pass 1 
+[2026-05-08 17:04:21.561, 825.60 μs] [2b48] Info | Converting cv::Mat to ImageData 
+[2026-05-08 17:04:21.561, 118.60 μs] [2b48] Info | Getting alpha mat: QRect(1721,514 508x630) 3000 2000 
+[2026-05-08 17:04:21.561,  40.70 μs] [2b48] Info | Converted cv::Mat to ImageData 
+[2026-05-08 17:04:21.561,  59.80 μs] [2b48] Info | Proc image finished 
+[2026-05-08 17:04:21.561, 286.70 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:21.561,  72.00 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:21.561,  65.00 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:21.561,  41.70 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:21.561,  16.18  s] [f28] Info | Calling generate pixmap: "Preview Image Original" QSize(-1, -1) 
+[2026-05-08 17:04:21.561, 556.00 μs] [f28] Info | Overwriting binding on WGridSelect_QMLTYPE_124::enabled at qrc:/imageenhance/views/rightPanel/controls/InpaintControls.qml:254 that was initially bound at qrc:/imageenhance/views/rightPanel/controls/InpaintControls.qml:442:17 
+[2026-05-08 17:04:21.561,   3.09 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:21.566,   0.00 μs] [1ed4] Info | Using embedded color profile:  QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-08 17:04:21.568,   2.08 ms] [1ed4] Info | Using base colorspace: QColorSpace(QColorSpace::SRgb, QColorSpace::Primaries::SRgb, QColorSpace::TransferFunction::SRgb) 
+[2026-05-08 17:04:21.606,  40.42 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:21.606, 539.80 μs] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:21.606,  63.50 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:21.607,  41.60 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:21.607,  38.50 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:21.608,   1.83 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:21.646,  37.71 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:28.567,   7.00  s] [f28] Info | Save started automatically  | (qrc:/imageenhance/views/exports/ExportDialog.qml:96, show)
+[2026-05-08 17:04:28.569,   1.07 ms] [f28] Info | [EXPORT] Starting export with index 0  | (qrc:/imageenhance/service/ImageExporter.qml:246, startExport)
+[2026-05-08 17:04:28.569, 578.80 μs] [f28] Info | Starting proc -2 
+[2026-05-08 17:04:28.569, 242.20 μs] [f28] Info | [PROC] Begin proc: QRect(0,0 3000x2000) true QList("Sharpen", "Face Recovery") 
+[2026-05-08 17:04:28.571, 466.00 μs] [f28] Info | Overwriting binding on QQmlSettingsLabs_QML_599::rollingParamStrengths at qrc:/imageenhance/main.qml:926 that was initially bound at qrc:/imageenhance/main.qml:6364:9 
+[2026-05-08 17:04:28.573,   6.93  s] [2b48] Info | Proc image worker started: => QRect(0,0 3000x2000) 
+[2026-05-08 17:04:28.573, 824.30 μs] [2b48] Info | [AIE] Face Recovery active: 0.200000 1 
+[2026-05-08 17:04:28.577,   6.03 ms] [2b48] Info | [AIE] Start face parsing 
+[2026-05-08 17:04:28.577, 143.80 μs] [2b48] Info | [AIE] Face landmarks from cache 
+[2026-05-08 17:04:28.577,  46.40 μs] [2b48] Info | [AIE] Finish face parsing 
+[2026-05-08 17:04:28.577,  39.20 μs] [2b48] Info | [AIE] faceEnhancement 1 0 1 
+[2026-05-08 17:04:28.577,  42.10 μs] [2b48] Info | [AIE] Initializing sstd with: 0x0x3000x2000 3000x2000 1 -2 
+[2026-05-08 17:04:28.577, 441.10 μs] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:28.577,  60.20 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:28.577,  44.00 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 8/8 R: 6/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:28.577, 190.30 μs] [2b48] Info | wantROI size: QRectF(0,0 3000x2000) 
+[2026-05-08 17:04:28.577,  40.80 μs] [2b48] Info | Image dimensions: 3000 2000 
+[2026-05-08 17:04:28.577,  32.00 μs] [2b48] Info | Mat dimensions: 3000 2000 
+[2026-05-08 17:04:28.577,  29.60 μs] [2b48] Info | Running export proc 
+[2026-05-08 17:04:28.577, 299.70 μs] [2b48] Info | [AIE] Output ROI: (0x0x3000x2000) 
+[2026-05-08 17:04:28.577,  40.30 μs] [2b48] Info | [AIE] Input ROI: (0x0x3000x2000) 
+[2026-05-08 17:04:28.577,  36.50 μs] [2b48] Info | [AIE] Output size: (3000x2000) 
+[2026-05-08 17:04:28.577, 331.80 μs] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:28.577,  47.00 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:28.577,  40.60 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 8/8 R: 6/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:28.593,  13.10 ms] [2b48] Info | [AIE] Model: sstd Device: -2 
+[2026-05-08 17:04:28.593, 192.30 μs] [2b48] Info | [AIE] Selecting backend for device -2 from: openvino,onnx,openvino16, 
+[2026-05-08 17:04:28.593,  57.00 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 8/8 R: 6/6 X: 464 Y: 464 inSize: 3000 2000 Pad: 380 416 
+[2026-05-08 17:04:28.593,  11.78 ms] [2b48] Info | [AIE] Cache contains image. Empty: 0 
+[2026-05-08 17:04:28.593, 113.70 μs] [2b48] Info | [AIE] loadModel skipped 
+[2026-05-08 17:04:28.593,  38.10 μs] [2b48] Info | [AIE] aiLoadTime: 0 ms 
+[2026-05-08 17:04:28.625,  20.45 ms] [2b48] Info | [AIE] param1: 0.065000 
+[2026-05-08 17:04:28.625, 133.50 μs] [2b48] Info | [AIE] param2: 0.574758 
+[2026-05-08 17:04:28.625, 185.20 μs] [2b48] Info | [AIE] Updated model params 
+[2026-05-08 17:04:28.646,  18.51 ms] [2b48] Info | [AIE] Skipped 6 block(s) out of 48 block(s) 
+[2026-05-08 17:04:29.021, 375.04 ms] [2b48] Info | 1 / 45 
+[2026-05-08 17:04:29.409, 388.33 ms] [2b48] Info | 2 / 45 
+[2026-05-08 17:04:29.780, 370.34 ms] [2b48] Info | 3 / 45 
+[2026-05-08 17:04:30.149, 369.18 ms] [2b48] Info | 4 / 45 
+[2026-05-08 17:04:30.517, 368.20 ms] [2b48] Info | 5 / 45 
+[2026-05-08 17:04:30.883, 366.16 ms] [2b48] Info | 6 / 45 
+[2026-05-08 17:04:31.257, 373.91 ms] [2b48] Info | 7 / 45 
+[2026-05-08 17:04:31.630, 372.81 ms] [2b48] Info | 8 / 45 
+[2026-05-08 17:04:31.998, 368.02 ms] [2b48] Info | 9 / 45 
+[2026-05-08 17:04:32.367, 368.55 ms] [2b48] Info | 10 / 45 
+[2026-05-08 17:04:32.748, 381.73 ms] [2b48] Info | 11 / 45 
+[2026-05-08 17:04:33.125, 377.05 ms] [2b48] Info | 12 / 45 
+[2026-05-08 17:04:33.504, 379.74 ms] [2b48] Info | 13 / 45 
+[2026-05-08 17:04:33.881, 376.08 ms] [2b48] Info | 14 / 45 
+[2026-05-08 17:04:34.250, 370.16 ms] [2b48] Info | 15 / 45 
+[2026-05-08 17:04:34.621, 369.29 ms] [2b48] Info | 16 / 45 
+[2026-05-08 17:04:34.995, 375.65 ms] [2b48] Info | 17 / 45 
+[2026-05-08 17:04:35.370, 373.15 ms] [2b48] Info | 18 / 45 
+[2026-05-08 17:04:35.744, 375.03 ms] [2b48] Info | 19 / 45 
+[2026-05-08 17:04:36.119, 375.10 ms] [2b48] Info | 20 / 45 
+[2026-05-08 17:04:36.541, 421.00 ms] [2b48] Info | 21 / 45 
+[2026-05-08 17:04:36.949, 409.67 ms] [2b48] Info | 22 / 45 
+[2026-05-08 17:04:37.368, 418.15 ms] [2b48] Info | 23 / 45 
+[2026-05-08 17:04:37.787, 417.91 ms] [2b48] Info | 24 / 45 
+[2026-05-08 17:04:38.216, 430.34 ms] [2b48] Info | 25 / 45 
+[2026-05-08 17:04:38.601, 385.31 ms] [2b48] Info | 26 / 45 
+[2026-05-08 17:04:38.990, 389.16 ms] [2b48] Info | 27 / 45 
+[2026-05-08 17:04:39.407, 415.99 ms] [2b48] Info | 28 / 45 
+[2026-05-08 17:04:39.827, 420.45 ms] [2b48] Info | 29 / 45 
+[2026-05-08 17:04:40.234, 405.92 ms] [2b48] Info | 30 / 45 
+[2026-05-08 17:04:40.659, 425.56 ms] [2b48] Info | 31 / 45 
+[2026-05-08 17:04:41.038, 379.78 ms] [2b48] Info | 32 / 45 
+[2026-05-08 17:04:41.419, 379.79 ms] [2b48] Info | 33 / 45 
+[2026-05-08 17:04:41.804, 386.43 ms] [2b48] Info | 34 / 45 
+[2026-05-08 17:04:42.179, 374.83 ms] [2b48] Info | 35 / 45 
+[2026-05-08 17:04:42.564, 384.81 ms] [2b48] Info | 36 / 45 
+[2026-05-08 17:04:42.944, 378.46 ms] [2b48] Info | 37 / 45 
+[2026-05-08 17:04:43.323, 380.69 ms] [2b48] Info | 38 / 45 
+[2026-05-08 17:04:43.693, 370.56 ms] [2b48] Info | 39 / 45 
+[2026-05-08 17:04:44.072, 378.44 ms] [2b48] Info | 40 / 45 
+[2026-05-08 17:04:44.442, 368.94 ms] [2b48] Info | 41 / 45 
+[2026-05-08 17:04:44.825, 383.08 ms] [2b48] Info | 42 / 45 
+[2026-05-08 17:04:44.827,   2.17 ms] [2b48] Info | [AIE] aiProcessTime: 16220 ms 
+[2026-05-08 17:04:44.878,  51.51 ms] [2b48] Info | Generating subject mask 
+[2026-05-08 17:04:44.878, 207.10 μs] [2b48] Info | Generating auto mask for requested model: "Subject" 
+[2026-05-08 17:04:44.878,  57.00 μs] [2b48] Info | [AutoMasking] Starting to generate auto mask: "Subject" 
+[2026-05-08 17:04:44.878,  53.80 μs] [2b48] Info | [AutoMasking PROFILE] Model selected:  "Subject" "sms_new" 
+[2026-05-08 17:04:44.880,   1.81 ms] [2b48] Info | [AutoMasking] Finished running mask for model: "sms_new" 
+[2026-05-08 17:04:44.910,  29.21 ms] [2b48] Info | [AutoMasking Detection] Finished processing auto mask for "Subject" 
+[2026-05-08 17:04:44.914,   3.13 ms] [2b48] Info | [AutoMasking PROFILE] begin feathering 
+[2026-05-08 17:04:44.990,  78.55 ms] [2b48] Info | [AutoMasking PROFILE] finish feathering:  "78.388 ms" 
+[2026-05-08 17:04:45.050,  57.72 ms] [2b48] Info | [AIE] Writing input to cache 8484775111032069591 Sharpen 
+[2026-05-08 17:04:45.068,  18.81 ms] [2b48] Info | [AIE] Output ROI: (0x0x3000x2000) 
+[2026-05-08 17:04:45.068, 201.40 μs] [2b48] Info | [AIE] Input ROI: (0x0x3000x2000) 
+[2026-05-08 17:04:45.068,  43.00 μs] [2b48] Info | [AIE] Output size: (3000x2000) 
+[2026-05-08 17:04:45.068,  47.00 μs] [2b48] Info | [AIE] Start face perfecting 
+[2026-05-08 17:04:45.077,   9.61 ms] [2b48] Info | [AIE] Face Perfector Device: -1 
+[2026-05-08 17:04:45.077, 171.70 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:45.077,  85.30 μs] [2b48] Info | [AIE]  ---TBlockProc 1024x1024 C: 1/1 R: 1/1 X: 976 Y: 976 inSize: 1024 1024 Pad: 0 0 
+[2026-05-08 17:04:45.077,  40.90 μs] [2b48] Info | [AIE] Selecting backend for device -1 from: openvino,onnx, 
+[2026-05-08 17:04:45.077,  34.80 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:45.077,  35.40 μs] [2b48] Info | [AIE] TargetDevices: Selected -1 
+[2026-05-08 17:04:45.077,  32.80 μs] [2b48] Info | [AIE] [ -1:1 ] 
+[2026-05-08 17:04:45.077,  31.50 μs] [2b48] Info | [AIE] 1 instances for device -1 
+[2026-05-08 17:04:45.077,  45.90 μs] [2b48] Info | [AIE] Target Device: -1 Count: 1 
+[2026-05-08 17:04:45.077,  35.80 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfrf-v2-fp16-1024x1024-ov.tz2 
+[2026-05-08 17:04:45.157,  92.77 ms] [2b48] Info | [AIE] Network Name: Model1648 Size: 306175142 
+[2026-05-08 17:04:45.157, 111.40 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:45.157,  38.80 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:45.157,  32.60 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:45.157,  30.70 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:04:45.157,  42.10 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gfrf-v2-fp16-1024x1024-ov.tz2 is 93 
+[2026-05-08 17:04:45.157, 257.50 μs] [2b48] Info | [AIE] facePerfectorSetup: 95 ms 
+[2026-05-08 17:04:45.157,  37.60 μs] [2b48] Info | [AIE] # 0 of 1 faces inferred 
+[2026-05-08 17:04:45.186,  13.24 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:45.189,   0.00 μs] [4a04] Info | [AIE] Parameters: device = -1 total: 1 
+[2026-05-08 17:04:45.189, 177.90 μs] [4a04] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:45.189,  52.80 μs] [4a04] Info | [AIE] OpenVINO device string for -1 is CPU 
+[2026-05-08 17:04:46.284,   1.09  s] [4a04] Info | [AIE]  - Loaded with targetDevice -1 
+[2026-05-08 17:04:46.284, 111.60 μs] [4a04] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:48.009,   2.83  s] [2b48] Info | [AIE] perfectTime: 2827 ms 
+[2026-05-08 17:04:48.020,  11.74 ms] [2b48] Info | 43 / 45 
+[2026-05-08 17:04:48.023, 646.60 μs] [2b48] Info | [AIE] Face Masker Device: 0 
+[2026-05-08 17:04:48.023,  74.50 μs] [2b48] Info | [AIE] Selecting backend for device 0 from: openvino,onnx, 
+[2026-05-08 17:04:48.023,  47.20 μs] [2b48] Info | [AIE]  ---TBlockProc 512x512 C: 1/1 R: 1/1 X: 464 Y: 464 inSize: 512 512 Pad: 0 0 
+[2026-05-08 17:04:48.023,  41.30 μs] [2b48] Info | [AIE] Selecting backend for device 0 from: openvino,onnx, 
+[2026-05-08 17:04:48.023,  34.90 μs] [2b48] Info | [AIE] Loading openvino backend 0011 
+[2026-05-08 17:04:48.023,  37.40 μs] [2b48] Info | [AIE] TargetDevices: Selected 0 
+[2026-05-08 17:04:48.023,  34.70 μs] [2b48] Info | [AIE] [ 0:1 ] 
+[2026-05-08 17:04:48.023,  32.90 μs] [2b48] Info | [AIE] 1 instances for device 0 
+[2026-05-08 17:04:48.023,  43.70 μs] [2b48] Info | [AIE] Target Device: 0 Count: 1 
+[2026-05-08 17:04:48.023,  35.80 μs] [2b48] Info | [AIE] Loading default model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gffm-v1-fp32-512x512-ov.tz2 
+[2026-05-08 17:04:48.036,  20.62 ms] [2b48] Info | [AIE] Network Name: Model1920 Size: 52663892 
+[2026-05-08 17:04:48.036, 107.60 μs] [2b48] Info | [AIE] Inputs: 1 
+[2026-05-08 17:04:48.036,  39.30 μs] [2b48] Info | [AIE] netInput 
+[2026-05-08 17:04:48.036,  33.30 μs] [2b48] Info | [AIE] Outputs: 1 
+[2026-05-08 17:04:48.036,  31.90 μs] [2b48] Info | [AIE] netOutput 
+[2026-05-08 17:04:48.036,  38.60 μs] [2b48] Info | [AIE] Loading time for model file C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\gffm-v1-fp32-512x512-ov.tz2 is 21 
+[2026-05-08 17:04:48.036, 260.50 μs] [2b48] Info | [AIE] faceMaskerSetup: 22 ms 
+[2026-05-08 17:04:48.036,   4.00 ms] [2b48] Info | [AIE] Skipped 0 block(s) out of 1 block(s) 
+[2026-05-08 17:04:48.050,   0.00 μs] [36f4] Info | [AIE] Parameters: device = 0 total: 1 
+[2026-05-08 17:04:48.050, 125.40 μs] [36f4] Info | [AIE] OV device selection: CPU 
+[2026-05-08 17:04:48.050,  45.00 μs] [36f4] Info | [AIE] OpenVINO device string for 0 is CPU 
+[2026-05-08 17:04:48.204, 158.28 ms] [36f4] Info | [AIE]  - Loaded with targetDevice 0 
+[2026-05-08 17:04:48.204, 123.90 μs] [36f4] Info | [AIE] ExeNetwork optimal requests: 1 
+[2026-05-08 17:04:48.367, 319.02 ms] [2b48] Info | [AIE] maskTime: 320 ms 
+[2026-05-08 17:04:48.540, 177.58 ms] [2b48] Info | [AIE] Finish face perfecting 
+[2026-05-08 17:04:48.556,  14.73 ms] [2b48] Info | [AIE] Writing input to cache 8315363109955857795 Face Recovery 
+[2026-05-08 17:04:48.588,  32.60 ms] [2b48] Info | [AIE] Start face blending 0 pass 0 
+[2026-05-08 17:04:48.588, 164.70 μs] [2b48] Info | [AIE] Finish face blending pass 0 
+[2026-05-08 17:04:48.588,   2.27 ms] [2b48] Info | [AIE] Start face blending 1 pass 1 
+[2026-05-08 17:04:48.588, 157.80 μs] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] starting process 
+[2026-05-08 17:04:48.698, 104.49 ms] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] mid process 
+[2026-05-08 17:04:48.716,  16.93 ms] [2b48] Info | [AIE] [ImageFaceColorCorrector PROFILE] finished process 
+[2026-05-08 17:04:48.734,  18.11 ms] [2b48] Info | [AIE] [ImageFaceBlender PROFILE] Face blender model initialized 
+[2026-05-08 17:04:48.740,   5.34 ms] [2b48] Info | [AIE] Using face bounds (1455, 142, 1055, 1055) 
+[2026-05-08 17:04:48.745,   5.32 ms] [2b48] Info | [AIE] Finished transforming faces: 6 ms 
+[2026-05-08 17:04:48.751,   7.81 ms] [2b48] Info | [AIE] opacity: 0.280000 
+[2026-05-08 17:04:48.769,  15.83 ms] [2b48] Info | [AIE] [ImageFaceBlender PROFILE] Face blending finished 
+[2026-05-08 17:04:48.769, 103.90 μs] [2b48] Info | 44 / 45 
+[2026-05-08 17:04:48.769,  67.10 μs] [2b48] Info | [AIE] Finish face blending pass 1 
+[2026-05-08 17:04:48.769, 592.80 μs] [2b48] Info | Converting cv::Mat to ImageData 
+[2026-05-08 17:04:48.769,  52.00 μs] [2b48] Info | Getting alpha mat: QRect(0,0 3000x2000) 3000 2000 
+[2026-05-08 17:04:48.769,  34.20 μs] [2b48] Info | Converted cv::Mat to ImageData 
+[2026-05-08 17:04:48.769,  41.70 μs] [2b48] Info | Proc image finished 
+[2026-05-08 17:04:48.771,  20.20  s] [f28] Info | Saving image:
+Engine: 'Adobe Photoshop Image'
+Input: 'Adobe Photoshop Image'
+Output: './Adobe Photoshop Image'  | (qrc:/imageenhance/service/ImageExporter.qml:463, handleProcResult)
+[2026-05-08 17:04:48.775,   5.07 ms] [f28] Info | [EXPORT] Done exporting  | (qrc:/imageenhance/service/ImageExporter.qml:350, continueExport)
+[2026-05-08 17:04:48.880, 103.97 ms] [f28] Info | Saving settings to PS 
+[2026-05-08 17:04:48.880, 738.60 μs] [f28] Warn | Sharpen settings too large, defaulting to {}. Minimized settings: QMap((enabled, QVariant(bool, true))(index, QVariant(qlonglong, 0))(locked, QVariant(bool, false))(model, QVariant(QString, Sharpen Standard v2))(params, QVariant(QVariantMap, QMap((compression_animals, QVariant(double, 0.517172))(compression_lensblur, QVariant(double, 0.517172))(compression_lensblurv2, QVariant(double, 0.517172))(compression_natural, QVariant(double, 0.517172))(compression_portrait, QVariant(double, 0.517172))(compression_refocus, QVariant(double, 0.517172))(compression_standard, QVariant(double, 0.517172))(compression_standardv2, QVariant(double, 0.517172))(compression_strong, QVariant(double, 0.517172))(flattened, QVariant(bool, false))(isLens, QVariant(bool, false))(param1_animals, QVariant(double, 0.336528))(param1_lensblur, QVariant(double, 0.336528))(param1_lensblurv2, QVariant(double, 0.065))(param1_natural, QVariant(double, 0.336528))(param1_portrait, QVariant(double, 0))(param1_refocus, QVariant(double, 0.336528))(param1_standard, QVariant(double, 0.336528))(param1_standardv2, QVariant(double, 0.065))(param1_strong, QVariant(double, 0.05))(param2_animals, QVariant(double, 0.303251))(param2_lensblur, QVariant(double, 0.12116))(param2_lensblurv2, QVariant(double, 0.758128))(param2_natural, QVariant(double, 0.12116))(param2_portrait, QVariant(double, 0.250182))(param2_refocus, QVariant(double, 0.12116))(param2_standard, QVariant(double, 0.352006))(param2_standardv2, QVariant(double, 0.758128))(param2_strong, QVariant(double, 0.442122))(scale, QVariant(double, 1))(strength_animals, QVariant(double, 1))(strength_lensblur, QVariant(double, 1))(strength_lensblurv2, QVariant(double, 1))(strength_natural, QVariant(double, 1))(strength_portrait, QVariant(double, 0.8))(strength_refocus, QVariant(double, 1))(strength_standard, QVariant(double, 1))(strength_standardv2, QVariant(double, 1))(strength_strong, QVariant(double, 1)))))(subjectSettings, QVariant(QVariantMap, QMap((feathering, QVariant(int, 1))(model, QVariant(QString, Subject))(originalSubjectPath, QVariant(QString, ))(sensitivity, QVariant(double, 0.5))(strokes, QVariant(QVariantList, QList())))))) (1474) 
+[2026-05-08 17:04:48.888,   8.39 ms] [f28] Info | [EXPORT] All images exported  | (qrc:/imageenhance/service/ImageExporter.qml:223, checkIfDone)
+[2026-05-08 17:04:48.888, 894.20 μs] [f28] Info | [Window] Window rect (logical): QRect(239,170 1296x751) dpr: 1 
+[2026-05-08 17:04:48.932,  41.22 ms] [f28] Info | Exiting app: 0 
+[2026-05-08 17:04:48.932, 283.90 μs] [f28] Info | Stopping TIntercomWorker thread 
+[2026-05-08 17:04:48.934,   2.00 ms] [f28] Info | TIntercomWorker worker thread stopped 
+[2026-05-08 17:04:48.937,   3.25 ms] [f28] Warn | qrc:/imageenhance/main.qml:134: TypeError: Cannot read property 'theme' of null  | (qrc:/imageenhance/main.qml:134)
+[2026-05-08 17:04:48.990,  53.38 ms] [f28] Info | Stopping TEngineWorker thread 
+[2026-05-08 17:04:48.991, 155.40 μs] [f28] Info | Worker cancel requested 
+[2026-05-08 17:04:48.991,  42.20 μs] [f28] Info | Cancelling processing 
