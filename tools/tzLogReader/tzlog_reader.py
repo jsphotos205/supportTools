@@ -429,7 +429,7 @@ def process_issue_logs_from_path(issue_log_path: Path, notable_errors: str = "No
 
     report_blocks.append(format_notable_error_report(notable_errors))
 
-    return ("\n" + ("-" * 72) + "\n").join(report_blocks)
+    return "\n\n".join(report_blocks)
 
 
 def run_gui() -> None:
@@ -744,7 +744,7 @@ def main() -> None:
     notable_errors = ask_for_notable_error_messages()
     report_blocks.append(format_notable_error_report(notable_errors))
 
-    report = ("\n" + ("-" * 72) + "\n").join(report_blocks)
+    report = "\n\n".join(report_blocks)
     print(report)
 
     if copy_to_clipboard(report):

@@ -153,10 +153,3 @@ If `(base)` also appears:
 ```bash
 conda deactivate
 ```
-
-
-# **tzlog_reader.py**
-
-Current support utility for parsing Topaz `.tzlog` files.
-
-Location:
