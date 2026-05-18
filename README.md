@@ -21,7 +21,7 @@ It can:
 - find `.tzlog` files inside extracted folders
 - copy reports to the clipboard on macOS and Windows
 - save report text files next to the processed logs
-- keep a local bank of repeated notable error messages
+- 
 
 ## What It Collects
 

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import datetime
 import json
 import re
 import subprocess
@@ -296,15 +297,70 @@ def first_user_email_from_parsed(parsed_logs: list[dict[str, Any]]) -> str | Non
     return None
 
 
+# === Timestamp and app version helpers for merging system info ===
+
+def timestamp_from_log_filename(file_path: Path) -> datetime | None:
+    """Extract a timestamp from common tzlog filename formats, if present."""
+    name = file_path.name
+    patterns = [
+        r"(\d{4})[-_](\d{2})[-_](\d{2})[-_T ](\d{2})[-_:.](\d{2})[-_:.](\d{2})",
+        r"(\d{4})(\d{2})(\d{2})[-_T ]?(\d{2})(\d{2})(\d{2})",
+    ]
+
+    for pattern in patterns:
+        match = re.search(pattern, name)
+        if not match:
+            continue
+        try:
+            year, month, day, hour, minute, second = (int(part) for part in match.groups())
+            return datetime(year, month, day, hour, minute, second)
+        except ValueError:
+            continue
+
+    return None
+
+
+def log_sort_datetime(file_path: Path) -> datetime:
+    """Return the best available datetime for comparing logs by recency."""
+    filename_timestamp = timestamp_from_log_filename(file_path)
+    if filename_timestamp is not None:
+        return filename_timestamp
+
+    try:
+        return datetime.fromtimestamp(file_path.stat().st_mtime)
+    except OSError:
+        return datetime.min
+
+
+def most_recent_app_version_from_parsed(parsed_logs: list[dict[str, Any]]) -> str | None:
+    """Return the Topaz Photo version from the most recent log that contains one."""
+    logs_with_versions = [entry for entry in parsed_logs if entry.get("app_version")]
+    if not logs_with_versions:
+        return None
+
+    newest_entry = max(
+        logs_with_versions,
+        key=lambda entry: log_sort_datetime(Path(entry["file"])),
+    )
+    return str(newest_entry["app_version"]).strip()
+
+
 def merge_system_info_entry_for_report(parsed_logs: list[dict[str, Any]]) -> dict[str, Any] | None:
-    """Pick the primary system-info log and attach user email from any log in the same batch if missing."""
+    """Pick the primary system-info log and attach newest app version plus user email from the batch."""
     entry = find_first_log_with_system_info(parsed_logs)
     if entry is None:
         return None
+
+    merged_entry = dict(entry)
     merged_email = entry.get("user_email") or first_user_email_from_parsed(parsed_logs)
-    if merged_email == entry.get("user_email"):
-        return entry
-    return {**entry, "user_email": merged_email}
+    newest_app_version = most_recent_app_version_from_parsed(parsed_logs)
+
+    if merged_email:
+        merged_entry["user_email"] = merged_email
+    if newest_app_version:
+        merged_entry["app_version"] = newest_app_version
+
+    return merged_entry
 
 
 def copy_to_clipboard(text: str) -> bool:
