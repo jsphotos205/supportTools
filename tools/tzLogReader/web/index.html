@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Topaz tzlog Reader</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>Topaz tzlog Reader</h1>
+        <p>Parse support downloads, review likely error patterns, and build a report.</p>
+      </div>
+      <div id="status" class="status">Ready</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="section-title">
+          <span class="step">1</span>
+          <h2>Support Download</h2>
+        </div>
+        <div class="path-row">
+          <input id="supportPath" type="text" placeholder="/path/to/support folder or .tar/.zip archive" />
+          <button id="runSystemInfo" class="primary">Run Step 1</button>
+        </div>
+        <div class="quick-row">
+          <button id="useTestArchive">Use Test Archive</button>
+          <button id="clearAll">Clear</button>
+        </div>
+        <div class="split">
+          <div>
+            <h3>Discovered Logs</h3>
+            <div id="logList" class="list empty">No logs loaded yet.</div>
+          </div>
+          <div>
+            <h3>System Information</h3>
+            <pre id="systemReport" class="report small">Run Step 1 to populate system information.</pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <span class="step">2</span>
+          <h2>Issue Log</h2>
+        </div>
+        <div class="path-row">
+          <input id="issuePath" type="text" placeholder="/path/to issue .tzlog or folder" />
+          <button id="scanErrors" class="primary">Scan for Errors</button>
+        </div>
+        <div class="review-actions">
+          <button id="addSelected">Add Selected to Step 3</button>
+          <button id="recordSelected">Record Selected Patterns</button>
+          <button id="selectAllCandidates">Select All</button>
+        </div>
+        <div id="candidateList" class="candidate-list empty">Scan an issue log to review candidate patterns.</div>
+      </section>
+
+      <section class="panel">
+        <div class="section-title">
+          <span class="step">3</span>
+          <h2>Report Patterns</h2>
+        </div>
+        <textarea id="notablePatterns" placeholder="Reviewed patterns selected for the support report"></textarea>
+        <div class="review-actions">
+          <label class="check">
+            <input id="recordOnBuild" type="checkbox" />
+            Record Step 3 patterns when building report
+          </label>
+          <button id="buildReport" class="primary">Build Report</button>
+          <button id="copyReport">Copy Report</button>
+        </div>
+        <pre id="finalReport" class="report">Build a report to see output here.</pre>
+      </section>
+
+      <aside class="panel bank-panel">
+        <div class="section-title">
+          <span class="step">B</span>
+          <h2>Error Pattern Bank</h2>
+        </div>
+        <input id="bankFilter" type="text" placeholder="Filter saved patterns" />
+        <div id="bankList" class="list empty">No bank entries loaded yet.</div>
+      </aside>
+    </main>
+
+    <dialog id="logDialog">
+      <div class="dialog-header">
+        <strong id="logDialogTitle">Log Preview</strong>
+        <button id="closeLogDialog">Close</button>
+      </div>
+      <pre id="logPreview" class="log-preview"></pre>
+    </dialog>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

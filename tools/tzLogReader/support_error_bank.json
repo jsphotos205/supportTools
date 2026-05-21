@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "entries": {
+    "6212e9f1c53f33b8aa3a0c63246faa5f8496fbbd1694d52561eb7cc005b15453": {
+      "pattern_text": "AI Engine Runtime Exception: Could not run model",
+      "count": 2,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 2
+      }
+    },
+    "67a46ac63ae1693d410ef57ccfb7ada3ca7a62b48f9c8eb0a47137435e906a55": {
+      "pattern_text": "[AIE] Failed to open prompt data in /<PATH>/Contents/MacOS/../Resources/models/default_prompt.bin",
+      "count": 1,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 1
+      }
+    },
+    "135b1f4cc8499342eaf979a9707d6a4fe7ffc2eff43d81d3c6a91d639aa76e79": {
+      "pattern_text": "AI Engine Load Exception: Could not load model",
+      "count": 3,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 3
+      }
+    },
+    "9d879420544742271a68b69cd5a20e015f444f260cfdd10040d9a46c9b7a0e9d": {
+      "pattern_text": "[AIE] Failed to open C:/ProgramData/Topaz Labs LLC/Topaz Photo/models/cloud_config.json",
+      "count": 1,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 1
+      }
+    },
+    "5d82004749d9cb17684ba8551bea317233f64edf9f6a446dde8ec7b234a6bc5c": {
+      "pattern_text": "[AIE] Model sdi_unet_nogpu not found in Denoise Max Super Focus V3 Wonder All Wonder V2 Wonder V3 apnb claa claae daclip dnt_beta draw_linear drw_native drw_native_mac drw_standard drw_standard_mac dswn_dec dswn_dit dswn_enc expog expoi gfclc gffm gfg gfp-l gfp-s gfpf gfrf gfrfn gfrg ggi ggn ggn_ap ggn_noee ggnv2 ghq ghq_noee ghqv2 ghqv2_ldn ghqv3 ghqv3_cache gmp iisa iri irwn_dec irwn_dit irwn_enc isoa isob lensblur liting_det lmx noise_det s_mask_l_flexible sam_decode sam_encode sddustdec sddustdec-gpu-mac sddustenc sddustenc-gpu-mac sddustunet sddustunet-gpu-mac sdi_dec sdi_enc sdi_imdn sdi_unet slb sll slsp slsp_ap smp_flexible sms_new spfcdec spfcdit spfcenc ssddec0_0 ssddec0_0-gpu-mac ssddec0_5 ssddec0_5-gpu-mac ssddec1_0 ssddec1_0-gpu-mac ssdenc-sharpen ssdenc-sharpen-gpu-mac ssdunet-sharpen ssdunet-sharpen-gpu-mac sstd sstd_ahres sstd_phres sstg stdmax tpn tpn_900 tpn_900_nogpu tpn_nogpu trf trfn txtdtx wbc",
+      "count": 1,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 1
+      }
+    },
+    "7873a61ecd587cf47fc023ef9d80ce1f2f65d16d1a6b6f1856b7ef3ad732e22f": {
+      "pattern_text": "[AIE] [Inpaint] AIEngine setup failed for sdi_unet",
+      "count": 1,
+      "first_seen": "2026-05-21",
+      "last_seen": "2026-05-21",
+      "seen_by_date": {
+        "2026-05-21": 1
+      }
+    }
+  }
+}
