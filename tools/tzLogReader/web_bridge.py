@@ -13,6 +13,8 @@ from contextlib import redirect_stdout
 import error_message_bank as error_bank
 from error_scanner import scan_path_for_error_candidates
 from log_parser import (
+    build_log_archive_from_path,
+    format_session_scan_report,
     process_issue_logs_from_path,
     process_system_info_from_path,
     report_destination_dirs,
@@ -85,6 +87,17 @@ def handle_scan(payload: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def handle_session_scan(payload: dict[str, Any]) -> dict[str, Any]:
+    path = path_from_user(str(payload.get("path", "")))
+    if not path.exists():
+        raise FileNotFoundError(f"Path not found: {path}")
+    archive = build_log_archive_from_path(path)
+    return {
+        "archive": archive.to_dict(),
+        "report": format_session_scan_report(archive),
+    }
+
+
 def handle_bank_list(payload: dict[str, Any]) -> dict[str, Any]:
     query = str(payload.get("query", "")).strip()
     entries = error_bank.search_entries(query, limit=80) if query else error_bank.list_entries_sorted(limit=80)
@@ -138,6 +151,7 @@ def handle_read_log(payload: dict[str, Any]) -> dict[str, Any]:
 HANDLERS = {
     "systemInfo": handle_system_info,
     "scan": handle_scan,
+    "sessionScan": handle_session_scan,
     "bankList": handle_bank_list,
     "bankRecord": handle_bank_record,
     "buildReport": handle_build_report,

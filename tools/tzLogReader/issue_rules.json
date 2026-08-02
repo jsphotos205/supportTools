@@ -1,0 +1,184 @@
+[
+  {
+    "id": "model_download_failure",
+    "severity": "high",
+    "match_any": [
+      "could not connect to download model",
+      "model not found",
+      "error loading model"
+    ],
+    "category": "Model Download",
+    "recommended_data": [
+      "full logs",
+      "system profile",
+      "model name",
+      "network security software"
+    ]
+  },
+  {
+    "id": "ai_device_not_detected",
+    "severity": "high",
+    "match_any": [
+      "device not detected",
+      "gpu not detected",
+      "ai device not found",
+      "no compatible device"
+    ],
+    "category": "AI Device Detection",
+    "recommended_data": [
+      "full logs",
+      "system profile",
+      "gpu driver version",
+      "device manager details"
+    ]
+  },
+  {
+    "id": "out_of_memory",
+    "severity": "high",
+    "match_any": [
+      "out of memory",
+      "oom",
+      "memory allocation failure"
+    ],
+    "category": "Out of Memory",
+    "recommended_data": [
+      "full logs",
+      "system profile",
+      "memory usage snapshot",
+      "image size"
+    ]
+  },
+  {
+    "id": "model_reload_loop",
+    "severity": "medium",
+    "match_any": [
+      "reload loop",
+      "restarting model",
+      "model setup failed and retrying"
+    ],
+    "category": "Model Reload Loop",
+    "recommended_data": [
+      "full logs",
+      "model name",
+      "session timeline",
+      "recent system changes"
+    ]
+  },
+  {
+    "id": "export_permission_failure",
+    "severity": "medium",
+    "match_any": [
+      "permission denied",
+      "access denied",
+      "export permission",
+      "cannot write output"
+    ],
+    "category": "Export Permission",
+    "recommended_data": [
+      "full logs",
+      "output folder path",
+      "folder permissions",
+      "user account details"
+    ]
+  },
+  {
+    "id": "unsupported_raw_pipeline",
+    "severity": "medium",
+    "match_any": [
+      "unsupported raw pipeline",
+      "raw file not supported",
+      "unsupported file format"
+    ],
+    "category": "Unsupported RAW Pipeline",
+    "recommended_data": [
+      "full logs",
+      "raw file metadata",
+      "pipeline version",
+      "source image format"
+    ]
+  },
+  {
+    "id": "plugin_external_editor_mismatch",
+    "severity": "medium",
+    "match_any": [
+      "plugin mismatch",
+      "external editor mismatch",
+      "unsupported external editor",
+      "plugin version conflict"
+    ],
+    "category": "Plugin / External Editor Mismatch",
+    "recommended_data": [
+      "full logs",
+      "plugin details",
+      "editor version",
+      "host app version"
+    ]
+  },
+  {
+    "id": "authentication_failure",
+    "severity": "high",
+    "match_any": [
+      "authentication failed",
+      "login failed",
+      "token invalid",
+      "license activation failed"
+    ],
+    "category": "Authentication Failure",
+    "recommended_data": [
+      "full logs",
+      "account email",
+      "activation details",
+      "security software"
+    ]
+  },
+  {
+    "id": "cloud_upload_download_failure",
+    "severity": "medium",
+    "match_any": [
+      "cloud upload failed",
+      "cloud download failed",
+      "upload failed",
+      "download failed"
+    ],
+    "category": "Cloud Upload / Download",
+    "recommended_data": [
+      "full logs",
+      "network profile",
+      "cloud service name",
+      "proxy / security software"
+    ]
+  },
+  {
+    "id": "detecting_subject_hang",
+    "severity": "medium",
+    "match_any": [
+      "detecting subject",
+      "subject detection hang",
+      "subject detection stalled"
+    ],
+    "category": "Detecting Subject Hang",
+    "recommended_data": [
+      "full logs",
+      "image content",
+      "subject detection settings",
+      "recent workflow changes"
+    ]
+  },
+  {
+    "id": "app_exit_during_processing",
+    "severity": "high",
+    "match_any": [
+      "application exited during processing",
+      "app exit during processing",
+      "process terminated",
+      "abrupt exit"
+    ],
+    "category": "App Exit During Processing",
+    "recommended_data": [
+      "full logs",
+      "crashpad session id",
+      "last processing stage",
+      "recent crash evidence"
+    ]
+  }
+]

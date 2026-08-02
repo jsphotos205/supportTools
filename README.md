@@ -53,6 +53,10 @@ cd tools/tzLogReader
 npm run start
 ```
 
+If your environment exposes Python as `python` instead of `python3`, set
+`PYTHON=python` before starting the server. You can also provide a launcher
+command with arguments such as `PYTHON="py -3"` or a quoted full path.
+
 Then open:
 
 ```text
@@ -123,6 +127,33 @@ JSON output is available:
 python tools/tzLogReader/tzlog_reader.py path/to/logs --json
 ```
 
+Multi-log session scanning is available:
+
+```bash
+python tools/tzLogReader/tzlog_reader.py path/to/support-folder-or-archive --session-scan
+```
+
+This groups discovered `.tzlog` files into launch sessions, sorts them
+chronologically, and assigns each session a typed status so the same engine can
+be reused by CLI, web, and downstream automation workflows.
+
+The session engine also records explicit termination analysis, distinguishing
+confirmed crash evidence, probable abrupt termination, forced quit,
+incomplete log capture, and graceful shutdown so support workflows can avoid
+mislabeling every incomplete log as a crash.
+
+The engine also supports an external, rule-driven issue classifier. Rules are
+stored in the data file below so Support can tune classifications without
+changing parser code:
+
+```text
+tools/tzLogReader/issue_rules.json
+```
+
+The classifier loads those rules and attaches machine-readable issue matches to
+session results, including a category, severity, and recommended follow-up
+information.
+
 View saved error-pattern trends:
 
 ```bash
@@ -148,7 +179,10 @@ tools/tzLogReader/
   gui_app.py             Tkinter desktop GUI
   server.js              local Node web server
   web_bridge.py          JSON bridge between the web UI and Python parser
-  log_parser.py          archive extraction, tzlog parsing, report formatting
+  analysis_model.py      typed internal analysis model for sessions and archives
+  log_parser.py          archive extraction, typed tzlog parsing, report formatting
+  issue_classifier.py    rule-based session issue classification layer
+  issue_rules.json       external support-facing issue rule definitions
   error_scanner.py       notable error candidate detection
   error_message_bank.py  local normalized pattern bank
   web/                   browser UI assets
