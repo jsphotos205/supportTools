@@ -196,6 +196,14 @@ h3 {
   margin-top: 14px;
 }
 
+.session-scan-block {
+  margin-top: 14px;
+}
+
+.section-title.compact {
+  margin-bottom: 10px;
+}
+
 .list,
 .candidate-list {
   min-height: 148px;

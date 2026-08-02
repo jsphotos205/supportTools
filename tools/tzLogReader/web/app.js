@@ -2,6 +2,7 @@ const state = {
   supportPath: "",
   issuePath: "",
   systemReport: "",
+  sessionReport: "",
   extractedDirs: [],
   candidates: [],
   selectedCandidateIndexes: new Set(),
@@ -16,6 +17,8 @@ const els = {
   clearAll: document.querySelector("#clearAll"),
   logList: document.querySelector("#logList"),
   systemReport: document.querySelector("#systemReport"),
+  runSessionScan: document.querySelector("#runSessionScan"),
+  sessionReport: document.querySelector("#sessionReport"),
   scanErrors: document.querySelector("#scanErrors"),
   candidateList: document.querySelector("#candidateList"),
   addSelected: document.querySelector("#addSelected"),
@@ -226,6 +229,18 @@ els.runSystemInfo.addEventListener("click", async () => {
   }
 });
 
+els.runSessionScan.addEventListener("click", async () => {
+  try {
+    const path = els.supportPath.value.trim() || state.supportPath;
+    const result = await api("sessionScan", { path });
+    state.sessionReport = result.report;
+    els.sessionReport.textContent = result.report;
+    setStatus(`Session scan complete with ${result.archive.application_sessions.length} grouped session(s).`);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
 els.scanErrors.addEventListener("click", async () => {
   try {
     const path = els.issuePath.value.trim();
@@ -308,12 +323,14 @@ els.clearAll.addEventListener("click", () => {
   state.supportPath = "";
   state.issuePath = "";
   state.systemReport = "";
+  state.sessionReport = "";
   state.extractedDirs = [];
   state.candidates = [];
   state.selectedCandidateIndexes.clear();
   els.supportPath.value = "";
   els.issuePath.value = "";
   els.systemReport.textContent = "Run Step 1 to populate system information.";
+  els.sessionReport.textContent = "Run a session scan to classify launch sessions and their issue patterns.";
   els.notablePatterns.value = "";
   els.finalReport.textContent = "Build a report to see output here.";
   renderLogs([]);

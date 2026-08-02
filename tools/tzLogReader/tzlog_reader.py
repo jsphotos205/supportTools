@@ -12,11 +12,13 @@ import sys
 import error_message_bank as error_bank
 from gui_app import run_gui
 from log_parser import (
+    build_log_archive_from_path,
     discover_log_files,
     extract_archive_files,
     format_issue_report,
     format_notable_error_report,
     format_notable_errors_for_report,
+    format_session_scan_report,
     format_system_info_report,
     get_system_info_search_paths,
     merge_system_info_entry_for_report,
@@ -76,6 +78,11 @@ def main() -> None:
     )
     parser.add_argument("--json", action="store_true", help="Output results as JSON instead of text report.")
     parser.add_argument(
+        "--session-scan",
+        action="store_true",
+        help="Group discovered .tzlog files into sessions and print a structured summary.",
+    )
+    parser.add_argument(
         "--error-bank-stats",
         action="store_true",
         help="Print cached error patterns sorted by frequency and exit.",
@@ -93,6 +100,14 @@ def main() -> None:
         return
 
     input_path = Path(args.path).expanduser().resolve()
+    if args.session_scan:
+        archive = build_log_archive_from_path(input_path)
+        if args.json:
+            print(json.dumps(archive.to_dict(), indent=2))
+        else:
+            print(format_session_scan_report(archive))
+        return
+
     extracted_dirs = extract_archive_files(input_path)
     if extracted_dirs:
         print("\nArchive extraction complete. Search paths:")
@@ -135,8 +150,8 @@ def main() -> None:
     parsed_issue_logs = [parse_tzlog(file_path) for file_path in issue_log_files]
     if args.json:
         output = {
-            "system_information": system_info_entry,
-            "issue_logs": parsed_issue_logs,
+            "system_information": system_info_entry.to_dict() if system_info_entry else None,
+            "issue_logs": [entry.to_dict() for entry in parsed_issue_logs],
         }
         print(json.dumps(output, indent=2))
         return

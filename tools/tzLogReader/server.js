@@ -7,6 +7,55 @@ const PORT = Number(process.env.PORT || 8765);
 const ROOT = process.cwd();
 const PUBLIC_DIR = join(ROOT, "web");
 
+function parseCommandString(command) {
+  const parts = [];
+  let current = "";
+  let quote = "";
+
+  for (const character of command) {
+    if (quote) {
+      if (character === quote) {
+        quote = "";
+      } else {
+        current += character;
+      }
+      continue;
+    }
+
+    if (character === '"' || character === "'") {
+      quote = character;
+      continue;
+    }
+
+    if (character === " " || character === "\t") {
+      if (current) {
+        parts.push(current);
+        current = "";
+      }
+      continue;
+    }
+
+    current += character;
+  }
+
+  if (current) {
+    parts.push(current);
+  }
+
+  return parts;
+}
+
+function resolvePythonCommand() {
+  const configured = process.env.PYTHON || process.env.PYTHON_BIN;
+  if (configured && configured.trim()) {
+    const [command, ...args] = parseCommandString(configured.trim());
+    if (command) {
+      return [command, ...args];
+    }
+  }
+  return process.platform === "win32" ? ["python"] : ["python3"];
+}
+
 const MIME_TYPES = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -37,7 +86,8 @@ function readRequestBody(req) {
 
 function runPythonBridge(payload) {
   return new Promise((resolve, reject) => {
-    const child = spawn("python3", ["web_bridge.py"], { cwd: ROOT, stdio: ["pipe", "pipe", "pipe"] });
+    const [pythonExecutable, ...pythonArgs] = resolvePythonCommand();
+    const child = spawn(pythonExecutable, [...pythonArgs, "web_bridge.py"], { cwd: ROOT, stdio: ["pipe", "pipe", "pipe"] });
     let stdout = "";
     let stderr = "";
     child.stdout.on("data", (chunk) => {
