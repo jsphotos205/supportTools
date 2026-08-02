@@ -3,11 +3,13 @@
   "entries": {
     "6212e9f1c53f33b8aa3a0c63246faa5f8496fbbd1694d52561eb7cc005b15453": {
       "pattern_text": "AI Engine Runtime Exception: Could not run model",
-      "count": 2,
+      "count": 5,
       "first_seen": "2026-05-21",
-      "last_seen": "2026-05-21",
+      "last_seen": "2026-08-02",
       "seen_by_date": {
-        "2026-05-21": 2
+        "2026-05-21": 2,
+        "2026-07-26": 2,
+        "2026-08-02": 1
       }
     },
     "67a46ac63ae1693d410ef57ccfb7ada3ca7a62b48f9c8eb0a47137435e906a55": {
@@ -53,6 +55,168 @@
       "last_seen": "2026-05-21",
       "seen_by_date": {
         "2026-05-21": 1
+      }
+    },
+    "f4405055da49ef10a6362dd64e31e4008bbbc9409596e3f5cdd6d5d93df65079": {
+      "pattern_text": "Model download failed: \"sstd-v2_1-fp16-512x512-mlc.tz\" HTTP status: <NUM>",
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "seen_by_date": {
+        "2026-07-26": 2
+      }
+    },
+    "744641aa07ae1df87b304f25b3fbdd5d9fc44fa650a0242500829cfa75608a37": {
+      "pattern_text": "[AIE] Unable to create or load model of type coreml from path sstd-v2_1-fp16-512x512-mlc.tz",
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "seen_by_date": {
+        "2026-07-26": 2
+      }
+    },
+    "3abc7ebd32af8d49550a0d787e42c976aec167c5697774897115422286163dfb": {
+      "pattern_text": "[AIE] Loading default error reading file: /<PATH>/Contents/MacOS/../Resources/models/sstd-v2_1-fp16-512x512-mlc.tz",
+      "count": 2,
+      "first_seen": "2026-07-26",
+      "last_seen": "2026-07-26",
+      "seen_by_date": {
+        "2026-07-26": 2
+      }
+    },
+    "2b8637979b7744883173e840481e10f926dbafcfaab4d04c14bc48bdda48104e": {
+      "pattern_text": "[AIE] Loading default error reading file: C:/ProgramData/Topaz Labs LLC/Topaz Photo/models\\s_mask_l_flexible-v2-fp16-320x320-rev2-ox.tz2",
+      "count": 1,
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-07-27",
+      "seen_by_date": {
+        "2026-07-27": 1
+      }
+    },
+    "183bed294a9367aa7de3023a1d1ef7be90602acd0897c303559e5265ef8ed31c": {
+      "pattern_text": "OpenCV Exception -<NUM> <NUM> <= roi.x && <NUM> <= roi.width && roi.x + roi.width <= m.cols && <NUM> <= roi.y && <NUM> <= roi.height && roi.y + roi.height <= m.rows",
+      "count": 1,
+      "first_seen": "2026-08-01",
+      "last_seen": "2026-08-01",
+      "seen_by_date": {
+        "2026-08-01": 1
+      }
+    },
+    "77fc30d8d84b8ecf3ed700b526f038c310fd0a4b0771518b4d84eff8f326aea1": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: FileNotFoundError: model file not found: blob.aaeb9f32c8b64dfbaa8eb1b41282b88c",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "c84e0ed9ada636558eec87a5541bba756703669e326196bd005bae09b07deb12": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: WARNING:topserving.dpe8bow3p5bd:Error while process_message with task_id: taskl-8f8e9af119784939b1b6f135c4f7eb21",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "6a7712621a6d4c4f0d538dfb9bf06f2a3be91181b976ef28a58e450cffff32e2": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: WARNING:topserving.dpe8bow3p5bd:Error while process_message with task_id: taskl-8684de156d60414486c006820a7364ce",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "57766ebba19014765bb984d00d5f3fe858100962e094dd2dca11c527063cde0b": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: INFO:topserving.dpe8bow3p5bd:Task taskl-8684de156d60414486c006820a7364ce is ERROR, <NUM> seconds left",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "c07d6ed28a94feffb0fabde1e5a9fcff422b741cb3787ff015eb236ed9c11974": {
+      "pattern_text": "[AIE] NeuroserverProcessor::process task ERROR task_id=taskl-8f8e9af119784939b1b6f135c4f7eb21",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "72b7bd7ab5f88aba642af2a8e07da767f2bdbd19ae49cf2ad393f87480b4ea3b": {
+      "pattern_text": "[AIE] NeuroserverProcessor::process task ERROR task_id=taskl-8684de156d60414486c006820a7364ce",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "1d0bd4c2303d78c4da8ec77936827cdd4788328146bb5defb5354f3ba3138ba0": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: File \"topserving/x4x6am34on5u.py\", line <NUM>, in topserving.x4x6am34on5u.raise_top_serving_exception",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "45541ad134a12fa9f5d9192cd0b20572ba2985922b9da3d0d09041be7286a75b": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: topserving.x4x6am34on5u.ModelInferenceErrorException: [MODEL_INFERENCE_ERROR] Error during model inference",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "68e00c64a08769fc984d33b1326c31a358562ea09f46b20a789d8a4bc8f89a62": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: ERROR:topserving.dpe8bow3p5bd:worker.run An error occurred while processing the message: [MODEL_INFERENCE_ERROR] Error during model inference",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "0212d98b943de95b9510f959b7d5be38382c87ecb693f6bef89d295a70799a96": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: ERROR:topserving.dpe8bow3p5bd:ModelInferenceErrorException occurred while processing the message: [MODEL_INFERENCE_ERROR] Error during model inference",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "247407198508ba0f981046edd09926858e3ccdbeea2a830f8e2c280e92bb1987": {
+      "pattern_text": "[AIE] NeuroserverRunner [stderr]: ERROR:local_model_service:Error running video restoration: model file not found: blob.aaeb9f32c8b64dfbaa8eb1b41282b88c",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "1d28afb08db3c2243f036cf9b73c6408000972cfdb56dc16b05d7328d04c4953": {
+      "pattern_text": "[AIE] NeuroserverProcessor: status check (task failed) response body: {\"error_code\":\"MODEL_INFERENCE_ERROR\",\"eta\":\"\",\"message\":\"{}\",\"progress\":<VERSION>,\"status\":\"ERROR\",\"task_id\":\"taskl-8f8e9af119784939b1b6f135c4f7eb21\"}",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
+      }
+    },
+    "b0ea5b3bf930e0396e42f4148ee4b779f47044edbeebc80323e2c12f231bc0aa": {
+      "pattern_text": "[AIE] NeuroserverProcessor: status check (task failed) response body: {\"error_code\":\"MODEL_INFERENCE_ERROR\",\"eta\":\"\",\"message\":\"{}\",\"progress\":<VERSION>,\"status\":\"ERROR\",\"task_id\":\"taskl-8684de156d60414486c006820a7364ce\"}",
+      "count": 1,
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-02",
+      "seen_by_date": {
+        "2026-08-02": 1
       }
     }
   }
